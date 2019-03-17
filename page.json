@@ -1,0 +1,21 @@
+{
+	"buildAll": false,
+	"page": [
+		{
+			"name": "index",
+			"isWorking": true,
+			"js": [
+			]
+		},
+		{
+			"name": "about",
+			"isWorking": true,
+			"js": []
+		},
+		{
+			"name": "colection",
+			"isWorking": true,
+			"js": []
+		}
+	]
+}

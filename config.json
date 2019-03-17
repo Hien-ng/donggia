@@ -1,0 +1,12 @@
+{
+	"font": [
+		"bower_components/mdi/fonts/*",
+		"bower_components/font-awesome/webfonts/*",
+		"bower_components/linearicons/dist/web-font/fonts/*"
+	],
+	"globalJs": [
+		"./bower_components/jquery/dist/jquery.js",
+		"./bower_components/swiper/dist/js/swiper.min.js",
+		"./bower_components/fancybox/dist/jquery.fancybox.js"
+	]
+}

@@ -1,0 +1,52 @@
+.dg-colection-body 
+	padding: 90px 0 
+	text-align: center
+	h2 
+		font-size: 35px
+		font-weight: 400
+		color: #111111
+	p 
+		font-size: 18px
+		font-weight: 400
+		color: #999999 
+		line-height: 26px
+	.colection-item 
+		margin-top: 40px
+		a 
+			text-decoration: none 
+			.img 
+				padding: 30px
+				box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1)
+				transition: .5s ease-in-out
+			h3 
+				margin-top: 30px
+				font-size: 18px
+				color: #6a4b2d 
+				font-weight: 600
+				line-height: 24px
+			&:hover 
+				.img
+					box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3)
+	.pages 
+		margin-top: 40px
+		.pagination 
+			list-style: none
+			padding-left: 0
+			display: flex
+			justify-content: center
+			align-items: center 
+			.PagerOtherPageCells
+				padding: 18px 30px
+				border-bottom: 1px solid #e1e1e1
+				&.active, &:hover 
+					border-bottom: 3px solid #555555
+	@media (max-width: 767.98px)
+		padding: 45px 0
+		.colection-item 
+			margin-top: 20px
+			a 
+				h3 
+					font-size: 15px
+					margin-top: 10px
+		.pages 
+			margin-top: 20px

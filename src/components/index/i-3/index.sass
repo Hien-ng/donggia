@@ -1,0 +1,44 @@
+.dg-collection
+	padding: 90px 0
+	.collection-item 
+		+ .collection-item 
+			+ .collection-item 
+				+ .collection-item 
+					margin-top: 20px
+		a 
+			color: #ffffff
+			text-decoration: none 
+			.img 
+				img 
+					width: 100%
+				position: relative
+				&:before 
+					content: ''
+					position: absolute 
+					width: 100%
+					height: 100% 
+					background: linear-gradient(hsla(0,0%,100%,0),rgba(0, 0, 0, 0.8))
+				.conten 
+					position: absolute 
+					bottom: 30px
+					left: 0 
+					text-align: center
+					width: 100%
+					h3 
+						font-weight: 600
+						font-size: 18px 
+						line-height: 28px
+	@media (max-width: 575.98px)
+		padding: 45px 0 
+		.collection-item 
+			+ .collection-item 
+				margin-top: 20px
+	@media (max-width: 991.98px)
+		.collection-item 
+			+ .collection-item 
+				+ .collection-item 
+					margin-top: 20px
+			a 
+				.img 
+					&:hover 
+						box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3)

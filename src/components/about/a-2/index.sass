@@ -1,0 +1,60 @@
+.dg-about-banner 
+	background: url("../img/banner/b-4.jpg") 
+	background-size: cover 
+	background-attachment: fixed 
+	padding: 90px 0
+	.bg-about-item 
+		+.bg-about-item 
+			margin-top: 3rem
+		h2 
+			font-size: 50px
+			font-weight: 400
+			color: #ffffff 
+		p,h4 
+			font-weight: 400
+			font-size: 18px 
+			color: #999999 
+			line-height: 28px
+		p 
+			color: #ffffff
+		.swiper-container
+			.swiper-wrapper 
+				.swiper-slide 
+					text-align: center
+			.swiper-nav 
+				color: #fff
+				max-width: 525px
+				margin: auto
+				display: flex
+				justify-content: flex-end
+				position: relative
+				margin-top: -60px
+				z-index: 1
+				.swiper-prev,.swiper-next
+					background-color: rgb(68, 59, 50)
+					width: 60px
+					line-height: 60px
+					text-align: center
+					height: 60px
+					&:hover 
+						em 
+							color: #ffffff
+					&:focus 
+						outline: none
+				.swiper-prev 
+					margin-right: 1px
+				em
+					font-size: 20px
+					color: #999999
+	@media (min-width: 1199.98px) 
+		.bg-about-item 
+			+ .bg-about-item 
+				margin-top: 0
+	@media (max-width: 767.98px)
+		padding: 45px 0
+	@media (max-width: 575.98px) 
+		.bg-about-item 
+			h2 
+				font-size: 30px 
+			p,h4 
+				font-size: 15px

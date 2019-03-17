@@ -1,0 +1,43 @@
+{
+	"name": "source-v3",
+	"version": "3.2.2",
+	"description": "source build html",
+	"main": "gulpfile.js",
+	"repository": "https://github.com/sonvh2510/01.ToolBuildHTML.git",
+	"private": false,
+	"author": "sonvh2510",
+	"license": "MIT",
+	"scripts": {
+		"start": "gulp",
+		"build": "gulp build"
+	},
+	"dependencies": {
+		"@babel/core": "^7.2.2",
+		"@babel/polyfill": "^7.2.5",
+		"@babel/preset-env": "^7.3.1",
+		"@babel/register": "^7.0.0",
+		"autoprefixer": "^9.4.3",
+		"bootstrap": "^4.3.1",
+		"browser-sync": "^2.26.3",
+		"css-declaration-sorter": "^4.0.1",
+		"cssnano": "^4.1.8",
+		"dart-sass": "^1.15.2",
+		"del": "^3.0.0",
+		"fibers": "^3.1.1",
+		"graceful-fs": "^4.1.15",
+		"gulp": "^4.0.0",
+		"gulp-babel": "^8.0.0-beta.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-cssimport": "^7.0.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^8.0.0",
+		"gulp-pug": "^4.0.1",
+		"gulp-rename": "^1.4.0",
+		"gulp-replace": "^1.0.0",
+		"gulp-sass": "^4.0.2",
+		"gulp-sass-unicode": "^1.0.1",
+		"gulp-sourcemaps": "^2.6.4",
+		"gulp-terser": "^1.1.7",
+		"linearicons": "^1.0.1"
+	}
+}

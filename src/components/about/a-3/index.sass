@@ -1,0 +1,66 @@
+.dg-about-team 
+	background: url("../img/banner/b-5.png") 
+	background-size: cover 
+	background-attachment: fixed 
+	padding: 90px 0
+	text-align: center
+	h2 
+		font-size: 50px
+		font-weight: 400
+		color: #333333
+	p 
+		font-size: 18px
+		line-height: 26px
+		color: #999999
+		max-width: 780px
+		margin: auto
+	.dg-team-item 
+		margin-top: 50px
+		display: flex
+		align-items: center
+		justify-content: center
+		.conten,.team
+			text-align: left
+			.name 
+				position: relative
+				&:before 
+					content: ""
+					position: absolute
+					border: 1px dotted #999
+					width: 50px
+					height: 1px
+					bottom: -10px
+			h4 
+				font-size: 20px 
+				line-height: 18px
+				font-weight: 600
+				color: #6a4b2d
+			h5 
+				font-size: 14px
+				line-height: 18px
+				color: #999999
+				font-weight: 400 
+			p 
+				font-size: 15px
+				line-height: 22px
+				color: #333333
+		.team 
+			margin-top: 30px
+	@media (max-width: 767.98px)
+		padding: 45px 0
+	@media (min-width: 1200px)
+		.dg-team-item 
+			.conten 
+				max-width: 505px
+	@media (max-width: 575.98px) 
+		h2 
+			font-size: 30px 
+		p,h4 
+			font-size: 15px
+		.dg-team-item
+			.team 
+				margin-top: 15px
+				h4 
+					font-size: 15px 
+				h5 
+					font-size: 13px
