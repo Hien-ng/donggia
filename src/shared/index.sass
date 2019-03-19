@@ -23,6 +23,21 @@ h1,h2,h3,h4,h5,h6,p
 .row 
 	margin-right: -10px
 	margin-left: -10px
+.pages 
+	margin-top: 40px
+	.pagination 
+		list-style: none
+		padding-left: 0
+		display: flex
+		justify-content: center
+		align-items: center 
+		.PagerOtherPageCells
+			padding: 18px 30px
+			border-bottom: 1px solid #e1e1e1
+			&.active, &:hover 
+				border-bottom: 3px solid #555555
+	@media (max-width: 767.98px) 
+		margin-top: 20px
 // Fonts
 .fa-angle-up:before
 	content: "\f106"
@@ -32,3 +47,5 @@ h1,h2,h3,h4,h5,h6,p
 	content: "\e879"
 .lnr-home:before 
 	content: "\e800"
+.lnr-chevron-up:before 
+	content: "\e873"

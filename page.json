@@ -16,6 +16,21 @@
 			"name": "colection",
 			"isWorking": true,
 			"js": []
+		},
+		{
+			"name": "catalogue",
+			"isWorking": true,
+			"js": []
+		},
+		{
+			"name": "support_faqs",
+			"isWorking": true,
+			"js": []
+		},
+		{
+			"name": "support_terms",
+			"isWorking": true,
+			"js": []
 		}
 	]
 }
