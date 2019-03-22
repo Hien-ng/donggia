@@ -1,0 +1,400 @@
+// Product
+.product-item
+	margin-bottom: 30px
+	.imgbox
+		box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1)
+		transition: all .5s ease-out
+		img
+			width: 100%
+			transition: all .5s ease-out
+	figcaption
+		position: relative
+		text-align: center
+		padding-top: 20px
+		.addcart
+			position: absolute
+			bottom: 100%
+			margin: 0 40px -50px 40px
+			line-height: 50px
+			left: 0
+			right: 0
+			background: lighten(black,33%)
+			color: white
+			font-size: 15px
+			text-transform: uppercase
+			cursor: pointer
+			opacity: 0
+			transition: all .53s ease-out
+		.type
+			font-size: 14px
+			font-weight: 400
+			text-transform: uppercase
+			color: darken(white,40%)
+		.name
+			font-size: 18px
+			font-weight: 700
+			color: lighten(black,20%)
+			// min-height: 54px
+			position: relative
+			margin-bottom: 8px
+			display: block
+			&:before
+				content: ''
+				width: 50px
+				height: 0px
+				position: absolute
+				top: 100%
+				left: 50%
+				transform: translateX(-50%)
+				border-top: 1px dashed darken(white,40%)
+			&:hover
+				text-decoration: none
+		.price
+			font-size: 18px
+			font-weight: 400
+			color: lighten(black,33%)
+			text-transform: uppercase
+	@media (min-width: 992px)
+		&:hover
+			.imgbox
+				box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3)
+				img
+					transform: translateY(-50px)
+			figcaption
+				.addcart
+					margin-bottom: 0
+					opacity: 1
+				.name
+					color: #6a4b2d
+
+.product-nav
+	border-bottom: 1px solid darken(white,12%)
+	.product-category
+		display: flex
+		nav
+			display: flex
+			&.category
+				flex-grow: 1
+				flex-basis: 1
+			&.sort
+				flex: 0 0 auto
+				width: 240px
+				max-width: 100%
+				.nav-item
+					border-right: 1px solid darken(white,12%)
+			.nav-item
+				flex-grow: 1
+				flex-basis: 0
+				padding: 0 16px
+				white-space: nowrap
+				cursor: pointer
+				border-left: 1px solid darken(white,12%)
+				display: flex
+				align-items: center
+				position: relative
+				>span,>a
+					font-size: 14px
+					text-transform: uppercase
+					line-height: 60px
+				.lnr
+					margin-left: auto
+					font-size: 12px
+					transition: all .3s ease-out
+					display: flex
+					align-items: center
+				&.active
+					.lnr
+						transform: rotateX(180deg)
+				.dropdown
+					display: none
+					position: absolute
+					top: 100%
+					left: 0
+					margin-top: 15px
+					background: white
+					box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15)
+					z-index: 2
+					padding: 5px 20px
+					width: 290px
+					&:before
+						content: ''
+						border-left: 8px solid transparent
+						border-right: 8px solid transparent
+						border-bottom: 10px solid white
+						position: absolute
+						bottom: 100%
+						left: 50px
+						overflow: hidden
+					.list,.viewall
+						display: flex
+						flex-wrap: wrap
+						a
+							width: 100%
+							text-transform: uppercase
+							font-size: 14px
+							color: darken(white,40%)
+							line-height: 45px
+							&:hover
+								font-weight: 500
+								color: lighten(black,33%)
+					.viewall
+						padding-bottom: 8px
+						border-bottom: 1px solid darken(white,12%)
+
+.product-wrapper
+	padding: 80px 0
+	.title
+		font-size: 35px
+		font-weight: 400
+		color: #6a4b2d
+		margin-bottom: 28px
+	.ajaxresponsewrap
+		.product-item
+			flex: 0 0 33.3333%
+			max-width: 33.3333%
+			padding: 0 10px
+	.product-image
+		flex: 0 0 33.3333%
+		max-width: 33.3333%
+		margin-left: 8.3333%
+		padding: 0 10px
+		.big
+			margin-bottom: 15px
+			.slide
+				display: none
+		.thumbnail
+			max-width: 375px
+			margin: 0 auto
+			.swiper-slide
+				padding: 0 10px
+				cursor: pointer
+				img
+					transition: all .5s ease-out
+					border: 1px solid transparent
+			.swiper-slide-active
+				img
+					border: 1px solid rgba(0, 0, 0, 0.1)
+	.product-info
+		flex: 0 0 41.6666%
+		max-width: 41.6666%
+		margin-left: 16.6666%
+		padding: 0 10px
+		.title
+			margin-bottom: 12px
+		.info-wrapper
+			border-bottom: 1px solid darken(white, 8%)
+			padding-bottom: 10px
+			.td
+				flex-grow: 1
+				flex-basis: 0
+			.subTitle,span
+				font-size: 14px
+				font-weight: 400
+				line-height: 1.5
+				display: inline-block
+				text-transform: uppercase
+				color: darken(white,60%)
+		.price-wrapper,.quantity-wrapper
+			display: flex
+			align-items: center
+			border-bottom: 1px solid darken(white, 8%)
+			padding: 16px 0
+		.price-wrapper
+			.td:last-child
+				margin-left: auto
+			span
+				font-size: 14px
+				font-weight: 700
+				color: #fa1126
+				text-transform: uppercase
+			.price
+				font-size: 25px
+				font-weight: 400
+				color: lighten(black,20%)
+		.quantity-wrapper
+			>span
+				font-size: 15px
+				font-weight: 500
+				text-transform: uppercase
+			.quantity-count
+				border: 1px solid darken(white, 8%)
+				border-radius: 5px
+				margin-left: 28px
+				span
+					display: inline-flex
+					width: 40px
+					height: 60px
+					justify-content: center
+					align-items: center
+					cursor: pointer
+				input
+					width: 50px
+					height: 60px
+					border: 0
+					text-align: center
+					font-weight: 700
+					&:focus
+						outline: none
+			.addcart
+				border-radius: 5px
+				cursor: pointer
+				margin-left: 28px
+				flex-grow: 1
+				flex-basis: 0
+				text-transform: uppercase
+				background: #6a4b2d
+				font-size: 15px
+				font-weight: 400
+				color: white
+				text-align: center
+				line-height: 60px
+		.product-tab
+			padding-top: 20px
+			font-size: 15px
+			font-weight: 400
+			.td
+				flex: 0 0 100%
+				max-width: 100%
+			nav
+				display: flex
+				padding-bottom: 20px
+				a
+					text-transform: uppercase
+					font-size: 15px
+					font-weight: 400
+					color: darken(white,40%)
+					flex-grow: 1
+					flex-basis: 0
+					&:hover, &.active
+						color: #6a4b2d
+						text-decoration: underline
+			.pcontent
+				display: none
+			p
+				margin-bottom: 8px
+				color: lighten(black,20%)
+			table
+				color: lighten(black,20%)
+				tr
+					td:first-child
+						width: 40%
+						vertical-align: top
+						font-weight: 500
+	.product-other
+		padding-top: 80px
+		margin-top: 80px
+		border-top: 1px solid darken(white,12%)
+		position: relative
+		&:before
+			content: ''
+			width: 100%
+			height: 0
+			border-top: 1px solid darken(white,12%)
+			top: 5px
+			position: absolute
+			left: 0
+		.title
+			color: lighten(black,20%)
+		.swiper-container
+			margin: -10px
+			padding: 10px
+@media (max-width: 1199.9px)
+	.product-category
+		nav
+			&.sort
+				width: 180px
+			.nav-item
+				>span,>a
+					font-size: 12px
+					line-height: 50px
+	.product-wrapper
+		.product-image
+			flex: 0 0 50%
+			max-width: 50%
+			margin-left: 0%
+		.product-info
+			flex: 0 0 50%
+			max-width: 50%
+			margin-left: 0
+@media (max-width: 991.9px)
+	.product-item
+		figcaption
+			.type
+				font-size: 12px
+			.name
+				font-size: 15px
+				// min-height: 50px
+			.price
+				font-size: 15px
+			.addcart
+				opacity: 1
+				position: unset
+				margin: 0
+				line-height: 35px
+				margin-top: 10px
+	.product-wrapper
+		padding: 40px 0
+		.title
+			font-size: 28px
+		.product-other
+			padding-top: 40px
+			margin-top: 40px
+
+@media (max-width: 767.9px)
+	.product-wrapper
+		.ajaxresponsewrap
+			.product-item
+				flex: 0 0 50%
+				max-width: 50%
+		.product-image
+			flex: 0 0 100%
+			max-width: 100%
+			margin-left: 0%
+			margin-top: 15px
+			order: 2
+			.thumbnail
+				max-width: 375px
+				width: 100%
+			.big
+				max-width: 400px
+				width: 100%
+				margin: 0 auto 15px auto
+		.product-info
+			order: 1
+			flex: 0 0 100%
+			max-width: 100%
+			margin-left: 0
+			.price-wrapper,.quantity-wrapper
+				padding: 6px 0
+			.quantity-wrapper
+				.quantity-count
+					span,input
+						height: 40px
+				.addcart
+					line-height: 40px
+			.product-tab
+				font-size: 12px
+				nav
+					a
+						font-size: 13px
+@media (max-width: 575.9px)
+	.product-wrapper
+		.product-image
+			.big
+				max-width: 200px
+				border: 1px solid rgba(0, 0, 0, 0.1)
+@media (max-width: 450px)
+	.product-wrapper
+		.product-info
+			.quantity-wrapper
+				>span
+					font-size: 15px
+					font-weight: 500
+					text-transform: uppercase
+				.quantity-count
+					margin-left: auto
+				.addcart
+					flex: 0 0 100%
+					max-width: 100%
+					margin-left: 0
+					margin-top: 10px

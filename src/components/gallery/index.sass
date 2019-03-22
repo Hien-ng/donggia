@@ -1,0 +1,96 @@
+.gallery-nav
+	nav
+		display: flex
+		justify-content: center
+		border-bottom: 1px solid darken(white, 12%)
+		a
+			font-size: 14px
+			font-weight: 400
+			text-transform: uppercase
+			line-height: 60px
+			margin: 0 28px
+			color: darken(white,40%)
+			border-bottom: 3px solid transparent
+			&:hover,&.active
+				color: #6a4b2d
+				text-decoration: none
+			&.active
+				border-bottom: 3px solid #6a4b2d
+			
+.gallery
+	padding: 80px 0
+	.grid
+		display: flex
+		flex-wrap: wrap
+		margin: 0 -10px
+	.grid-item
+		position: relative
+		flex: 0 0 33.3333%
+		max-width: 33.3333%
+		padding: 10px
+		transition: .5s all ease-out
+		.img 
+			position: relative
+			&:before 
+				content: ''
+				position: absolute
+				width: 100%
+				height: 100%
+				background: none
+		.noidung 
+			opacity: 0
+			padding: 10px
+			position: absolute 
+			bottom: 0px
+			left: 0
+			width: 100% 
+			text-align: center
+			transition: .5s all ease-in-out
+			p 
+				color: #ffffff
+				font-size: 16px
+				line-height: 28px
+				font-weight: 600
+		&:hover 
+			.img 
+				&:before 
+					background: linear-gradient(#ffffff00, #000000d1)
+			.noidung 
+				opacity: 1
+				bottom: 70px
+
+	h2
+		text-align: center
+	.viewmore
+		text-align: center
+		margin-top: 50px
+		a
+			display: inline-flex
+			min-width: 190px
+			height: 50px
+			justify-content: center
+			align-items: center
+			border: 1px solid lighten(black,33%)
+			color: lighten(black,33%)
+			text-transform: uppercase
+			font-size: 16px
+			border-radius: 5px
+			&:hover
+				background: #fa1126
+				border-color: #fa1126
+				color: white
+				text-decoration: none
+@media (max-width: 767.9px)
+	.gallery
+		padding: 40px 0
+		.grid-item
+			flex: 0 0 50%
+			max-width: 50%
+			.img 
+				&:before 
+					background: linear-gradient(#ffffff00, #000000d1)
+			.noidung 
+				opacity: 1
+				bottom: 0
+				p 
+					font-weight: 400

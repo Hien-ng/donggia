@@ -1,12 +1,9 @@
 
 $(document).ready(function () {
-    var asa = new Swiper('.dg-banner .swiper-container', {
-        slidesPerView: 1,
-        loop: true,
-        autoplay: {
-            delay: 2000
-        },
-    })
-    
+    $('#gotop').on('click', function () {
+		$('html,body').animate({
+			scrollTop: 0
+		}, 1000)
+	})
 });
 // var swiper = new Swiper('.dg-banner .swiper-container')

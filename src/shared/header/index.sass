@@ -1,0 +1,333 @@
+header
+	padding-top: 10px
+	padding-bottom: 20px
+	position: fixed
+	width: 100%
+	top: 0
+	left: 0
+	transition: all .3s ease-out
+	background: white
+	z-index: 2
+	&.fixed
+		box-shadow: 0 0 8px rgba(0,0,0,.15)
+	.backdrop
+		display: none
+	.logo
+		flex-grow: 1
+		flex-basis: 0
+		max-width: 190px
+		margin-right: 70px
+		display: flex
+		justify-content: center
+		align-items: center
+		img
+			width: 100%
+	.menu-wrapper
+		flex-grow: 1
+		flex-basis: 0
+	.sub-menu,.main-menu
+		display: flex
+		justify-content: flex-end
+		align-items: center
+	.sub-menu
+		font-size: 13px
+		font-weight: 400
+		text-transform: uppercase
+		margin-bottom: 8px
+		*
+			color: darken(white,40%)
+		>a
+			display: flex
+			align-items: center
+			text-decoration: none
+			padding: 0 8px
+			.mdi
+				font-size: 18px
+				font-weight: 700
+				color: #fa1126
+			&.login,&.hotline,&.welcome,&.logout
+				.mdi
+					margin-right: 7px
+			&.hotline
+				span:not(.mdi)
+					font-weight: 700
+					color: lighten(black, 33%)
+			@media (min-width: 992px)
+				&:not(:first-child)
+					position: relative
+					&:before
+						content: ''
+						position: absolute
+						height: 14px
+						width: 1px
+						background: darken(white,40%)
+						top: 50%
+						left: 0
+						transform: translateY(-50%)
+				&:hover
+					color: #6a4b2d
+					span:not(.mdi)
+						color: #6a4b2d
+		.language
+			position: relative
+			.current
+				width: 80px
+				height: 36px
+				background: darken(#ffffff,4%)
+				display: flex
+				justify-content: center
+				align-items: center
+				cursor: pointer
+				.mdi-web
+					margin-right: 6px
+					font-size: 18px
+				.mdi-chevron-down
+					margin-left: 6px
+				&.active
+					background: map-get($mau, main)
+					span
+						color: white
+			.dropdown
+				position: absolute
+				top: 100%
+				left: 0
+				width: 80px
+				background: darken(white,4%)
+				display: none
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				a
+					display: block
+					text-align: center
+					width: 100%
+					padding: 7px 0
+					&:hover
+						background: map-get($mau, main)
+						color: white
+						text-decoration: none
+				&.active
+					display: flex
+					box-shadow: 0px 4px 5px rgba(0,0,0,.1)
+	.search
+		width: 32px
+		height: 45px
+		display: flex
+		justify-content: center
+		align-items: center
+		cursor: pointer
+		margin-left: 8px
+		.search-toggle
+			font-size: 18px
+			width: inherit
+			height: inherit
+			display: flex
+			justify-content: center
+			align-items: center
+		.searchbox
+			display: none
+			position: absolute
+			top: 100%
+			width: 100%
+			margin: 0 auto
+			left: 0
+			right: 0
+			padding: 10px
+			background: white
+			box-shadow: 0 2px 4px rgba(0,0,0,.1)
+			@media (min-width: 992px)
+				max-width: 960px
+			@media (min-width: 1200px)
+				max-width: 1140px
+			@media (min-width: 1440px)
+				max-width: 1260px
+			.searchinput
+				border: 0
+				border-bottom: 1px solid rgba(0,0,0,.15)
+				width: 100%
+				line-height: 35px
+				height: 35px
+				&:focus
+					outline: none
+			.searchbutton
+				position: absolute
+				width: 35px
+				height: 35px
+				top: 10px
+				right: 10px
+				font-size: 0
+				border: 0
+				background: transparent
+				&:before
+					content: '\f349'
+					color: lighten(black,33%) 
+					display: inline-block
+					font: normal normal normal 24px/1 "Material Design Icons"
+					font-size: inherit
+					text-rendering: auto
+					line-height: inherit
+					-webkit-font-smoothing: antialiased
+					-moz-osx-font-smoothing: grayscale
+					font-size: 18px
+	.category-list
+		flex-grow: 1
+		flex-basis: 0
+		.ModuleContent
+			ul
+				display: flex
+				font-size: 15px
+				font-weight: 500
+				text-transform: uppercase
+				justify-content: space-between
+				li
+					flex-grow: auto
+					a
+						color: lighten(black,33%)
+						white-space: nowrap
+	.cart
+		margin-left: 16px
+		.cart-toggle
+			width: 140px
+			height: 45px
+			display: flex
+			border: 1px solid lighten(black,33%)
+			border-radius: 4px
+			cursor: pointer
+			.icon
+				background: lighten(black,33%)
+				width: 45px
+				display: flex
+				justify-content: center
+				align-items: center
+				color: white
+			.text
+				flex-grow: 1
+				flex-basis: 0
+				display: flex
+				justify-content: center
+				align-items: center
+		.cartpanel
+			display: none
+	.toggle-menu
+		display: none
+		cursor: pointer
+	@media (max-width: 1199.9px)
+		.logo
+			max-width: 150px
+			margin-right: 30px
+		.category-list
+			.ModuleContent
+				ul
+					font-size: 13px
+	@media (max-width: 991.9px)
+		padding-bottom: 10px
+		.container
+			max-width: 100%
+		.backdrop
+			display: none
+			z-index: 1
+			position: fixed
+			top: 73px
+			left: 0
+			width: 100%
+			height: 100%
+			background: rgba(0,0,0,.8)
+		.toggle-menu
+			width: 35px
+			height: 35px
+			margin-left: 12px
+			display: flex
+			justify-content: center
+			align-items: center
+			font-size: 28px
+			color: map-get($mau, main)
+			line-height: 35px
+		.row.no-gutters
+			align-items: center
+		.search
+			height: 35px
+			.searchbox
+				z-index: 2
+				background: white
+		.cart
+			margin-left: 12px
+			.cart-toggle
+				width: auto
+				border: 0
+				width: 35px
+				height: 35px
+				overflow: hidden
+				.text
+					display: none
+		.logo
+			max-width: 120px
+			margin-right: 15px
+		.sub-menu
+			margin-bottom: 0
+			justify-content: flex-start
+			position: fixed
+			top: 73px
+			height: 550px
+			right: 0
+			z-index: 3
+			flex-direction: column
+			width: 105px
+			background: #00973E
+			transform: translateX(100%)
+			transition: all .3s ease-out
+			&.active
+				transform: translateX(0)
+			>a
+				height: 90px
+				width: 100%
+				padding: 8px
+				border-bottom: 1px solid white
+				text-align: center
+				flex-wrap: wrap
+				justify-content: center
+				color: white
+				span:not(.mdi), &.hotline span:not(.mdi)
+					color: white
+					width: 100%
+				&.hotline, &.login
+					.mdi
+						margin-right: 0
+						color: white
+						font-size: 24px
+					span:not(.mdi)
+						font-weight: 400
+			.language
+				width: 100%
+				height: 90px
+				padding: 27px 12px
+				.dropdown
+					left: 11.5px
+					top: 65px
+		.category-list
+			position: fixed
+			top: 73px
+			z-index: 2
+			right: 0
+			width: 100%
+			max-width: 300px
+			height: 550px
+			background: #005D00
+			transform: translateX(100%)
+			transition: all .5s ease-out
+			&.active
+				transform: translateX(0)
+			.ModuleContent
+				height: inherit
+				ul
+					padding-left: 15px
+					padding-top: 15px
+					padding-bottom: 15px
+					// height: inherit
+					flex-direction: column
+					justify-content: unset
+					font-size: 15px
+					padding-right: 105px
+					li
+						a
+							color: white
+							line-height: 40px

@@ -24,6 +24,7 @@
     "font-awesome": "5.7.2",
     "mdi": "3.5.94",
     "linearicons": "1.0.1",
-    "bootstrap": "4.3.1"
+    "bootstrap": "4.3.1",
+    "isotope-layout": "^3.0.6"
   }
 }

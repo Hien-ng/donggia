@@ -1,0 +1,104 @@
+.product-wrapper
+	.container
+		.row
+			.product-image
+				.big
+					.slide(data-id="sl-1" style="display:block")
+						img(src="./img/product/p_1.png", alt="")
+					.slide(data-id="sl-2")
+						img(src="./img/product/p_2.png", alt="")
+					.slide(data-id="sl-3")
+						img(src="./img/product/p_3.png", alt="")
+					.slide(data-id="sl-4")
+						img(src="./img/product/p_4.png", alt="")
+					.slide(data-id="sl-5")
+						img(src="./img/product/p_5.png", alt="")
+				.swiper-container.thumbnail
+					.swiper-wrapper
+						.swiper-slide(data-target="sl-1")
+							img(src="./img/product/p_1.png", alt="")
+						.swiper-slide(data-target="sl-2")
+							img(src="./img/product/p_2.png", alt="")
+						.swiper-slide(data-target="sl-3")
+							img(src="./img/product/p_3.png", alt="")
+						.swiper-slide(data-target="sl-4")
+							img(src="./img/product/p_4.png", alt="")
+						.swiper-slide(data-target="sl-5")
+							img(src="./img/product/p_5.png", alt="")
+			.product-info
+				h1.title Half-moon Tea Set
+				.row.info-wrapper
+					.col
+						.td
+							h2.subTitle Tea & Coffee Set
+						.td
+							span Code: 
+							span.code TPDL0014SET
+				.row.price-wrapper
+					.td
+						span.price 880.000 vnđ
+					.td
+						span x 
+						span.quantity Out of Stock
+				.row.quantity-wrapper
+					span Quantity
+					.quantity-count
+						span -
+						input#quantity(type="text" value="1")
+						span +
+					.addcart
+						span Add to cart
+				.row.product-tab
+					.td
+						nav
+							a.active(href="#ptab-1") Product Info
+							a(href="#ptab-2") Specifications
+							a(href="#ptab-3") How to use
+					.td
+						.pcontent#ptab-1(style="display: block")
+							p A little tea set presented in handmade gift box. Conventional shape. Great for gifting individually on all occasions.
+							table
+								tbody
+									tr
+										td Gift set contains
+										td 
+											| Japanese Tea Pot: 1PC
+											| Small Tea Bolw: 6 PCS
+									tr
+										td Size
+										td L - 25cm X  W - 25cm   X  H - 10cm
+									tr
+										td Color
+										td Crytal Green
+									tr
+										td Material
+										td Ceramic
+									tr
+										td Care
+										td Microwave, Dishwasher Safe
+						.pcontent#ptab-2
+							p tab 2
+						.pcontent#ptab-3
+							p tab 3
+		.row.product-other
+			.col
+				h2.title You may also like...
+			.col
+				.swiper-container
+					.swiper-wrapper
+						- for(i=1;i<6;i++)
+							.swiper-slide
+								figure.product-item
+									.imgbox
+										a(href="product-detail.html")
+											img(src="./img/product/p_"+i+".png", alt="product "+i)
+									figcaption
+										.type Plates
+										- if(i%2==0)
+											a.name(href="product-detail.html") Salt And Pepper Pebble Plate B
+											.price Contact uS
+										- else
+											a.name(href="product-detail.html") Salt And Pepper Pebble Plate B Salt And Pepper Pebble Plate B
+											.price 880.000 vnđ
+										.addcart
+											span Add to cart

@@ -1,43 +1,65 @@
+@import "color.sass"
 @import "../plugins/font.css"
 @import "../plugins/grid.css"
 @import "header/index.sass"
 @import "footer/index.sass"
 
 @import "../../bower_components/swiper/dist/css/swiper.min.css"
-@import "../../bower_components/bootstrap/dist/css/bootstrap-grid.css"
+// @import "../../bower_components/bootstrap/dist/css/bootstrap-grid.css"
 @import "../../bower_components/fancybox/dist/jquery.fancybox.css"
 // @import "../../bower_components/bootstrap/dist/css/bootstrap-reboot.css"
 
-img 
-	max-width: 100%
 h1,h2,h3,h4,h5,h6,p 
 	margin-bottom: 0
-.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-auto, .col-lg, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-auto, .col-md, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md-auto, .col-sm, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-auto 
-	padding-left: 10px
-	padding-right: 10px
-.container 
-	@media (min-width: 1200px)
-		max-width: 1240px
-	padding-left: 10px
-	padding-right: 10px
-.row 
-	margin-right: -10px
-	margin-left: -10px
-.pages 
-	margin-top: 40px
-	.pagination 
-		list-style: none
-		padding-left: 0
+ul
+	list-style-type: none
+	padding-left: 0
+main
+	padding-top: 119px
+	@media (max-width: 991.9px)
+		padding-top: 73px
+.hiddenX
+	overflow: hidden
+img
+	max-width: 100%
+
+//pagination
+.pages
+	.pagination
 		display: flex
 		justify-content: center
-		align-items: center 
-		.PagerOtherPageCells
-			padding: 18px 30px
-			border-bottom: 1px solid #e1e1e1
-			&.active, &:hover 
-				border-bottom: 3px solid #555555
-	@media (max-width: 767.98px) 
-		margin-top: 20px
+		li
+			width: 60px
+			height: 50px
+			border-bottom: 1px solid darken(white,40%)
+			a,span
+				font-size: 15px
+				font-weight: 400
+				color: darken(white,40%)
+				width: inherit
+				height: inherit
+				display: flex
+				justify-content: center
+				align-items: center
+			&.active
+				border-bottom: 3px solid lighten(black,33%)
+				a,span
+					font-weight: 700
+					color: lighten(black,33%)
+	// margin-top: 40px
+	// .pagination 
+	// 	list-style: none
+	// 	padding-left: 0
+	// 	display: flex
+	// 	justify-content: center
+	// 	align-items: center 
+	// 	.PagerOtherPageCells
+	// 		padding: 18px 30px
+	// 		border-bottom: 1px solid #e1e1e1
+	// 		&.active, &:hover 
+	// 			border-bottom: 3px solid #555555
+	// @media (max-width: 767.98px) 
+	// 	margin-top: 20px
 // Fonts
 .fa-angle-up:before
 	content: "\f106"
@@ -49,3 +71,53 @@ h1,h2,h3,h4,h5,h6,p
 	content: "\e800"
 .lnr-chevron-up:before 
 	content: "\e873"
+.col, [class^="col-"]
+	padding: 0 10px
+@media (min-width: 576px)
+	.col-sm-6
+		flex: 0 0 50%
+		max-width: 50%
+@media (min-width: 768px)
+@media (min-width: 992px)
+	.col-lg
+		flex-grow: 1
+		flex-basis: 0
+		max-width: 100%
+	.col-lg-2
+		flex: 0 0 16.6666%
+		max-width: 16.6666%
+	.col-lg-3
+		flex: 0 0 25%
+		max-width: 25%
+	.col-lg-4
+		flex: 0 0 33.3333%
+		max-width: 33.3333%
+@media (min-width: 1200px)
+
+	.col-xl-3
+		flex: 0 0 25%
+		max-width: 25%
+
+// Fonts icon
+.mdi-phone:before
+	content: '\f3f2'
+.mdi-account-outline:before
+	content: '\f013'
+.mdi-web:before
+	content: '\f59f'
+.mdi-chevron-down:before
+	content: '\f140'
+.mdi-basket:before
+	content: '\f076'
+.mdi-magnify:before
+	content: '\f349'
+.mdi-menu:before
+	content: '\f35c'
+.fa-facebook-f:before
+	content: '\f39e'
+.fa-instagram:before
+	content: '\f16d'
+.fa-youtube:before
+	content: '\f167'
+.lnr-chevron-down:before
+	content: '\e874'

@@ -1,2 +1,117 @@
 footer
-	background: black
+	background: darken(white,8%)
+	.container
+		position: relative
+	.top
+		padding-top: 48px
+		padding-bottom: 48px
+		border-bottom: 1px solid #d8d8d9
+	.module-title
+		font-size: 18px
+		font-weight: 700
+		color: lighten(black,33%)
+		margin-bottom: 16px
+	p, a
+		font-size: 15px
+		font-weight: 400
+		text-transform: uppercase
+		color: #8b8c92
+	a:hover
+		color: map-get($mau, main)
+	.nav
+		nav
+			display: flex
+			flex-direction: column
+	.no-gutters
+		.address
+			padding-right: 20px
+	.receive-news
+		p
+			text-transform: none
+			color: lighten(black,33%)
+			font-weight: 500
+		.subscribefrm
+			position: relative
+			z-index: 0
+			.subscribeemail
+				border: 0
+				border-bottom: 1px solid #8b8c92
+				background: transparent
+				width: 100%
+				height: 35px
+				margin-bottom: 8px
+				&:focus
+					outline: none
+			.subscribebutton
+				z-index: 0
+				font-size: 0
+				display: flex
+				justify-content: center
+				align-items: center
+				border: 0
+				background: transparent
+				position: absolute
+				right: 0
+				top: 0
+				padding: 0
+				width: 35px
+				height: 35px
+				&:before
+					content: '\e87a'
+					font-size: 20px
+					font-family: 'Linearicons-free'
+	.social
+		margin-top: 24px
+		a
+			display: inline-flex
+			justify-content: center
+			align-items: center
+			width: 60px
+			height: 30px
+			color: #8b8c92
+			border: 1px solid #8b8c92
+			&:hover
+				background: map-get($mau, main)
+				border-color: map-get($mau, main)
+				color: white
+			+ a
+				margin-left: 8px
+	.copyright
+		justify-content: center
+		padding-top: 20px
+		padding-bottom: 20px
+		text-align: center
+	@media (max-width: 991.9px)
+		.copyright
+			p,a
+				font-size: 13px
+				span
+					display: block
+		.container
+			max-width: 100%
+		.address, .nav
+			margin-bottom: 28px
+	@media (max-width: 575.9px)
+		.social
+			nav
+				justify-content: center
+				display: flex
+		.copyright
+			p,a
+				font-size: 12px
+		.no-gutters
+			.address
+				padding-right: 0
+	#gotop
+		position: absolute
+		width: 45px
+		bottom: 62px
+		transform: translateY(50%)
+		right: 10px
+		cursor: pointer
+		@media (max-width: 991.9px)
+			bottom: 78px
+		@media (max-width: 575.9px)
+			bottom: 75px
+		@media (max-width: 320px)
+			bottom: 93px

@@ -1,0 +1,20 @@
+.gallery-nav
+	.container
+		nav
+			a.active(href="#") Workshop
+			a(href="#") Product Concept
+.gallery
+	.container
+		h2.main-title Product Concept
+		.grid
+			.grid-sizer
+			- for(i=1;i<14;i++)
+				a(href="./img/gallery/g_"+i+".jpg" data-fancybox="hien").grid-item
+					.img
+						img(src="./img/gallery/g_"+i+".jpg", alt="")
+					.noidung 
+						p Japanese Teapot in Sandy
+		.viewmore
+			a(href="#") 
+				span Viewmore
+				span.lnr.lnr-arrow-down

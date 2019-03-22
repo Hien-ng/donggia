@@ -31,6 +31,21 @@
 			"name": "support_terms",
 			"isWorking": true,
 			"js": []
+		},
+		{
+			"name": "gallery",
+			"isWorking": true,
+			"js": []
+		},
+		{
+			"name": "product-detail",
+			"isWorking": true,
+			"js": []
+		},
+		{
+			"name": "product",
+			"isWorking": true,
+			"js": []
 		}
 	]
 }

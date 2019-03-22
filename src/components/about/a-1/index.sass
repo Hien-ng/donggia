@@ -1,20 +1,39 @@
-.dg-breadcrumb 
+.breadcrumb-wrapper
 	background: #f7f2ee
-	padding: 20px 0
-	.breadcrumb 
-		ol
-			padding: 0
-			margin: 0
-			list-style-type: none
-			display: flex
+	.breadcrumb
+		width: 100%
+		padding-right: 10px
+		padding-left: 10px
+		margin-right: auto
+		margin-left: auto
+		padding: 5px 10px
+		list-style-type: none
+		@media (min-width: 992px)
+			padding: 13px 10px
+			max-width: 960px
+		@media (min-width: 1200px)
+			max-width: 1140px
+		@media (min-width: 1440px)
+			max-width: 1260px
 		li
+			display: inline-flex
+			a
+				font-size: 15px
+				color: darken(white,40%)
 			+ li
-				margin-left: -4px
-			&:not(:last-child):after
-				content: '/'
-				margin: 0 .5rem
-				font-size: 14px
-				color: rgb(153, 153, 153)
-		a
-			font-size: 15px
-			color: rgb(153, 153, 153)
+				&:before
+					content: '/'
+					padding: 0 8px
+					color: darken(white,40%)
+			&:hover
+				a
+					color: #fa1126
+					text-decoration: none
+			&:first-child
+				a
+					span
+						font-size: 0
+						&:before
+							font-size: 15px
+							content: '\e800'
+							font-family: 'Linearicons-Free'

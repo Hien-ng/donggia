@@ -1,0 +1,109 @@
+.product-nav
+	.container
+		.product-category
+			nav.category
+				.nav-item
+					span Decorative Object
+					span.lnr.lnr-chevron-down
+					.dropdown
+						.viewall
+							a(href="#") View All
+						.list
+							a(href="#") Tea &amp; Coffee set
+							a(href="#") Bowls
+							a(href="#") Plates
+							a(href="#") For Sake
+							a(href="#") Dining Stoneware
+
+				.nav-item
+					span Kitchen &amp; Dining
+					span.lnr.lnr-chevron-down
+					.dropdown
+						.viewall
+							a(href="#") View All
+						.list
+							a(href="#") Tea &amp; Coffee set
+							a(href="#") Bowls
+							a(href="#") Plates
+							a(href="#") For Sake
+							a(href="#") Dining Stoneware
+					
+				.nav-item
+					span Lighting
+					span.lnr.lnr-chevron-down
+					.dropdown
+						.viewall
+							a(href="#") View All
+						.list
+							a(href="#") Tea &amp; Coffee set
+							a(href="#") Bowls
+							a(href="#") Plates
+							a(href="#") For Sake
+							a(href="#") Dining Stoneware
+					
+				.nav-item
+					span Amenities
+					span.lnr.lnr-chevron-down
+					.dropdown
+						.viewall
+							a(href="#") View All
+						.list
+							a(href="#") Tea &amp; Coffee set
+							a(href="#") Bowls
+							a(href="#") Plates
+							a(href="#") For Sake
+							a(href="#") Dining Stoneware
+					
+				.nav-item
+					span Gift Collections
+					span.lnr.lnr-chevron-down
+					.dropdown
+						.viewall
+							a(href="#") View All
+						.list
+							a(href="#") Tea &amp; Coffee set
+							a(href="#") Bowls
+							a(href="#") Plates
+							a(href="#") For Sake
+							a(href="#") Dining Stoneware	
+			nav.sort
+				.nav-item
+					span Sort by: 
+					span Featured
+					span.lnr.lnr-chevron-down
+					.dropdown
+						.list
+							a.ajaxlink(href="#") Featured
+							a.ajaxlink(href="#") A-&gt;Z
+							a.ajaxlink(href="#") Price
+.product-wrapper
+	.container
+		.ajaxresponse
+			h2.title Kitchen & Dining
+			.row.ajaxresponsewrap
+				- for(i=1;i<16;i++)
+					figure.product-item
+						.imgbox
+							a(href="product-detail.html")
+								img(src="./img/product/p_"+i+".png", alt="product "+i)
+						figcaption
+							.type Plates
+							- if(i%2==0)
+								a.name(href="product-detail.html") Salt And Pepper Pebble Plate B
+								.price Contact uS
+							- else
+								a.name(href="product-detail.html") Salt And Pepper Pebble Plate B Salt And Pepper Pebble Plate B
+								.price 880.000 vnđ
+							.addcart
+								span Add to cart
+		.pages.productpager
+			.modulepager
+				ul.pagination
+					li.PagerCurrentPageCell.active
+						span.SelectedPage 1
+					li.PagerOtherPageCells
+						a.ModulePager(href='#') 2
+					li.PagerOtherPageCells
+						a.ModulePager.NextPage(href='#') ›
+					li.PagerOtherPageCells
+						a.ModulePager.LastPage(href='#') »
