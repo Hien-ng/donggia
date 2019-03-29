@@ -1,0 +1,71 @@
+.dg-about-form
+	.container
+		padding: 90px 10px 
+		border-top-style: double
+		border-color: #ebebeb
+	h2 
+		text-align: center
+		font-size: 35px
+		font-weight: 400
+	p 
+		font-size: 18px
+		line-height: 26px
+		color: #999999
+		text-align: center
+	.contact-form 
+		padding-top: 35px
+		.wrap-form 
+			div 
+				margin: auto
+				max-width: 610px
+				display: flex
+				flex-wrap: wrap
+			.form-group 
+				margin-bottom: 20px
+				flex: 0 0 50%
+				label 
+					text-transform: uppercase
+					display: inline-block 
+					font-size: 16px
+					font-weight: 600
+				input,textarea 
+					border-radius: 5px
+					width: 100% 
+					padding: .8rem
+					border: none
+					box-shadow: 0 0 0 1px #d6d6d6
+					&:focus 
+						outline: none 
+						box-shadow: 0 0 0 1px red, 0 0 10px #0000004d
+				textarea 
+					height: 120px
+				&:nth-child(2)
+					padding-right: 10px 
+				&:nth-child(3)
+					padding-left: 10px
+				&:last-child, &:first-child, &:nth-child(4) 
+					max-width: 100%
+					flex: 0 0 100%
+				&.frm-btnwrap 
+					.frm-btn 
+						.btn
+							background-color: #555555
+							width: 180px
+							height: 60px
+							text-align: center
+							color: #ffffff
+							font-size: 18px
+							font-weight: 400
+						.frm-btn-reset 
+							display: none
+	@media (max-width: 767.98px)
+		.container
+			padding: 45px 10px
+		.contact-form 
+			.wrap-form 
+				.form-group 
+					flex: 0 0 100%
+					&:nth-child(2) 
+						padding-right: 0
+					&:nth-child(3) 
+						padding-left: 0

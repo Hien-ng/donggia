@@ -1,0 +1,268 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="~/App_MasterPages/layout.Master.cs" Inherits="CanhCam.Web.layout" %>
+
+<!DOCTYPE html>
+<html id="Html1" runat="server">
+
+<head id="Head1" runat="server">
+	<title></title>
+	<portal:MetaContent ID="MetaContent" runat="server" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<portal:StyleSheetCombiner ID="StyleSheetCombiner" runat="server" IncludejQueryUI="false"
+		JQueryUIThemeName="smoothness" />
+	<portal:Favicon ID="Favicon1" runat="server" />
+	<portal:ScriptLoader ID="ScriptLoader1" runat="server" IncludejQueryUICore="true" IncludeFancyBox="true" />
+	<portal:SkinFolderScript ID="SkinFolderScript1" runat="server" ScriptFileName="js/addons.js"
+		AddToCombinedScript="true" />
+	<portal:SkinFolderScript ID="SkinFolderScript4" runat="server" ScriptFileName="js/jquery.zoom.min.js"
+		AddToCombinedScript="true" />
+	<portal:SkinFolderScript ID="SkinFolderScript2" runat="server" ScriptFileName="js/main.min.js"
+		AddToCombinedScript="true" />
+	<portal:SkinFolderScript ID="SkinFolderScript3" runat="server" ScriptFileName="js/global.min.js"
+		AddToCombinedScript="true" />
+	<portal:GoogleAnalyticsScript ID="GoogleAnalyticsScript1" runat="server" />
+
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+	<!--*********************************************************************************************-->
+	<!-- Canh Cam - the best Web Solutions Provider - http://www.canhcam.vn                          -->
+	<!-- 156 Nguyen Van Thu, District 1, Ho Chi Minh City, Viet Nam.                                 -->
+	<!-- Phone: (+84) 8 38238364 – Fax: (+84) 8 38238365 - Email: info@canhcam.vn                    -->
+	<!-- Facebook: https://www.facebook.com/canhcam.vn                                               -->
+	<!--*********************************************************************************************-->
+</head>
+
+<body id="Body" runat="server" class="canhcam">
+	<portal:FacebookSdk ID="fbsdk" runat="server" />
+	<portal:LayoutDisplaySettings ID="LayoutDisplaySettings1" runat="server" />
+	<form id="frmMain" runat="server">
+		<asp:SiteMapDataSource ID="SiteMapData" runat="server" ShowStartingNode="false" />
+		<asp:SiteMapDataSource ID="PageMapDataSource" runat="server" ShowStartingNode="false" />
+		<asp:SiteMapDataSource ID="ChildPageSiteMapData" runat="server" ShowStartingNode="false" />
+		<asp:ScriptManager ID="ScriptManager1" EnablePageMethods="true" runat="server" />
+		<div id="wrapper">
+			<header>
+				<div class="container">
+					<div class="row no-gutters">
+						<div class="logo">
+							<portal:ModuleWrapper ID="mdl206" runat="server" ConfigureModuleId="206" />
+						</div>
+						<div class="menu-wrapper">
+							<div class="sub-menu">
+								<a href="#">Customer Support</a>
+								<a href="#">Contact Us</a>
+								<a class="hotline" href="tel:+84965117114">
+									<span class="mdi mdi-phone"></span>
+									<span>+84 965 117 114</span></a>
+								<a class="login" href="#"></a>
+
+								<portal:LoginLink ID="LoginLink" runat="server" RenderAsListItem="false"
+									IconCssClass="mdi mdi-account-outline" CssClass="login-inner" />
+								<portal:welcomemessage id="WelcomeMessage" runat="server" WrapInProfileLink="true"
+									ProfileLink="~/Account/UserProfile.aspx" RenderAsListItem="false"
+									listitemcss="firstnav" CssClass="welcome-message" />
+								<portal:LogoutLink ID="LogoutLink" runat="server" RenderAsListItem="false"
+									IconCssClass="fas fa-sign-out-alt" CssClass="logout" />
+								<!-- <span class="mdi mdi-account-outline"></span><span>Sign in</span> -->
+								</a>
+								<div class="language">
+									<portal:ModuleWrapper ID="mdl209" runat="server" ConfigureModuleId="209" />
+								</div>
+							</div>
+							<div class="main-menu">
+								<div class="category-list Module">
+									<portal:ModuleWrapper ID="mdl210" runat="server" ConfigureModuleId="210" />
+								</div>
+								<div class="search">
+									<div class="search-toggle"><span class="mdi mdi-magnify"></span></div>
+									<portal:ModuleWrapper ID="mdl208" runat="server" ConfigureModuleId="208" />
+									<!-- <div class="searchbox">
+										<input class="searchinput" type="text" title="Site Search" autocomplete="off" placeholder="Search terms">
+										<button class="searchbutton">Search</button>
+									</div> -->
+								</div>
+								<div class="cart Module">
+									<div class="ModuleContent">
+										<div class="cart-toggle ml-auto">
+											<div class="icon"><span class="mdi mdi-basket"></span></div>
+											<div class="text"><span class="product-count">Cart</span><span
+													class="bracket">(</span><span
+													class="product-count amount">1</span><span class="bracket">)</span>
+											</div>
+										</div>
+										<div class="cartpanel">
+											<div class="title">Có 1 sản phẩm trong <a href="cart.html">giỏ hàng</a>.
+											</div>
+											<div class="btn-closecart"><span class="lnr lnr-cross"></span></div>
+											<div class="cart-list">
+												<ul>
+													<li><a class="product-img" href="product-detail.html"><img
+																class="img-fluid"
+																src="Data/Sites/1/skins/default/img/product/p_2.png"></a>
+														<div class="product-info">
+															<h3 class="product-name"><a href="product-detail.html"
+																	target="_self">Balo teen Mrvui BLTEEN673</a></h3>
+															<div class="size">Màu sắc: Xanh dương</div>
+															<div class="amount">370.000 ₫ x 1</div>
+														</div>
+														<div class="remove-product"><i class="fa fa-trash-o"
+																aria-hidden="true"></i></div>
+													</li>
+												</ul>
+											</div>
+											<div class="checkout-panel">
+												<div class="total">Tạm tính: <strong>370.000 ₫</strong></div>
+												<div class="button"><a class="btn-checkout" href="cart.html">Tiến hành
+														thanh toán</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="toggle-menu"><span class="mdi mdi-menu"></span></div>
+					</div>
+				</div>
+				<div class="backdrop"></div>
+			</header>
+			<asp:Panel ID="divAlt1" runat="server" CssClass="altcontent1">
+				<asp:ContentPlaceHolder ID="altContent1" runat="server">
+				</asp:ContentPlaceHolder>
+			</asp:Panel>
+			<main>
+				<asp:Panel ID="divLeft" runat="server" CssClass="leftside" Visible="True" SkinID="pnlPlain">
+					<asp:ContentPlaceHolder ID="leftContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+				<asp:Panel ID="divCenter" runat="server" Visible="True" CssClass="center-rightandleftmargins"
+					SkinID="pnlPlain">
+					<asp:ContentPlaceHolder ID="mainContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+				<asp:Panel ID="divRight" runat="server" Visible="True" CssClass="rightside" SkinID="pnlPlain">
+					<asp:ContentPlaceHolder ID="rightContent" runat="server">
+					</asp:ContentPlaceHolder>
+				</asp:Panel>
+			</main>
+			<footer>
+				<div class="container">
+					<div class="row top">
+						<div class="col-lg-4 col-sm-6 address"> 
+							<portal:ModuleWrapper ID="mdl212" runat="server" ConfigureModuleId="212"/>
+						</div>
+						<div class="col-lg col-sm-6 nav">
+							<portal:ModuleWrapper ID="mdl213" runat="server" ConfigureModuleId="213"/>
+						</div>
+						<div class="col-lg col-sm-6 nav">
+							<portal:ModuleWrapper ID="mdl214" runat="server" ConfigureModuleId="214"/>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="receive-news">
+								<div class="Module">
+									<div class="subscribe">
+										<div>
+											<portal:ModuleWrapper ID="mdl216" runat="server" ConfigureModuleId="216"/>
+										</div>
+									</div>
+								</div>
+								<div class="Module">
+									<div class="ModuleContent">
+										<portal:ModuleWrapper ID="mdl217" runat="server" ConfigureModuleId="217"/>
+									</div>
+								</div>
+							</div>
+							<div class="social">
+								<div class="Module">
+									<div class="ModuleContent">
+										<nav>
+											<portal:ModuleWrapper ID="mdl218" runat="server" ConfigureModuleId="218"/>
+										</nav>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row copyright">
+						<div class="col">
+							<p> <span>@ 2019 DONG GIA ENTERPRISE - CERAMICS & DÉCO OBJECTS.</span><span>ALL RIGHT
+									RESERVED. DESIGN BY <a href="https://canhcam.vn">CÁNH CAM.</a></span></p>
+						</div>
+					</div>
+					<div id="gotop"><img src="Data/Sites/1/skins/default/img/arrow-up.png" alt=""></div>
+				</div>
+			</footer>
+		</div>
+		<portal:AutoHidePanel ID="ah1" CssClass="cmsadminpanel" runat="server">
+			<div class="row">
+				<div class="col-lg-12">
+					<nav>
+						<ul class="nav navbar-nav listmenu">
+							<portal:AdminMenuLink ID="lnkDashboard" IconCssClass="fa fa-key" RenderAsListItem="true"
+								runat="server" />
+							<portal:FileManagerLink ID="lnkFileManager" IconCssClass="fa fa-folder-open"
+								RenderAsListItem="true" runat="server" />
+							<portal:PageEditFeaturesLink ID="lnkPageContent" IconCssClass="fa fa-cog"
+								RenderAsListItem="true" runat="server" />
+							<portal:PageEditSettingsLink ID="lnkPageSettings" IconCssClass="fa fa-edit"
+								RenderAsListItem="true" runat="server" />
+							<portal:NewZoneLink ID="lnkNewZone" IconCssClass="fa fa-file" RenderAsListItem="true"
+								runat="server" />
+							<portal:ZoneEditSettingsLink ID="lnkZoneSettings" IconCssClass="fa fa-edit"
+								RenderAsListItem="true" runat="server" />
+							<li>
+								<div class="form-inline">
+									<div class="form-group">
+										<label class="sr-only">Mode</label>
+									</div>
+									<div class="form-group">
+										<asp:ContentPlaceHolder ID="pageEditContent" runat="server">
+										</asp:ContentPlaceHolder>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<ul class="nav">
+							<li><a href="#" id="pullmenucms"><i class="fa fa-chevron-circle-right"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function () {
+					$("#pullmenucms").click(function (e) {
+						e.preventDefault();
+						if ($(this).parents('.cmsadminpanel').hasClass('toggled')) {
+							ShowToolbar();
+							Set_Cookie('toolbarOpenState', 'open');
+						} else {
+							HideToolbar();
+							Set_Cookie('toolbarOpenState', 'closed');
+						}
+					});
+					var openState = Get_Cookie('toolbarOpenState');
+					if (openState != null) {
+						if (openState == 'closed') {
+							HideToolbar();
+						}
+						if (openState == 'open') {
+							ShowToolbar();
+						}
+					}
+				});
+
+				function HideToolbar() {
+					$('.cmsadminpanel').addClass("toggled");
+					$('.fa-chevron-circle-right').addClass('fa-rotate-180');
+				}
+
+				function ShowToolbar() {
+					$('.cmsadminpanel').removeClass("toggled");
+					$('.fa-chevron-circle-right').removeClass('fa-rotate-180');
+				}
+			</script>
+		</portal:AutoHidePanel>
+		<portal:Woopra ID="woopra11" runat="server" />
+	</form>
+</body>
+
+</html>

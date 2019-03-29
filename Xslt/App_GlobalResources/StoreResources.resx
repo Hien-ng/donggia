@@ -1,0 +1,977 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddMetaButton" xml:space="preserve">
+    <value>Add Meta Element</value>
+  </data>
+  <data name="AddMetaLinkButton" xml:space="preserve">
+    <value>Add Meta Link</value>
+  </data>
+  <data name="AnswerLabel" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="BriefContentLabel" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="ButtonDisabledPleaseWait" xml:space="preserve">
+    <value>Please Wait...</value>
+  </data>
+  <data name="ByKey" xml:space="preserve">
+    <value>By key</value>
+  </data>
+  <data name="CancelLink" xml:space="preserve">
+    <value>Cancel/Finished</value>
+  </data>
+  <data name="CodeLabel" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="ContentMetaContentRequired" xml:space="preserve">
+    <value>Content is required.</value>
+  </data>
+  <data name="ContentMetaDeleteWarning" xml:space="preserve">
+    <value>Are you sure you want to delete this meta element?</value>
+  </data>
+  <data name="ContentMetaGridCancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ContentMetaGridDeleteButton" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="ContentMetaGridEditButton" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ContentMetaGridMoveDownButton" xml:space="preserve">
+    <value>Move Down</value>
+  </data>
+  <data name="ContentMetaGridMoveUpButton" xml:space="preserve">
+    <value>Move Up</value>
+  </data>
+  <data name="ContentMetaGridUpdateButton" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="ContentMetaLinkDeleteWarning" xml:space="preserve">
+    <value>Are you sure you want to delete this meta link?</value>
+  </data>
+  <data name="ContentMetaLinkHrefRequired" xml:space="preserve">
+    <value>Href is required.</value>
+  </data>
+  <data name="ContentMetaLinkRelRequired" xml:space="preserve">
+    <value>Rel is required.</value>
+  </data>
+  <data name="ContentMetaMetaContentLabel" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="ContentMetaMetaHrefLabel" xml:space="preserve">
+    <value>Href</value>
+  </data>
+  <data name="ContentMetaNameLabel" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ContentMetaNameRequired" xml:space="preserve">
+    <value>Name is required.</value>
+  </data>
+  <data name="ContentMetaRelLabel" xml:space="preserve">
+    <value>Rel</value>
+  </data>
+  <data name="ContentTab" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="DateFormat" xml:space="preserve">
+    <value>MM/dd/yyyy</value>
+  </data>
+  <data name="DateTimeFormat" xml:space="preserve">
+    <value>MM/dd/yyyy HH:mm</value>
+  </data>
+  <data name="DeleteButton" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeleteMultiWarning" xml:space="preserve">
+    <value>Are you sure you want to delete selected FAQs?</value>
+  </data>
+  <data name="DeleteSelectedButton" xml:space="preserve">
+    <value>Delete (Selected)</value>
+  </data>
+  <data name="DeleteWarning" xml:space="preserve">
+    <value>Are you sure you want to delete this FAQs?</value>
+  </data>
+  <data name="DisplayOrderLabel" xml:space="preserve">
+    <value>Display order</value>
+  </data>
+  <data name="EditCancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="EditCancelButtonAccessKey" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="EditCommentsDaysLabel" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="EditDeleteButton" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="EditDeleteButtonAccessKey" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="EditDescriptionLabel" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="EditDisplayOrderLabel" xml:space="preserve">
+    <value>Display Order</value>
+  </data>
+  <data name="EditHeading" xml:space="preserve">
+    <value>Edit FAQs</value>
+  </data>
+  <data name="EditImageAltText" xml:space="preserve">
+    <value>Edit This Content</value>
+  </data>
+  <data name="EditItemUrlLabel" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="EditLanguageLabel" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="EditLink" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditNewsPageTitle" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="EditPageTitle" xml:space="preserve">
+    <value>Edit FAQs</value>
+  </data>
+  <data name="EditSaveAndContinue" xml:space="preserve">
+    <value>Save and Continue</value>
+  </data>
+  <data name="EditStartDateLabel" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="EditTitleLabel" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="EditUpdateButton" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="EditUpdateButtonAccessKey" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="EditViewedLabel" xml:space="preserve">
+    <value>Viewed</value>
+  </data>
+  <data name="FAQsFeatureName" xml:space="preserve">
+    <value>FAQs</value>
+  </data>
+  <data name="FAQsListHeading" xml:space="preserve">
+    <value>FAQs List</value>
+  </data>
+  <data name="FilterAllSelected" xml:space="preserve">
+    <value>--All--</value>
+  </data>
+  <data name="FilterPublishedSelected" xml:space="preserve">
+    <value>Published</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="ImageDeleteConfirmMessage" xml:space="preserve">
+    <value>Are you sure you want to delete these selected images?</value>
+  </data>
+  <data name="ImageDeleteSelectedButton" xml:space="preserve">
+    <value>Delete (selected)</value>
+  </data>
+  <data name="ImageFile" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="Images" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="ImageUpdateButton" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="ImportButton" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="InsertLabel" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="InsertLink" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="IsPublishedLabel" xml:space="preserve">
+    <value>Is published</value>
+  </data>
+  <data name="ItemsPerPageSetting" xml:space="preserve">
+    <value>Items per page</value>
+  </data>
+  <data name="ItemsPerPageSettingRegexWarning" xml:space="preserve">
+    <value>Must be an integer. The default is 10</value>
+  </data>
+  <data name="ListAllFilter" xml:space="preserve">
+    <value>--All--</value>
+  </data>
+  <data name="ListFilterAllSelected" xml:space="preserve">
+    <value>--All--</value>
+  </data>
+  <data name="ListFilterPublishedSelected" xml:space="preserve">
+    <value>Published</value>
+  </data>
+  <data name="ListFilterStatusLabel" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ListLink" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="ManuEditHeading" xml:space="preserve">
+    <value>Edit Brand</value>
+  </data>
+  <data name="ManuFeatureName" xml:space="preserve">
+    <value>Brand</value>
+  </data>
+  <data name="ManuList" xml:space="preserve">
+    <value>Brands list</value>
+  </data>
+  <data name="ManuSelect" xml:space="preserve">
+    <value>Choose brands</value>
+  </data>
+  <data name="ManuSelectedSetting" xml:space="preserve">
+    <value>Selected brands</value>
+  </data>
+  <data name="ManuSpecialFeatureName" xml:space="preserve">
+    <value>Brands special</value>
+  </data>
+  <data name="MetaDescriptionLabel" xml:space="preserve">
+    <value>Meta Description</value>
+  </data>
+  <data name="MetaKeywordsLabel" xml:space="preserve">
+    <value>Meta Keywords</value>
+  </data>
+  <data name="MetaTab" xml:space="preserve">
+    <value>Meta Data</value>
+  </data>
+  <data name="PageUrlInUseNewsErrorMessage" xml:space="preserve">
+    <value>The Url is already in use. You cannot use the same Url for different pages.</value>
+  </data>
+  <data name="PriceFormat" xml:space="preserve">
+    <value>#,##0</value>
+  </data>
+  <data name="ProductList" xml:space="preserve">
+    <value>Products list</value>
+  </data>
+  <data name="QuestionLabel" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="SaveAndPreviewButton" xml:space="preserve">
+    <value>Save and Preview</value>
+  </data>
+  <data name="SaveButton" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SearchButton" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SendQuestionEmptyMessageWarning" xml:space="preserve">
+    <value>You must enter a message.</value>
+  </data>
+  <data name="SendQuestionMessageLabel" xml:space="preserve">
+    <value>Message (*)</value>
+  </data>
+  <data name="SendQuestionSendButton" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="SendQuestionSubjectLabel" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="SendQuestionThankYouLabel" xml:space="preserve">
+    <value>Thank You! Your message has been received.</value>
+  </data>
+  <data name="SendQuestionValidAddressLabel" xml:space="preserve">
+    <value>You must enter a valid e-mail address.</value>
+  </data>
+  <data name="SendQuestionYourEmailLabel" xml:space="preserve">
+    <value>Your email (*)</value>
+  </data>
+  <data name="SendQuestionYourNameLabel" xml:space="preserve">
+    <value>Your name</value>
+  </data>
+  <data name="ShowAll" xml:space="preserve">
+    <value>Show all</value>
+  </data>
+  <data name="ShowAllItemsFromChildPageSetting" xml:space="preserve">
+    <value>Show All Items From Child Page</value>
+  </data>
+  <data name="ShowGroup" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="SubmitAQuestionLink" xml:space="preserve">
+    <value>Submit a question</value>
+  </data>
+  <data name="ThumbnailLabel" xml:space="preserve">
+    <value>Thumbnail</value>
+  </data>
+  <data name="TimeFormat" xml:space="preserve">
+    <value>HH:mm</value>
+  </data>
+  <data name="TitleRequiredWarning" xml:space="preserve">
+    <value>Title is required.</value>
+  </data>
+  <data name="UpdateButton" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="UrlConflictWithPhysicalPageError" xml:space="preserve">
+    <value>Please enter a different Url. The entered Url conflicts with an existing page.</value>
+  </data>
+  <data name="XsltFileName" xml:space="preserve">
+    <value>Xslt file name</value>
+  </data>
+  <data name="XsltFileNameDetailPage" xml:space="preserve">
+    <value>XSLT detail page</value>
+  </data>
+  <data name="ListFilterDraftSelected" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="ListFilterExpiredSelected" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="LoadFirstItemSetting" xml:space="preserve">
+    <value>Load first product</value>
+  </data>
+  <data name="ProductFeatureName" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="ShowAllProductFromChildPageSetting" xml:space="preserve">
+    <value>Show all products</value>
+  </data>
+  <data name="ShowAttributeSetting" xml:space="preserve">
+    <value>Show attributes</value>
+  </data>
+  <data name="ShowPageLeftContentSetting" xml:space="preserve">
+    <value>Show left content</value>
+  </data>
+  <data name="ShowPageRightContentSetting" xml:space="preserve">
+    <value>Show right content</value>
+  </data>
+  <data name="ShowRelatedItems" xml:space="preserve">
+    <value>Show related product</value>
+  </data>
+  <data name="CommentsNotAllowed" xml:space="preserve">
+    <value>Not allowed</value>
+  </data>
+  <data name="CommentsUnlimited" xml:space="preserve">
+    <value>Unlimited</value>
+  </data>
+  <data name="GroupLabel" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="ProductCodeLabel" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="ProductCodeTitleLabel" xml:space="preserve">
+    <value>Title / Code</value>
+  </data>
+  <data name="ProductFeatures" xml:space="preserve">
+    <value>Features</value>
+  </data>
+  <data name="ProductFilters" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="ProductImageLabel" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="ProductImages" xml:space="preserve">
+    <value>Images</value>
+  </data>
+  <data name="ProductPriceLabel" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="ProductPriceOldLabel" xml:space="preserve">
+    <value>Old price</value>
+  </data>
+  <data name="ProductRelated" xml:space="preserve">
+    <value>Related</value>
+  </data>
+  <data name="AllowedCommentsForDaysPrefix" xml:space="preserve">
+    <value>Allow Comments for</value>
+  </data>
+  <data name="AmountLabel" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="CommentsDaysLabel" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="EmailLabel" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailLink" xml:space="preserve">
+    <value>Email subject</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>End date</value>
+  </data>
+  <data name="FeatureFeatureName" xml:space="preserve">
+    <value>Feature</value>
+  </data>
+  <data name="FeatureList" xml:space="preserve">
+    <value>Features list</value>
+  </data>
+  <data name="FeatureName" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="Features" xml:space="preserve">
+    <value>Features</value>
+  </data>
+  <data name="FeatureValueLabel" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="OpenInNewWindowLabel" xml:space="preserve">
+    <value>Open in new window</value>
+  </data>
+  <data name="PrintLink" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="Processing" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="ProductComment" xml:space="preserve">
+    <value>Reviews &amp; Ratings for product</value>
+  </data>
+  <data name="ProductWeightLabel" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="RelatedType" xml:space="preserve">
+    <value>Related Type</value>
+  </data>
+  <data name="StartDateLabel" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="CartContinueBack" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="CartContinueNext" xml:space="preserve">
+    <value>Proceed payment</value>
+  </data>
+  <data name="CartDeleteWarning" xml:space="preserve">
+    <value>Are you sure you want to delete this item?</value>
+  </data>
+  <data name="CartDiscountCode" xml:space="preserve">
+    <value>Coupon Code</value>
+  </data>
+  <data name="CartDiscountLabel" xml:space="preserve">
+    <value>Discount</value>
+  </data>
+  <data name="CartEditLink" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="CartEnterDiscount" xml:space="preserve">
+    <value>Enter coupon Code</value>
+  </data>
+  <data name="CartLabel" xml:space="preserve">
+    <value>Shopping cart</value>
+  </data>
+  <data name="CartProductHeading" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="CartQuantityHeading" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="CartStep1Heading" xml:space="preserve">
+    <value>Shopping cart ...</value>
+  </data>
+  <data name="CartSubTotalHeading" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="GetLastestProduct" xml:space="preserve">
+    <value>Get Lastest Products</value>
+  </data>
+  <data name="ManuPageFeatureName" xml:space="preserve">
+    <value>Brand by page</value>
+  </data>
+  <data name="MaxItemsToGet" xml:space="preserve">
+    <value>Maximum Items To Get</value>
+  </data>
+  <data name="ProductEditHeading" xml:space="preserve">
+    <value>Product information</value>
+  </data>
+  <data name="ProductPageFeatureName" xml:space="preserve">
+    <value>Product Page</value>
+  </data>
+  <data name="ProductSelectedSetting" xml:space="preserve">
+    <value>Selected items</value>
+  </data>
+  <data name="ProductSpecialFeatureName" xml:space="preserve">
+    <value>Product special</value>
+  </data>
+  <data name="ProductVisitedFeatureName" xml:space="preserve">
+    <value>Product visited</value>
+  </data>
+  <data name="PublishedDate" xml:space="preserve">
+    <value>Published Date</value>
+  </data>
+  <data name="SelectProduct" xml:space="preserve">
+    <value>Select products</value>
+  </data>
+  <data name="SelectProductPageFilterLabel" xml:space="preserve">
+    <value>Select page:</value>
+  </data>
+  <data name="AttributeContent" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="AttributeDefaultLanguage" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="AttributeDeleteAlternateText" xml:space="preserve">
+    <value>Click here to delete the selected attribute.</value>
+  </data>
+  <data name="AttributeDeleteButton" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="AttributeDeleteConfirmMessage" xml:space="preserve">
+    <value>Are you sure you want to delete this attribute? It will be completely removed.</value>
+  </data>
+  <data name="AttributeDeleteSelectedButton" xml:space="preserve">
+    <value>Delete (Selected)</value>
+  </data>
+  <data name="AttributeLanguageLabel" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="AttributeRefreshAlternateText" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="AttributeRefreshLink" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Attributes" xml:space="preserve">
+    <value>Attributes</value>
+  </data>
+  <data name="AttributeSaveAndContinue" xml:space="preserve">
+    <value>Save and Continue</value>
+  </data>
+  <data name="AttributeSaveAndNew" xml:space="preserve">
+    <value>Save and New</value>
+  </data>
+  <data name="AttributeSaveButton" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="AttributeTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="AttributeTitleRequired" xml:space="preserve">
+    <value>Title is required.</value>
+  </data>
+  <data name="ProductAttributes" xml:space="preserve">
+    <value>Attributes</value>
+  </data>
+  <data name="CartTotalLabel" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="CartStep1" xml:space="preserve">
+    <value>Shopping ...</value>
+  </data>
+  <data name="CartStep2" xml:space="preserve">
+    <value>Login/Register</value>
+  </data>
+  <data name="CartStep3" xml:space="preserve">
+    <value>Information &amp; Payment</value>
+  </data>
+  <data name="CartStep4" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="CartUsed" xml:space="preserve">
+    <value>Use</value>
+  </data>
+  <data name="CommentCommentLabel" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="CommentEmailLabel" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="CommentPostCommentButton" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="CommentPostCommentButtonAccessKey" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CommentRateLabel" xml:space="preserve">
+    <value>Rate</value>
+  </data>
+  <data name="CommentRemeberMeLabel" xml:space="preserve">
+    <value>Remember Me?</value>
+  </data>
+  <data name="CommentsClosedMessage" xml:space="preserve">
+    <value>Comments are closed on this content.</value>
+  </data>
+  <data name="CommentsDaysLabel1" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="CommentsNotAllowed1" xml:space="preserve">
+    <value>Not Allowed</value>
+  </data>
+  <data name="CommentsRequireAuthenticationMessage" xml:space="preserve">
+    <value>You must sign in to this site to post comments.</value>
+  </data>
+  <data name="CommentsUnlimited1" xml:space="preserve">
+    <value>Unlimited</value>
+  </data>
+  <data name="CommentTitleLabel" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="CommentUrlLabel" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="CommentUserNameLabel" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DeleteCommentWarning" xml:space="preserve">
+    <value>Are you sure you want to delete this comment?</value>
+  </data>
+  <data name="DeleteImageAltText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FeedbackLabel" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="WebSiteUrlRegexWarning" xml:space="preserve">
+    <value>must be an url starting with http:// or https://</value>
+  </data>
+  <data name="DistrictLabel" xml:space="preserve">
+    <value>District</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="NumberOfHomeLabel" xml:space="preserve">
+    <value>Number of home </value>
+  </data>
+  <data name="OrderApproved" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="OrderCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="OrderPaid" xml:space="preserve">
+    <value>Paid</value>
+  </data>
+  <data name="OrderShiped" xml:space="preserve">
+    <value>Shiped</value>
+  </data>
+  <data name="OrderShipedAll" xml:space="preserve">
+    <value>Shiped All</value>
+  </data>
+  <data name="OrderSuccess" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="ProvinceLabel" xml:space="preserve">
+    <value>Province</value>
+  </data>
+  <data name="WardLabel" xml:space="preserve">
+    <value>Ward</value>
+  </data>
+  <data name="FeatureNoteLabel" xml:space="preserve">
+    <value>(Each attribute entered in one line structure [code], [Text]</value>
+  </data>
+  <data name="ListFilterTypeLabel" xml:space="preserve">
+    <value>Filter type</value>
+  </data>
+  <data name="PositionLabel" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="AreaCodeTitleLabel" xml:space="preserve">
+    <value>Area Code</value>
+  </data>
+  <data name="EMSCostLabel" xml:space="preserve">
+    <value>EMS Cost</value>
+  </data>
+  <data name="StandardCostLabel" xml:space="preserve">
+    <value>Standard Cost</value>
+  </data>
+  <data name="ShowOptionLabel" xml:space="preserve">
+    <value>Show Option </value>
+  </data>
+  <data name="DeliveryLabel" xml:space="preserve">
+    <value>Delivery information</value>
+  </data>
+  <data name="OrderComfirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="PointLabel" xml:space="preserve">
+    <value>Bonus points</value>
+  </data>
+  <data name="ShippingCost" xml:space="preserve">
+    <value>Shipping cost</value>
+  </data>
+  <data name="Move" xml:space="preserve">
+    <value>Move products</value>
+  </data>
+  <data name="OrderNotPaid" xml:space="preserve">
+    <value>Not Paid</value>
+  </data>
+  <data name="DepthLabel" xml:space="preserve">
+    <value>Depth</value>
+  </data>
+  <data name="HeightLabel" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="ProductItemsToShowSetting" xml:space="preserve">
+    <value>Products per page</value>
+  </data>
+  <data name="SubTitle" xml:space="preserve">
+    <value>Material</value>
+  </data>
+  <data name="WidthLabel" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="AddressLabel" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="CreatedDateLabel" xml:space="preserve">
+    <value>Created date</value>
+  </data>
+  <data name="FirstNameLabel" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="FromDateLabel" xml:space="preserve">
+    <value>From Date</value>
+  </data>
+  <data name="LastNameLabel" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="OrderList" xml:space="preserve">
+    <value>Order list</value>
+  </data>
+  <data name="PaymentStatusLabel" xml:space="preserve">
+    <value>Payment Status</value>
+  </data>
+  <data name="PhoneLabel" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="StatusLabel" xml:space="preserve">
+    <value>Order Status</value>
+  </data>
+  <data name="ToDateLabel" xml:space="preserve">
+    <value>To Date</value>
+  </data>
+  <data name="TotalPriceLabel" xml:space="preserve">
+    <value>Total Price</value>
+  </data>
+  <data name="BankInfoLabel" xml:space="preserve">
+    <value>&lt;h4&gt;
+                           Bank ACB&lt;/h4&gt;
+                        &lt;p&gt;
+                            Account Number: 163 034 429&lt;/p&gt;
+                        &lt;p&gt;
+                            Account Name:Nguyễn Viết Hoan&lt;/p&gt;
+                        &lt;h4 class="title-2nd"&gt;
+                            Bank Vietcombank&lt;/h4&gt;
+                        &lt;p&gt;
+                            Account Number: 0181 033 405 044&lt;/p&gt;
+                        &lt;p&gt;
+                            Account Name: Nguyễn Viết Hoan&lt;/p&gt;
+                        &lt;h4 class="title-2nd"&gt;
+                           Bank Sacombank&lt;/h4&gt;
+                        &lt;p&gt;
+                            Account Number: 060 070 505 668&lt;/p&gt;
+                        &lt;p&gt;
+                            Account Name: Nguyễn Viết Hoan&lt;/p&gt;</value>
+  </data>
+  <data name="CartInfoLabel" xml:space="preserve">
+    <value>Cart information</value>
+  </data>
+  <data name="CODInfoLabel" xml:space="preserve">
+    <value>&lt;p&gt;
+                             You will pay for the delivery of NTC Furniture on delivery &lt;/ p&gt;</value>
+  </data>
+  <data name="CusReg" xml:space="preserve">
+    <value>Registered Customers</value>
+  </data>
+  <data name="CustomerInfo" xml:space="preserve">
+    <value>Customer Information</value>
+  </data>
+  <data name="InfoAndPay" xml:space="preserve">
+    <value> Information &amp; Payment</value>
+  </data>
+  <data name="InforequestLabel" xml:space="preserve">
+    <value>Information required to provide</value>
+  </data>
+  <data name="MobileLabel" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="NextLabel" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NotReg" xml:space="preserve">
+    <value>Customers not registered</value>
+  </data>
+  <data name="NotRegLink" xml:space="preserve">
+    <value>/en-US/Store/Register.aspx?returnurl=%2fstore%2fCheckout.aspx</value>
+  </data>
+  <data name="PayCODLabel" xml:space="preserve">
+    <value>COD</value>
+  </data>
+  <data name="PaymentInfoLabel" xml:space="preserve">
+    <value>Payment info</value>
+  </data>
+  <data name="PayTranferLabel" xml:space="preserve">
+    <value>Bank tranfer</value>
+  </data>
+  <data name="Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="SameAddress" xml:space="preserve">
+    <value>Delivery to the same address</value>
+  </data>
+  <data name="ShipNote" xml:space="preserve">
+    <value>&lt;ul&gt;
+                          &lt;li&gt;Nationwide Delivery &lt;/ li&gt;
+                                 &lt;li&gt; Payment on delivery &lt;/ li&gt;
+                                 &lt;li&gt; Return in 30 days &lt;/ li&gt;
+                                 &lt;li&gt; HOTLINE: 0937 033 077 &lt;/ li&gt;
+                             &lt;/ ul&gt;</value>
+  </data>
+  <data name="ShippingAddressLabel" xml:space="preserve">
+    <value>Shipping address</value>
+  </data>
+  <data name="AllLabel" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="FindBy" xml:space="preserve">
+    <value>Find by</value>
+  </data>
+  <data name="MoveData" xml:space="preserve">
+    <value>Move products</value>
+  </data>
+  <data name="PriceLev1" xml:space="preserve">
+    <value>Less than 3 million</value>
+  </data>
+  <data name="PriceLev2" xml:space="preserve">
+    <value>3-5 million</value>
+  </data>
+  <data name="PriceLev3" xml:space="preserve">
+    <value>5-7 million</value>
+  </data>
+  <data name="PriceLev4" xml:space="preserve">
+    <value>Over 7 million</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+</root>

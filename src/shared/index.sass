@@ -73,11 +73,21 @@ img
 	content: "\e873"
 .col, [class^="col-"]
 	padding: 0 10px
+@media (min-width: 0)
+	.col
+		flex: 100%
+		max-width: 100%
+	.col-6 
+		flex: 0 0 50%
+		max-width: 50%
 @media (min-width: 576px)
 	.col-sm-6
 		flex: 0 0 50%
 		max-width: 50%
 @media (min-width: 768px)
+	.col-md-6 
+		flex: 0 0 50%
+		max-width: 50%
 @media (min-width: 992px)
 	.col-lg
 		flex-grow: 1
@@ -92,11 +102,17 @@ img
 	.col-lg-4
 		flex: 0 0 33.3333%
 		max-width: 33.3333%
+	.col-lg-6
+		flex: 0 0 50%
+		max-width: 50%
 @media (min-width: 1200px)
-
 	.col-xl-3
 		flex: 0 0 25%
 		max-width: 25%
+
+	.col-xl-6
+		flex: 0 0 50%
+		max-width: 50%
 
 // Fonts icon
 .mdi-phone:before

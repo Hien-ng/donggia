@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BannerAddImageLabel" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="BannerCaptionLabel" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="BannerDeleteImageWarning" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa?</value>
+  </data>
+  <data name="BannerUrlLabel" xml:space="preserve">
+    <value>Liên kết (Url)</value>
+  </data>
+  <data name="BannerDisplayOrderLabel" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="BannerEditCancelButton" xml:space="preserve">
+    <value>Hủy bỏ</value>
+  </data>
+  <data name="BannerEditDeleteButton" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="BannerEditImageLabel" xml:space="preserve">
+    <value>Thêm/Sửa banner</value>
+  </data>
+  <data name="BannerEditImageLink" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="BannerEditUpdateButton" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="BannerFileLabel" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="BannerThumbnailHeightSetting" xml:space="preserve">
+    <value>Chiều cao hình đại diện</value>
+  </data>
+  <data name="BannerThumbnailHeightSettingRegexWarning" xml:space="preserve">
+    <value>Chiều cao hình đại diện phải là số.</value>
+  </data>
+  <data name="BannerThumbnailWidthSetting" xml:space="preserve">
+    <value>Chiều dài hình đại diện</value>
+  </data>
+  <data name="BannerThumbnailWidthSettingRegexWarning" xml:space="preserve">
+    <value>Chiều dài hình đại diện phải là số.</value>
+  </data>
+  <data name="BannerFeatureName" xml:space="preserve">
+    <value>Banner</value>
+  </data>
+  <data name="EditImagePageTitle" xml:space="preserve">
+    <value>Thêm/Sửa banner</value>
+  </data>
+  <data name="BulkUploadButton" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="BulkUploadHeading" xml:space="preserve">
+    <value>Upload nhiều ảnh</value>
+  </data>
+  <data name="BulkUploadLink" xml:space="preserve">
+    <value>Upload nhiều ảnh</value>
+  </data>
+  <data name="InvalidFile" xml:space="preserve">
+    <value>File không hợp lệ.</value>
+  </data>
+  <data name="ImageListHeading" xml:space="preserve">
+    <value>Danh sách banner</value>
+  </data>
+  <data name="ImageListLink" xml:space="preserve">
+    <value>Danh sách banner</value>
+  </data>
+  <data name="XsltFileName" xml:space="preserve">
+    <value>Tập tin xslt</value>
+  </data>
+  <data name="DefaultBannerFolder" xml:space="preserve">
+    <value>Thư mục mặc định</value>
+  </data>
+  <data name="InsertLink" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="BannerListDeleteSelectedButton" xml:space="preserve">
+    <value>Xóa (Chọn)</value>
+  </data>
+  <data name="BannerListImageHeader" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="BannerEditLanguageLabel" xml:space="preserve">
+    <value>Ngôn ngữ</value>
+  </data>
+  <data name="BannerEditDefaultSelector" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="BannerDeleteMultiImageWarning" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa hình được chọn?</value>
+  </data>
+  <data name="BannerDescriptionLabel" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="ThumbnailLabel" xml:space="preserve">
+    <value>Hình phụ</value>
+  </data>
+  <data name="BannerPermissions" xml:space="preserve">
+    <value>Banner</value>
+  </data>
+  <data name="BannerPositionLabel" xml:space="preserve">
+    <value>Vị trí</value>
+  </data>
+  <data name="MaxItemsToShowSetting" xml:space="preserve">
+    <value>Số banner hiển thị</value>
+  </data>
+  <data name="OpenInNewWindowLabel" xml:space="preserve">
+    <value>Mở trang mới</value>
+  </data>
+  <data name="PermissionsBannerCreate" xml:space="preserve">
+    <value>Thêm mới banner</value>
+  </data>
+  <data name="PermissionsBannerDelete" xml:space="preserve">
+    <value>Xóa banner</value>
+  </data>
+  <data name="PermissionsBannerUpdate" xml:space="preserve">
+    <value>Cập nhật banner</value>
+  </data>
+  <data name="PermissionsBannerViewList" xml:space="preserve">
+    <value>Xem danh sách banner</value>
+  </data>
+  <data name="PositionSetting" xml:space="preserve">
+    <value>Vị trí</value>
+  </data>
+  <data name="ShowOptionsBoth" xml:space="preserve">
+    <value>Cả hai</value>
+  </data>
+  <data name="ShowOptionsByPosition" xml:space="preserve">
+    <value>Vị trí</value>
+  </data>
+  <data name="ShowOptionsByZone" xml:space="preserve">
+    <value>Chuyên mục</value>
+  </data>
+  <data name="ShowOptionsSetting" xml:space="preserve">
+    <value>Lấy dữ liệu theo</value>
+  </data>
+  <data name="ShowPagerSetting" xml:space="preserve">
+    <value>Hiển thị phân trang</value>
+  </data>
+  <data name="UsingDefaultLanguageSetting" xml:space="preserve">
+    <value>Dùng mặc định nếu chưa nhập ngôn ngữ</value>
+  </data>
+  <data name="SelectZoneMessage" xml:space="preserve">
+    <value>Vui lòng chọn chuyên mục</value>
+  </data>
+  <data name="BannerManageMenuLink" xml:space="preserve">
+    <value>Banner</value>
+  </data>
+  <data name="DelayTimeSetting" xml:space="preserve">
+    <value>Thời gian hiển thị (giây)</value>
+  </data>
+  <data name="ViewMoreLink" xml:space="preserve">
+    <value>Xem thêm</value>
+  </data>
+</root>

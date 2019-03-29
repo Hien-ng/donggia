@@ -1,0 +1,993 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddMetaButton" xml:space="preserve">
+    <value>Add Meta Element</value>
+  </data>
+  <data name="AddMetaLinkButton" xml:space="preserve">
+    <value>Add Meta Link</value>
+  </data>
+  <data name="ArchiveDateGridHeader" xml:space="preserve">
+    <value>Archived</value>
+  </data>
+  <data name="AttributeContent" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="AttributeDeleteAlternateText" xml:space="preserve">
+    <value>Nhấn vào đây để xóa nội dung được chọn.</value>
+  </data>
+  <data name="AttributeDeleteButton" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="AttributeDeleteConfirmMessage" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa. Sẽ không thể phục hồi nếu thực hiện thao tác?</value>
+  </data>
+  <data name="AttributeDeleteSelectedButton" xml:space="preserve">
+    <value>Xóa (Chọn)</value>
+  </data>
+  <data name="AttributeRefreshAlternateText" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Attributes" xml:space="preserve">
+    <value>Thuộc tính</value>
+  </data>
+  <data name="AttributeUpdateButton" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="AttributeTitle" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="BriefContentLabel" xml:space="preserve">
+    <value>Mô tả ngắn</value>
+  </data>
+  <data name="ButtonDisabledPleaseWait" xml:space="preserve">
+    <value>Vui lòng đợi...</value>
+  </data>
+  <data name="CommentsRequireAuthenticationMessage" xml:space="preserve">
+    <value>Bạn phải đăng nhập trước khi bình luận.</value>
+  </data>
+  <data name="CompareHistoryToCurrentLink" xml:space="preserve">
+    <value>So sánh với phiên bản hiện tại</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="ContentMetaContentRequired" xml:space="preserve">
+    <value>Content is required.</value>
+  </data>
+  <data name="ContentMetaDeleteWarning" xml:space="preserve">
+    <value>Are you sure you want to delete this meta element?</value>
+  </data>
+  <data name="ContentMetaDirLabel" xml:space="preserve">
+    <value>Dir</value>
+  </data>
+  <data name="ContentMetaGridCancelButton" xml:space="preserve">
+    <value>Hủy bỏ</value>
+  </data>
+  <data name="ContentMetaGridDeleteButton" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="ContentMetaGridEditButton" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="ContentMetaGridMoveDownButton" xml:space="preserve">
+    <value>Di chuyển xuống</value>
+  </data>
+  <data name="ContentMetaGridMoveUpButton" xml:space="preserve">
+    <value>Di chuyển lên</value>
+  </data>
+  <data name="ContentMetaGridUpdateButton" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="ContentMetaLangCodeLabel" xml:space="preserve">
+    <value>Lang</value>
+  </data>
+  <data name="ContentMetaLinkDeleteWarning" xml:space="preserve">
+    <value>Are you sure you want to delete this meta link?</value>
+  </data>
+  <data name="ContentMetaLinkHrefRequired" xml:space="preserve">
+    <value>Href is required.</value>
+  </data>
+  <data name="ContentMetaLinkRelRequired" xml:space="preserve">
+    <value>Rel is required.</value>
+  </data>
+  <data name="ContentMetaMetaContentLabel" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="ContentMetaMetaHrefLabel" xml:space="preserve">
+    <value>Href</value>
+  </data>
+  <data name="ContentMetaNameLabel" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ContentMetaNameRequired" xml:space="preserve">
+    <value>Name is required.</value>
+  </data>
+  <data name="ContentMetaRelLabel" xml:space="preserve">
+    <value>Rel</value>
+  </data>
+  <data name="ContentMetaSchemeLabel" xml:space="preserve">
+    <value>Scheme</value>
+  </data>
+  <data name="ContentMetHrefLangLabel" xml:space="preserve">
+    <value>HrefLang</value>
+  </data>
+  <data name="ContentTab" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="CreatedDateGridHeader" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="CurrentVersionHeadingFormat" xml:space="preserve">
+    <value>Current Version Created {0}</value>
+  </data>
+  <data name="DateTimeFormat" xml:space="preserve">
+    <value>dd/MM/yyyy HH:mm</value>
+  </data>
+  <data name="DeleteAllHistoryButton" xml:space="preserve">
+    <value>Xóa tất cả lịch sử?</value>
+  </data>
+  <data name="DeleteAllHistoryWarning" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa tất cả lịch sử của nội dung?</value>
+  </data>
+  <data name="DeleteHistoryButton" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="DeleteHistoryItemWarning" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa lịch sử?</value>
+  </data>
+  <data name="DeleteImageAltText" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="DialogCloseLink" xml:space="preserve">
+    <value>Đóng</value>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="EditImageAltText" xml:space="preserve">
+    <value>Sửa nội dung này</value>
+  </data>
+  <data name="EditNewsPageTitle" xml:space="preserve">
+    <value>Thêm/Sửa bài viết</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>Đến ngày</value>
+  </data>
+  <data name="FriendlyUrlRegexWarning" xml:space="preserve">
+    <value>URL phải bắt đầu với ~ / hoặc http:// hoặc https:// và không chứa khoảng trắng.</value>
+  </data>
+  <data name="GetLastestNews" xml:space="preserve">
+    <value>Lấy tin mới nhất</value>
+  </data>
+  <data name="ImageDeleteConfirmMessage" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa hình được chọn?</value>
+  </data>
+  <data name="ImageDeleteSelectedButton" xml:space="preserve">
+    <value>Xóa (Chọn)</value>
+  </data>
+  <data name="ImageFile" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="ImageInsertButton" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="Images" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="ImageTitle" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="InsertAttribute" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="IsPublishedLabel" xml:space="preserve">
+    <value>Duyệt hiển thị?</value>
+  </data>
+  <data name="ItemsPerPageSetting" xml:space="preserve">
+    <value>Số bài viết/trang</value>
+  </data>
+  <data name="MaxItemsToGet" xml:space="preserve">
+    <value>Số bài viết tối đa cần lấy</value>
+  </data>
+  <data name="MetaAdditionalLabel" xml:space="preserve">
+    <value>Additional Meta Tags</value>
+  </data>
+  <data name="MetaDescriptionLabel" xml:space="preserve">
+    <value>Thẻ "Description"</value>
+  </data>
+  <data name="MetaKeywordsLabel" xml:space="preserve">
+    <value>Thẻ "Keywords"</value>
+  </data>
+  <data name="MetaTab" xml:space="preserve">
+    <value>Cấu hình SEO</value>
+  </data>
+  <data name="NewComment" xml:space="preserve">
+    <value>Bình luận mới</value>
+  </data>
+  <data name="NewsBeginDateRequiredHelp" xml:space="preserve">
+    <value>Ngày bắt đầu không hợp lệ</value>
+  </data>
+  <data name="NewsCommentCommentLabel" xml:space="preserve">
+    <value>Bình luận</value>
+  </data>
+  <data name="NewsCommentCountLabel" xml:space="preserve">
+    <value>Bình luận</value>
+  </data>
+  <data name="NewsCommentPostCommentButton" xml:space="preserve">
+    <value>Gửi</value>
+  </data>
+  <data name="NewsCommentPostCommentButtonAccessKey" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="NewsCommentRemeberMeLabel" xml:space="preserve">
+    <value>Remember Me?</value>
+  </data>
+  <data name="NewsCommentsClosedMessage" xml:space="preserve">
+    <value>Bình luận đã khóa ở bài viết này.</value>
+  </data>
+  <data name="NewsCommentsNotAllowed" xml:space="preserve">
+    <value>Không cho phép</value>
+  </data>
+  <data name="NewsCommentSolveQuestionMessage" xml:space="preserve">
+    <value>Solve This To Prove You are a Real Person, not a SPAM script.</value>
+  </data>
+  <data name="NewsCommentsUnlimited" xml:space="preserve">
+    <value>Không giới hạn</value>
+  </data>
+  <data name="NewsCommentTitleLabel" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="NewsCommentUrlLabel" xml:space="preserve">
+    <value>Đường dẫn (URL)</value>
+  </data>
+  <data name="NewsCommentUserNameLabel" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="NewsDateFormat" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="NewsDeleteCommentWarning" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa bình luận?</value>
+  </data>
+  <data name="NewsDeleteMultiWarning" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa dòng được chọn?</value>
+  </data>
+  <data name="NewsDeleteWarning" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa?</value>
+  </data>
+  <data name="NewsDraftInstructions" xml:space="preserve">
+    <value>Nhập ngày bắt đầu ở tương lai hoặc không chọn "Duyệt hiển thị" để tạo bản nháp.</value>
+  </data>
+  <data name="NewsEditAllowedCommentsForDaysPrefix" xml:space="preserve">
+    <value>Cho phép bình luận trong</value>
+  </data>
+  <data name="NewsEditCancelButton" xml:space="preserve">
+    <value>Hủy bỏ</value>
+  </data>
+  <data name="NewsEditCancelButtonAccessKey" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="NewsEditCommentsDaysLabel" xml:space="preserve">
+    <value>ngày</value>
+  </data>
+  <data name="NewsEditDeleteButton" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="NewsEditDeleteButtonAccessKey" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="NewsEditDescriptionLabel" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="NewsEditDisplayOrderLabel" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="NewsEditHeading" xml:space="preserve">
+    <value>Thêm/Sửa bài viết</value>
+  </data>
+  <data name="NewsEditItemUrlLabel" xml:space="preserve">
+    <value>Đường dẫn (URL)</value>
+  </data>
+  <data name="NewsEditLink" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="NewsEditStartDateLabel" xml:space="preserve">
+    <value>Ngày bắt đầu hiển thị</value>
+  </data>
+  <data name="NewsEditTitleLabel" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="NewsEditUpdateButton" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="NewsEditUpdateButtonAccessKey" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="NewsEditViewedLabel" xml:space="preserve">
+    <value>Lượt xem</value>
+  </data>
+  <data name="NewsEnableVersioningSetting" xml:space="preserve">
+    <value>Keep Version History?</value>
+  </data>
+  <data name="NewsFeatureName" xml:space="preserve">
+    <value>Bài viết</value>
+  </data>
+  <data name="NewsFeedbackLabel" xml:space="preserve">
+    <value>Bình luận</value>
+  </data>
+  <data name="NewsInsertLabel" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="NewsList" xml:space="preserve">
+    <value>Danh sách bài viết</value>
+  </data>
+  <data name="NewsListAllFilter" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="NewsListDeleteSelectedButton" xml:space="preserve">
+    <value>Xóa (Được chọn)</value>
+  </data>
+  <data name="NewsListFilterStatusLabel" xml:space="preserve">
+    <value>Chọn trạng thái</value>
+  </data>
+  <data name="NewsListUpdateButton" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="NewsManageCreatedBy" xml:space="preserve">
+    <value>Người tạo</value>
+  </data>
+  <data name="NewsManagePublishedDate" xml:space="preserve">
+    <value>Ngày hiển thị</value>
+  </data>
+  <data name="NewsMoreLinkText" xml:space="preserve">
+    <value>Xem thêm</value>
+  </data>
+  <data name="NewsNextLink" xml:space="preserve">
+    <value>Bài sau &gt;&gt;</value>
+  </data>
+  <data name="NewsPreviousLink" xml:space="preserve">
+    <value>&lt;&lt; Bài trước</value>
+  </data>
+  <data name="NewsSpecialFeatureName" xml:space="preserve">
+    <value>Bài viết đặc biệt</value>
+  </data>
+  <data name="NewsTemplate" xml:space="preserve">
+    <value>Mẫu giao diện trang danh sách</value>
+  </data>
+  <data name="NewsThumbnailHeightSetting" xml:space="preserve">
+    <value>Chiều cao hình đại diện</value>
+  </data>
+  <data name="NewsThumbnailWidthSetting" xml:space="preserve">
+    <value>Chiều rộng hình đại diện</value>
+  </data>
+  <data name="NewsTimeFormat" xml:space="preserve">
+    <value>HH:mm</value>
+  </data>
+  <data name="NewsTypeSetting" xml:space="preserve">
+    <value>Loại bài viết</value>
+  </data>
+  <data name="NewsUrlConflictWithPhysicalPageError" xml:space="preserve">
+    <value>Đường dẫn (URL) đã tồn tại. Vui lòng chọn đường dẫn khác.</value>
+  </data>
+  <data name="OtherNewsLabel" xml:space="preserve">
+    <value>Các tin khác</value>
+  </data>
+  <data name="OtherProductLabel" xml:space="preserve">
+    <value>Các sản phẩm khác</value>
+  </data>
+  <data name="OtherProjectLabel" xml:space="preserve">
+    <value>Các dự án khác</value>
+  </data>
+  <data name="PageUrlInUseNewsErrorMessage" xml:space="preserve">
+    <value>Đường dẫn (URL) đã được sử dụng, vui lòng chọn URL khác hoặc thêm nhập đầy đủ http nếu muốn sử dụng URL này.</value>
+  </data>
+  <data name="ParseDateFailureMessage" xml:space="preserve">
+    <value>Sai định dạng ngày.</value>
+  </data>
+  <data name="RelatedItemsToShow" xml:space="preserve">
+    <value>Số bài viết khác/trang</value>
+  </data>
+  <data name="RestoreToEditorButton" xml:space="preserve">
+    <value>Phục hồi vào trình soạn thảo</value>
+  </data>
+  <data name="RowNumber" xml:space="preserve">
+    <value>STT</value>
+  </data>
+  <data name="SaveAndPreviewButton" xml:space="preserve">
+    <value>Lưu và Xem trước</value>
+  </data>
+  <data name="ShowPageLeftContentSetting" xml:space="preserve">
+    <value>Hiển thị nội dung cột trái trang chi tiết?</value>
+  </data>
+  <data name="ShowPageRightContentSetting" xml:space="preserve">
+    <value>Hiển thị nội dung cột phải trang chi tiết?</value>
+  </data>
+  <data name="SubTitle" xml:space="preserve">
+    <value>Tiêu đề phụ</value>
+  </data>
+  <data name="TitleRequiredWarning" xml:space="preserve">
+    <value>Vui lòng nhập tiêu đề.</value>
+  </data>
+  <data name="VersionAsOfHeadingFormat" xml:space="preserve">
+    <value>Version as of {0}</value>
+  </data>
+  <data name="VersionHistory" xml:space="preserve">
+    <value>Version History</value>
+  </data>
+  <data name="WebSiteUrlRegexWarning" xml:space="preserve">
+    <value>url phải bắt đầu http:// hoặc https://</value>
+  </data>
+  <data name="XsltFileName" xml:space="preserve">
+    <value>Mẫu giao diện</value>
+  </data>
+  <data name="NewsSearchName" xml:space="preserve">
+    <value>Bài viết</value>
+  </data>
+  <data name="ShowAllNewsFromChildZoneSetting" xml:space="preserve">
+    <value>Hiển thị bài viết của chuyên mục con</value>
+  </data>
+  <data name="AttributeTitleRequired" xml:space="preserve">
+    <value>Vui lòng nhập tiêu đề</value>
+  </data>
+  <data name="AttributeDefaultLanguage" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="AttributeLanguageLabel" xml:space="preserve">
+    <value>Ngôn ngữ</value>
+  </data>
+  <data name="AttributeRefreshLink" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="NewsEditLanguageLabel" xml:space="preserve">
+    <value>Ngôn ngữ</value>
+  </data>
+  <data name="XsltFileNameDetailPage" xml:space="preserve">
+    <value>Mẫu giao diện trang chi tiết</value>
+  </data>
+  <data name="NewsPrintLink" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="NewsEditSaveAndContinue" xml:space="preserve">
+    <value>Lưu và Tiếp tục</value>
+  </data>
+  <data name="NewsEmailLink" xml:space="preserve">
+    <value>Gửi bạn bè</value>
+  </data>
+  <data name="LoadFirstItemSetting" xml:space="preserve">
+    <value>Hiển thị bài viết trực tiếp?</value>
+  </data>
+  <data name="ItemsPerPageSettingRegexWarning" xml:space="preserve">
+    <value>Số bài viết/trang phải là một số nguyên. Mặc định là 10</value>
+  </data>
+  <data name="MaxItemsToGetRegexWarning" xml:space="preserve">
+    <value>Phải là một số nguyên. Mặc định là 5</value>
+  </data>
+  <data name="EmailSubjectLabel" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="EmailSubjectMessageLabel" xml:space="preserve">
+    <value>Thông điệp</value>
+  </data>
+  <data name="EmailSubjectSendButton" xml:space="preserve">
+    <value>Gửi</value>
+  </data>
+  <data name="EmailSubjectThankYouLabel" xml:space="preserve">
+    <value>Cảm ơn! Thông tin của bạn đã được gửi cho người được nhận.</value>
+  </data>
+  <data name="EmailSubjectToEmailLabel" xml:space="preserve">
+    <value>Email người nhận (*)</value>
+  </data>
+  <data name="EmailSubjectValidEmailAddressLabel" xml:space="preserve">
+    <value>Bạn phải nhập địa chỉ email hợp lệ.</value>
+  </data>
+  <data name="EmailSubjectYourEmailLabel" xml:space="preserve">
+    <value>Email của bạn (*)</value>
+  </data>
+  <data name="EmailSubjectYourNameLabel" xml:space="preserve">
+    <value>Tên của bạn</value>
+  </data>
+  <data name="ZoneNewsFeatureName" xml:space="preserve">
+    <value>Bài viết theo chuyên mục</value>
+  </data>
+  <data name="FileAttachmentLabel" xml:space="preserve">
+    <value>Đính kèm file</value>
+  </data>
+  <data name="FileBrowserLink" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="IncludeInFeedLabel" xml:space="preserve">
+    <value>Hiển thị ở feed</value>
+  </data>
+  <data name="IncludeInSearchLabel" xml:space="preserve">
+    <value>Cho phép tìm kiếm</value>
+  </data>
+  <data name="IncludeInSiteMapLabel" xml:space="preserve">
+    <value>Hiển thị ở sitemap</value>
+  </data>
+  <data name="OpenInNewWindowLabel" xml:space="preserve">
+    <value>Mở trang mới</value>
+  </data>
+  <data name="ShowOptionLabel" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="ImageUpdateButton" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="ThumbnailLabel" xml:space="preserve">
+    <value>Thumbnail</value>
+  </data>
+  <data name="EmailSubjectEmailAddressRequired" xml:space="preserve">
+    <value>Vui lòng nhập email.</value>
+  </data>
+  <data name="EmailSubjectToEmailAddressRequired" xml:space="preserve">
+    <value>Vui lòng nhập email người nhận.</value>
+  </data>
+  <data name="EmailSubjectValidToEmailAddressLabel" xml:space="preserve">
+    <value>Email người nhận không hợp lệ.</value>
+  </data>
+  <data name="NewsEditPreviewLabel" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="WorkflowContentAwaitingApprovalFormat" xml:space="preserve">
+    <value>{0} - Đang chờ duyệt</value>
+  </data>
+  <data name="WorkflowContentRejectedFormat" xml:space="preserve">
+    <value>{0} - Không duyệt</value>
+  </data>
+  <data name="WorkflowDraftFormat" xml:space="preserve">
+    <value>{0} - Bản nháp</value>
+  </data>
+  <data name="WorkflowSaveDraftButton" xml:space="preserve">
+    <value>Lưu bản nháp</value>
+  </data>
+  <data name="NewsListFilterTitleLabel" xml:space="preserve">
+    <value>Tiêu đề chứa</value>
+  </data>
+  <data name="NewsListSearchButton" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="ApproveContentToolTip" xml:space="preserve">
+    <value>Duyệt bài viết này</value>
+  </data>
+  <data name="CancelChangesToolTip" xml:space="preserve">
+    <value>Hủy bỏ bài viết (Đánh dấu xóa bài viết)</value>
+  </data>
+  <data name="CancelContentChangesButtonWarning" xml:space="preserve">
+    <value>Bạn có chắc muốn hủy bỏ bài viết?</value>
+  </data>
+  <data name="ContentAwaitingApproval" xml:space="preserve">
+    <value>Bài viết này đã được gửi để chờ phê duyệt.</value>
+  </data>
+  <data name="ContentAwaitingApprovalFormat" xml:space="preserve">
+    <value>{0} - Bài viết đang chờ phê duyệt</value>
+  </data>
+  <data name="ContentEditsInProgress" xml:space="preserve">
+    <value>Bài viết này đang được chỉnh sửa.</value>
+  </data>
+  <data name="ContentWasRejected" xml:space="preserve">
+    <value>Bài viết đã bị từ chối.</value>
+  </data>
+  <data name="RejectContentHeading" xml:space="preserve">
+    <value>Từ chối nội dung</value>
+  </data>
+  <data name="RejectContentToolTip" xml:space="preserve">
+    <value>Từ chối bài viết này</value>
+  </data>
+  <data name="RejectionIntroduction" xml:space="preserve">
+    <value>Nhấn vào nút &lt;b&gt;{0}&lt;/b&gt; để từ chối bài viết &lt;b&gt;{1}&lt;/b&gt;. Có thể nhập vài lý do từ chối dưới đây, những điều này có thể giúp tác giả &lt;b&gt;{2}&lt;b&gt; trong việc chỉnh sửa bài viết.</value>
+  </data>
+  <data name="RejectionPageUpdateButton" xml:space="preserve">
+    <value>Không duyệt</value>
+  </data>
+  <data name="RequestApprovalToolTip" xml:space="preserve">
+    <value>Yêu cầu xét duyệt cho bài viết này</value>
+  </data>
+  <data name="WorkflowApproved" xml:space="preserve">
+    <value>Bài viết đã được duyệt.</value>
+  </data>
+  <data name="WorkflowAwaitingApproval" xml:space="preserve">
+    <value>Bài viết này đã gửi yêu cầu xét duyệt. Nếu được duyệt nội dung sẽ được hiển thị.</value>
+  </data>
+  <data name="WorkflowCancelled" xml:space="preserve">
+    <value>Bài viết đã bị xóa bởi tác giả.</value>
+  </data>
+  <data name="WorkflowDraft" xml:space="preserve">
+    <value>Bài viết này đã được chỉnh sửa nhưng chưa gửi yêu cầu xét duyệt.</value>
+  </data>
+  <data name="WorkflowRejected" xml:space="preserve">
+    <value>Bài viết này đã bị từ chối bởi biên tập viên. Vào trình soạn thảo nội dung để thấy nguyên nhân bị từ chối.</value>
+  </data>
+  <data name="WorkflowStatus" xml:space="preserve">
+    <value>Trạng thái nội dung</value>
+  </data>
+  <data name="NewsListByUser" xml:space="preserve">
+    <value>Bài viết của tôi</value>
+  </data>
+  <data name="JobAddressLabel" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="JobApplyLable" xml:space="preserve">
+    <value>Nộp đơn tuyển dụng</value>
+  </data>
+  <data name="JobAttachFile1Label" xml:space="preserve">
+    <value>File đính kèm 1</value>
+  </data>
+  <data name="JobAttachFile2Label" xml:space="preserve">
+    <value>File đính kèm 2</value>
+  </data>
+  <data name="JobViewCVFormat" xml:space="preserve">
+    <value>Danh sách CV ({0})</value>
+  </data>
+  <data name="JobEmailLabel" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="JobFullNameLabel" xml:space="preserve">
+    <value>Họ tên</value>
+  </data>
+  <data name="JobMessageLabel" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="JobNoteLabel" xml:space="preserve">
+    <value>Vui lòng điền đầy đủ thông tin bên dưới</value>
+  </data>
+  <data name="JobPhoneLabel" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="JobPositionLabel" xml:space="preserve">
+    <value>Vị trí ứng tuyển</value>
+  </data>
+  <data name="JobRequiredLabel" xml:space="preserve">
+    <value>bắt buộc</value>
+  </data>
+  <data name="JobRequiredStarLabel" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="JobViewCVTitle" xml:space="preserve">
+    <value>Danh sách CV</value>
+  </data>
+  <data name="JobAddressRequiredLabel" xml:space="preserve">
+    <value>Vui lòng nhập địa chỉ</value>
+  </data>
+  <data name="JobEmailRequiredLabel" xml:space="preserve">
+    <value>Vui lòng nhập email</value>
+  </data>
+  <data name="JobEmptyMessageWarning" xml:space="preserve">
+    <value>Vui lòng nhập nội dung</value>
+  </data>
+  <data name="JobFullNameRequiredLabel" xml:space="preserve">
+    <value>Vui lòng nhập họ tên</value>
+  </data>
+  <data name="JobPhoneRequiredLabel" xml:space="preserve">
+    <value>Vui lòng nhập điện thoại</value>
+  </data>
+  <data name="JobPositionRequiredLabel" xml:space="preserve">
+    <value>Vui lòng nhập vị trí tuyển dụng</value>
+  </data>
+  <data name="JobValidEmailLabel" xml:space="preserve">
+    <value>Email không hợp lệ</value>
+  </data>
+  <data name="JobApplyThankYouLabel" xml:space="preserve">
+    <value>Thông tin của bạn đã được gửi cho chúng tôi.</value>
+  </data>
+  <data name="JobApplyRefreshLink" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="JobAttachFileLabel" xml:space="preserve">
+    <value>File đính kèm</value>
+  </data>
+  <data name="JobCandidateInfoLabel" xml:space="preserve">
+    <value>Thông tin ứng viên</value>
+  </data>
+  <data name="JobApplyViewAllCVLabel" xml:space="preserve">
+    <value>Xem tất cả CV</value>
+  </data>
+  <data name="RelatedItemsToShowRegexWarning" xml:space="preserve">
+    <value>Số bài viết khác/trang phải là số &gt;0. Mặc định là 5</value>
+  </data>
+  <data name="CommentText" xml:space="preserve">
+    <value>Ý kiến về bài viết</value>
+  </data>
+  <data name="NewsEditSaveAndNew" xml:space="preserve">
+    <value>Lưu &amp; Mới</value>
+  </data>
+  <data name="NewsListStatusFilterAll" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="NewsUrlInUseErrorMessage" xml:space="preserve">
+    <value>Đường dẫn (URL) đã được sử dụng, điều này sẽ dẫn đến nhiều chuyên mục liên kết đến cùng một nội dung.</value>
+  </data>
+  <data name="SelectZoneMessage" xml:space="preserve">
+    <value>Vui lòng chọn chuyên mục</value>
+  </data>
+  <data name="NewsPositionSetting" xml:space="preserve">
+    <value>Vị trí đặc biệt</value>
+  </data>
+  <data name="IsSubZoneSetting" xml:space="preserve">
+    <value>Lấy con chuyên mục hiện tại</value>
+  </data>
+  <data name="NewsTypeLabel" xml:space="preserve">
+    <value>Loại bài viết</value>
+  </data>
+  <data name="AttributeNewLabel" xml:space="preserve">
+    <value>Thuộc tính mới</value>
+  </data>
+  <data name="NewsInsertLink" xml:space="preserve">
+    <value>Thêm mới bài viết</value>
+  </data>
+  <data name="NewsPermissions" xml:space="preserve">
+    <value>Bài viết</value>
+  </data>
+  <data name="PermissionsNewsCreate" xml:space="preserve">
+    <value>Tạo bài viết</value>
+  </data>
+  <data name="PermissionsNewsDelete" xml:space="preserve">
+    <value>Xóa bài viết</value>
+  </data>
+  <data name="PermissionsNewsUpdate" xml:space="preserve">
+    <value>Cập nhật bài viết</value>
+  </data>
+  <data name="PermissionsNewsViewList" xml:space="preserve">
+    <value>Xem danh sách bài viết</value>
+  </data>
+  <data name="NewsEditImageTitleLabel" xml:space="preserve">
+    <value>Chú thích ảnh</value>
+  </data>
+  <data name="NewsEditLanguageNotCareLabel" xml:space="preserve">
+    <value>Không quan tâm</value>
+  </data>
+  <data name="AttributeDownAlternateText" xml:space="preserve">
+    <value>Chuyển thuộc tính được chọn xuống dưới trong danh sách</value>
+  </data>
+  <data name="AttributeUpAlternateText" xml:space="preserve">
+    <value>Chuyển thuộc tính được chọn lên trên danh sách</value>
+  </data>
+  <data name="WorkflowStateLable" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="NewsMoveLeftAlternateText" xml:space="preserve">
+    <value>Di chuyển bài viết được chọn vào chuyên mục trái</value>
+  </data>
+  <data name="NewsMoveLink" xml:space="preserve">
+    <value>Di chuyển bài viết</value>
+  </data>
+  <data name="NewsMoveRightAlternateText" xml:space="preserve">
+    <value>Di chuyển bài viết được chọn vào chuyên mục phải</value>
+  </data>
+  <data name="NewsMoveTilte" xml:space="preserve">
+    <value>Di chuyển bài viết</value>
+  </data>
+  <data name="NewsSpecialLink" xml:space="preserve">
+    <value>Bài viết đặc biệt</value>
+  </data>
+  <data name="NewsSpecialTitle" xml:space="preserve">
+    <value>Bài viết đặc biệt</value>
+  </data>
+  <data name="NewsListFormat" xml:space="preserve">
+    <value>Danh sách {0}</value>
+  </data>
+  <data name="CreatedByLabel" xml:space="preserve">
+    <value>Tạo bởi</value>
+  </data>
+  <data name="CreatedOnLabel" xml:space="preserve">
+    <value>Tạo lúc</value>
+  </data>
+  <data name="RecentActionByLabel" xml:space="preserve">
+    <value>Duyệt cuối bởi</value>
+  </data>
+  <data name="RecentActionOnLabel" xml:space="preserve">
+    <value>Duyệt cuối lúc</value>
+  </data>
+  <data name="NewsPositionLabel" xml:space="preserve">
+    <value>Vị trí đặc biệt</value>
+  </data>
+  <data name="NewsPositionLink" xml:space="preserve">
+    <value>Bài viết vị trí đặc biệt</value>
+  </data>
+  <data name="NewsSpecialTilte" xml:space="preserve">
+    <value>Bài viết vị trí đặc biệt</value>
+  </data>
+  <data name="EditNewsPageTitleFormat" xml:space="preserve">
+    <value>Thêm/Sửa {0}</value>
+  </data>
+  <data name="NewsInsertFormat" xml:space="preserve">
+    <value>Thêm mới {0}</value>
+  </data>
+  <data name="NewsMoveTilteFormat" xml:space="preserve">
+    <value>Di chuyển {0}</value>
+  </data>
+  <data name="NewsSpecialTilteFormat" xml:space="preserve">
+    <value>{0} vị trí đặc biệt</value>
+  </data>
+  <data name="NewsSelectedListLabel" xml:space="preserve">
+    <value>Danh sách được chọn</value>
+  </data>
+  <data name="NewsSelectFormat" xml:space="preserve">
+    <value>Chọn {0}</value>
+  </data>
+  <data name="NewsSelectLabel" xml:space="preserve">
+    <value>Chọn bài viết</value>
+  </data>
+  <data name="NewsSortByCreatedOn" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="NewsSortByDefault" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="NewsSortByMostViewed" xml:space="preserve">
+    <value>Xem nhiều nhất</value>
+  </data>
+  <data name="NewsSortByRandom" xml:space="preserve">
+    <value>Ngẫu nhiên</value>
+  </data>
+  <data name="NewsSortBySetting" xml:space="preserve">
+    <value>Sắp xếp theo</value>
+  </data>
+  <data name="ParentZoneSetting" xml:space="preserve">
+    <value>Chọn chuyên mục</value>
+  </data>
+  <data name="AutomaticallySelectCategory" xml:space="preserve">
+    <value>[Tự động lấy chuyên mục]</value>
+  </data>
+  <data name="ShowAllImagesInNewsList" xml:space="preserve">
+    <value>Hiển thị hình ảnh ở trang danh sách</value>
+  </data>
+  <data name="SearchPageTitle" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="SearchResultsFormat" xml:space="preserve">
+    <value>Tìm thấy &lt;strong&gt;{0}&lt;/strong&gt; kết quả với từ khóa &lt;strong&gt;{1}&lt;/strong&gt; &lt;span class='searchduration'&gt;({2} giây)&lt;/span&gt;</value>
+  </data>
+  <data name="SearchResultsNotFound" xml:space="preserve">
+    <value>Không tìm thấy kết quả nào phù hợp với từ khóa của bạn</value>
+  </data>
+  <data name="ShowHiddenContentsOnDetailPage" xml:space="preserve">
+    <value>Hiển thị nội dung ẩn ở trang chi tiết</value>
+  </data>
+  <data name="HideOtherContentsOnDetailPage" xml:space="preserve">
+    <value>Ẩn nội dung khác ở cột giữa trang chi tiết</value>
+  </data>
+  <data name="HidePaginationOnDetailPage" xml:space="preserve">
+    <value>Ẩn phân trang ở trang chi tiết</value>
+  </data>
+  <data name="ParentZonesSetting" xml:space="preserve">
+    <value>Chọn chuyên mục</value>
+  </data>
+  <data name="CopyNewsButton" xml:space="preserve">
+    <value>Sao chép</value>
+  </data>
+  <data name="CopyNewsCopyImagesLabel" xml:space="preserve">
+    <value>Sao chép hình ảnh?</value>
+  </data>
+  <data name="CopyNewsLabel" xml:space="preserve">
+    <value>Sao chép bài viết</value>
+  </data>
+  <data name="CopyNewsPublishedLabel" xml:space="preserve">
+    <value>Hiển thị?</value>
+  </data>
+  <data name="CopyNewsSuccessMessage" xml:space="preserve">
+    <value>Sao chép bài viết thành công</value>
+  </data>
+  <data name="CopyNewsTitleLabel" xml:space="preserve">
+    <value>Tiêu đề bài viết mới</value>
+  </data>
+  <data name="ShowAttributesInNewsList" xml:space="preserve">
+    <value>Hiển thị thuộc tính ở trang danh sách</value>
+  </data>
+</root>

@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GalleryAddImageLabel" xml:space="preserve">
+    <value>Add Image</value>
+  </data>
+  <data name="GalleryAllowFullSizeViewSetting" xml:space="preserve">
+    <value>Allow Full Size View</value>
+  </data>
+  <data name="GalleryCaptionLabel" xml:space="preserve">
+    <value>Caption</value>
+  </data>
+  <data name="GalleryClickForBiggerLabel" xml:space="preserve">
+    <value>Click Image To View/Download Full Size Image</value>
+  </data>
+  <data name="GalleryDeleteImageWarning" xml:space="preserve">
+    <value>Are you sure you want to delete this image?</value>
+  </data>
+  <data name="GalleryDescriptionLabel" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="GalleryDisplayOrderLabel" xml:space="preserve">
+    <value>Display Order</value>
+  </data>
+  <data name="GalleryEditCancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="GalleryEditCancelButtonAccessKey" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="GalleryEditDeleteButton" xml:space="preserve">
+    <value>Delete this item</value>
+  </data>
+  <data name="GalleryEditDeleteButtonAccessKey" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="GalleryEditImageLabel" xml:space="preserve">
+    <value>Image Settings</value>
+  </data>
+  <data name="GalleryEditImageLink" xml:space="preserve">
+    <value>Edit Image</value>
+  </data>
+  <data name="GalleryEditUpdateButton" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="GalleryEditUpdateButtonAccessKey" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GalleryFileLabel" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="GalleryNotUseFoldersSetting" xml:space="preserve">
+    <value>Disable Sub Folder Creation for Gallery</value>
+  </data>
+  <data name="GalleryPagerLabel" xml:space="preserve">
+    <value>Image Selector:</value>
+  </data>
+  <data name="GalleryThumbnailHeightSetting" xml:space="preserve">
+    <value>Thumbnail Height</value>
+  </data>
+  <data name="GalleryThumbnailHeightSettingRegexWarning" xml:space="preserve">
+    <value>Must be an integer. The default is 75</value>
+  </data>
+  <data name="GalleryThumbnailsPerPageSetting" xml:space="preserve">
+    <value>Items Per Page</value>
+  </data>
+  <data name="GalleryThumbnailsPerPageSettingRegexWarning" xml:space="preserve">
+    <value>Must be a number. The default is -1</value>
+  </data>
+  <data name="GalleryThumbnailWidthSetting" xml:space="preserve">
+    <value>Thumbnail Width</value>
+  </data>
+  <data name="GalleryThumbnailWidthSettingRegexWarning" xml:space="preserve">
+    <value>Must be an integer. The default is 100</value>
+  </data>
+  <data name="GalleryWebImageHeightSetting" xml:space="preserve">
+    <value>WebImage Height</value>
+  </data>
+  <data name="GalleryWebImageHeightSettingRegexWarning" xml:space="preserve">
+    <value>Must be an integer. The default is 320</value>
+  </data>
+  <data name="GalleryWebImageWidthSetting" xml:space="preserve">
+    <value>WebImage Width</value>
+  </data>
+  <data name="GalleryWebImageWidthSettingRegexWarning" xml:space="preserve">
+    <value>Must be an integer. The default is 480</value>
+  </data>
+  <data name="GalleryWebPartMoreLink" xml:space="preserve">
+    <value>more...</value>
+  </data>
+  <data name="ImageGalleryFeatureName" xml:space="preserve">
+    <value>Image Gallery</value>
+  </data>
+  <data name="LaunchGalleryLink" xml:space="preserve">
+    <value>Launch Gallery</value>
+  </data>
+  <data name="ImageGallerySearchName" xml:space="preserve">
+    <value>Image Galleries</value>
+  </data>
+  <data name="EditImagePageTitle" xml:space="preserve">
+    <value>Gallery Image Editor</value>
+  </data>
+  <data name="AddFileButton" xml:space="preserve">
+    <value>Add File</value>
+  </data>
+  <data name="BulkUploadButton" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="BulkUploadHeading" xml:space="preserve">
+    <value>Bulk Upload</value>
+  </data>
+  <data name="BulkUploadLink" xml:space="preserve">
+    <value>Bulk Upload</value>
+  </data>
+  <data name="InvalidFile" xml:space="preserve">
+    <value>Invalid file type</value>
+  </data>
+  <data name="BrowseGalleryPageTitle" xml:space="preserve">
+    <value>Browse Gallery</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>close</value>
+  </data>
+  <data name="ImageCountJsFormat" xml:space="preserve">
+    <value>image {current} of {total}</value>
+  </data>
+  <data name="ImageSettings" xml:space="preserve">
+    <value>Image Settings</value>
+  </data>
+  <data name="MiscSettings" xml:space="preserve">
+    <value>Miscellaneous</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>next</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>previous</value>
+  </data>
+  <data name="ImageListLink" xml:space="preserve">
+    <value>Image list</value>
+  </data>
+  <data name="GalleryAlbumLabel" xml:space="preserve">
+    <value>Album</value>
+  </data>
+  <data name="AlbumListLink" xml:space="preserve">
+    <value>Album List</value>
+  </data>
+  <data name="GalleryAlbumHeader" xml:space="preserve">
+    <value>Album</value>
+  </data>
+  <data name="GalleryEditLink" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="GalleryImageHeader" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="GalleryListDeleteSelectedButton" xml:space="preserve">
+    <value>Delete (Selected)</value>
+  </data>
+  <data name="ImageListHeading" xml:space="preserve">
+    <value>Image List</value>
+  </data>
+  <data name="InsertLink" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="GalleryUseAlbumSetting" xml:space="preserve">
+    <value>Show album</value>
+  </data>
+  <data name="XsltFileName" xml:space="preserve">
+    <value>Xslt file name</value>
+  </data>
+  <data name="AlbumDeleteButton" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="AlbumDeleteMultiWarning" xml:space="preserve">
+    <value>Are you sure you want to delete selected albums?</value>
+  </data>
+  <data name="AlbumSaveAndContinue" xml:space="preserve">
+    <value>Save and Continue</value>
+  </data>
+  <data name="AlbumSaveButton" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="AlbumTitleLabel" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="AlbumTitleRequired" xml:space="preserve">
+    <value>Title is required.</value>
+  </data>
+  <data name="GalleryDeleteMultiImageWarning" xml:space="preserve">
+    <value>Are you sure you want to delete selected images?</value>
+  </data>
+  <data name="GalleryUrlLabel" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="GetLastestItemsSetting" xml:space="preserve">
+    <value>Get latest items</value>
+  </data>
+  <data name="GalleryManageMenuLink" xml:space="preserve">
+    <value>Manage galleries</value>
+  </data>
+  <data name="GalleryPermissions" xml:space="preserve">
+    <value>Gallery permissions</value>
+  </data>
+  <data name="PermissionsGalleryCreate" xml:space="preserve">
+    <value>Create gallery</value>
+  </data>
+  <data name="PermissionsGalleryDelete" xml:space="preserve">
+    <value>Delete gallery</value>
+  </data>
+  <data name="PermissionsGalleryUpdate" xml:space="preserve">
+    <value>Update gallery</value>
+  </data>
+  <data name="PermissionsGalleryViewList" xml:space="preserve">
+    <value>View gallery list</value>
+  </data>
+  <data name="AlbumEditTitle" xml:space="preserve">
+    <value>Album edit</value>
+  </data>
+  <data name="AlbumListTitle" xml:space="preserve">
+    <value>Album List</value>
+  </data>
+  <data name="AlbumDeleteWarning" xml:space="preserve">
+    <value>Are you sure you want to delete this album?</value>
+  </data>
+  <data name="AlbumDescriptionLabel" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="AlbumPositionLabel" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="AlbumTitleRequiredWarning" xml:space="preserve">
+    <value>Title is required</value>
+  </data>
+  <data name="AlbumUrlLabel" xml:space="preserve">
+    <value>Url</value>
+  </data>
+  <data name="SelectZoneMessage" xml:space="preserve">
+    <value>Please select a category</value>
+  </data>
+  <data name="AlbumPhotoTitleFormat" xml:space="preserve">
+    <value>{0} ({1} photo(s))</value>
+  </data>
+  <data name="AlbumVideoTitleFormat" xml:space="preserve">
+    <value>{0} ({1} video(s))</value>
+  </data>
+  <data name="GalleryAlbumTab" xml:space="preserve">
+    <value>Album info</value>
+  </data>
+  <data name="GalleryEditDeleteLabel" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="GalleryImageEditHeading" xml:space="preserve">
+    <value>Update photo</value>
+  </data>
+  <data name="GalleryImageTab" xml:space="preserve">
+    <value>Photos</value>
+  </data>
+  <data name="GalleryPositionSetting" xml:space="preserve">
+    <value>Position</value>
+  </data>
+</root>

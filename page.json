@@ -46,6 +46,11 @@
 			"name": "product",
 			"isWorking": true,
 			"js": []
+		},
+		{
+			"name": "contact",
+			"isWorking": true,
+			"js": []
 		}
 	]
 }

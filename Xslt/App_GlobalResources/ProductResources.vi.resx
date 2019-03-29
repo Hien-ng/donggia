@@ -1,0 +1,1755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CartAdminCreatedDate" xml:space="preserve">
+    <value>Ngày tạo</value>
+  </data>
+  <data name="CartAdminDaysLabel" xml:space="preserve">
+    <value>ngày</value>
+  </data>
+  <data name="CartAdminDeleteOlderThan" xml:space="preserve">
+    <value>Xóa cũ hơn</value>
+  </data>
+  <data name="CartAdminIPAddress" xml:space="preserve">
+    <value>Địa chỉ IP</value>
+  </data>
+  <data name="CartAdminMenuLink" xml:space="preserve">
+    <value>Quản lý giỏ hàng</value>
+  </data>
+  <data name="CartAdminProduct" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="CartAdminQuantity" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="CartAdminTitle" xml:space="preserve">
+    <value>Quản lý giỏ hàng</value>
+  </data>
+  <data name="CartAdminUserName" xml:space="preserve">
+    <value>Tên khách hàng</value>
+  </data>
+  <data name="CartIsEmptyLabel" xml:space="preserve">
+    <value>Chưa có sản phẩm nào trong giỏ hàng</value>
+  </data>
+  <data name="CartQuantityShouldPositive" xml:space="preserve">
+    <value>Số lượng không hợp lệ</value>
+  </data>
+  <data name="CartTypeLabel" xml:space="preserve">
+    <value>Loại</value>
+  </data>
+  <data name="CartTypeShoppingCart" xml:space="preserve">
+    <value>Giỏ hàng</value>
+  </data>
+  <data name="CartTypeWishlist" xml:space="preserve">
+    <value>Wishlist</value>
+  </data>
+  <data name="CustomFieldAllowComparingLabel" xml:space="preserve">
+    <value>Cho phép so sánh?</value>
+  </data>
+  <data name="CustomFieldDataTypeLabel" xml:space="preserve">
+    <value>Kiểu dữ liệu</value>
+  </data>
+  <data name="CustomFieldDisplayNameLabel" xml:space="preserve">
+    <value>Tên hiển thị</value>
+  </data>
+  <data name="CustomFieldDisplayOrderLabel" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="CustomFieldDisplayTypeLabel" xml:space="preserve">
+    <value>Kiểu hiển thị</value>
+  </data>
+  <data name="CustomFieldEditTitle" xml:space="preserve">
+    <value>Thêm/Sửa thuộc tính sản phẩm</value>
+  </data>
+  <data name="CustomFieldFilterTypeLabel" xml:space="preserve">
+    <value>Kiểu lọc</value>
+  </data>
+  <data name="CustomFieldInvalidMessageLabel" xml:space="preserve">
+    <value>Nội dung không hợp lệ</value>
+  </data>
+  <data name="CustomFieldIsEnabledLabel" xml:space="preserve">
+    <value>Hiển thị?</value>
+  </data>
+  <data name="CustomFieldIsRequiredLabel" xml:space="preserve">
+    <value>Bắt buộc nhập?</value>
+  </data>
+  <data name="CustomFieldNameLabel" xml:space="preserve">
+    <value>Tên thuộc tính</value>
+  </data>
+  <data name="CustomFieldsTitle" xml:space="preserve">
+    <value>Thuộc tính sản phẩm</value>
+  </data>
+  <data name="CustomFieldValidationExpressionLabel" xml:space="preserve">
+    <value>Biểu thức chính quy</value>
+  </data>
+  <data name="LoadFirstProductSetting" xml:space="preserve">
+    <value>Hiển thị sản phẩm trực tiếp?</value>
+  </data>
+  <data name="MaxProductsToGetSetting" xml:space="preserve">
+    <value>Số sản phẩm hiển thị tối đa</value>
+  </data>
+  <data name="OrderAdminMenuLink" xml:space="preserve">
+    <value>Đơn hàng</value>
+  </data>
+  <data name="OrderListLink" xml:space="preserve">
+    <value>Danh sách đơn hàng</value>
+  </data>
+  <data name="OtherProductsPerPageSetting" xml:space="preserve">
+    <value>Số sản phẩm khác/trang</value>
+  </data>
+  <data name="PermissionsProductCreate" xml:space="preserve">
+    <value>Thêm mới sản phẩm</value>
+  </data>
+  <data name="PermissionsProductDelete" xml:space="preserve">
+    <value>Xóa sản phẩm</value>
+  </data>
+  <data name="PermissionsProductUpdate" xml:space="preserve">
+    <value>Cập nhật sản phẩm</value>
+  </data>
+  <data name="PermissionsProductViewList" xml:space="preserve">
+    <value>Xem danh sách sản phẩm</value>
+  </data>
+  <data name="ProductEditRelatedProductTab" xml:space="preserve">
+    <value>Sản phẩm liên quan</value>
+  </data>
+  <data name="ProductFeatureName" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="ProductInsertLink" xml:space="preserve">
+    <value>Thêm mới sản phẩm</value>
+  </data>
+  <data name="ProductListLink" xml:space="preserve">
+    <value>Danh sách sản phẩm</value>
+  </data>
+  <data name="ProductListTitle" xml:space="preserve">
+    <value>Danh sách sản phẩm</value>
+  </data>
+  <data name="ProductMoveLeftAlternateText" xml:space="preserve">
+    <value>Di chuyển sản phẩm được chọn vào chuyên mục trái</value>
+  </data>
+  <data name="ProductMoveLink" xml:space="preserve">
+    <value>Di chuyển sản phẩm</value>
+  </data>
+  <data name="ProductMoveRightAlternateText" xml:space="preserve">
+    <value>Di chuyển sản phẩm được chọn vào chuyên mục phải</value>
+  </data>
+  <data name="ProductMoveTilte" xml:space="preserve">
+    <value>Di chuyển sản phẩm</value>
+  </data>
+  <data name="ProductPermissions" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="ProductPositionSetting" xml:space="preserve">
+    <value>Vị trí đặc biệt</value>
+  </data>
+  <data name="ProductSearchName" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="ProductSelectLabel" xml:space="preserve">
+    <value>Chọn sản phẩm</value>
+  </data>
+  <data name="ProductSpecialFeatureName" xml:space="preserve">
+    <value>Sản phẩm đặc biệt</value>
+  </data>
+  <data name="ProductsPerPageSetting" xml:space="preserve">
+    <value>Số sản phẩm/trang</value>
+  </data>
+  <data name="RelatedProductsToShow" xml:space="preserve">
+    <value>Số sản phẩm liên quan tối đa</value>
+  </data>
+  <data name="ShowAllProductsFromChildZoneSetting" xml:space="preserve">
+    <value>Hiển thị sản phẩm của chuyên mục con</value>
+  </data>
+  <data name="ShowPageLeftContentSetting" xml:space="preserve">
+    <value>Hiển thị nội dung cột trái trang chi tiết?</value>
+  </data>
+  <data name="ShowPageRightContentSetting" xml:space="preserve">
+    <value>Hiển thị nội dung cột phải trang chi tiết?</value>
+  </data>
+  <data name="XsltFileName" xml:space="preserve">
+    <value>Mẫu giao diện trang danh sách</value>
+  </data>
+  <data name="XsltFileNameDetailPage" xml:space="preserve">
+    <value>Mẫu giao diện trang chi tiết</value>
+  </data>
+  <data name="CustomFieldByMultipleValuesFilterType" xml:space="preserve">
+    <value>Lọc theo nhiều giá trị</value>
+  </data>
+  <data name="CustomFieldByValueFilterType" xml:space="preserve">
+    <value>Lọc theo một giá trị</value>
+  </data>
+  <data name="CustomFieldCheckBoxDataType" xml:space="preserve">
+    <value>Check Box</value>
+  </data>
+  <data name="CustomFieldEditLink" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="CustomFieldNameRequiredWarning" xml:space="preserve">
+    <value>Vui lòng nhập thuộc tính.</value>
+  </data>
+  <data name="CustomFieldSelectBoxDataType" xml:space="preserve">
+    <value>Select Box</value>
+  </data>
+  <data name="CustomFieldTextDataType" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="CustomFieldOptionDeleteConfirmMessage" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa. Sẽ không thể phục hồi nếu thực hiện thao tác?</value>
+  </data>
+  <data name="CustomFieldOptionDeleteSelectedButton" xml:space="preserve">
+    <value>Xóa (Chọn)</value>
+  </data>
+  <data name="CustomFieldOptionDownAlternateText" xml:space="preserve">
+    <value>Chuyển giá trị được chọn xuống dưới trong danh sách</value>
+  </data>
+  <data name="CustomFieldOptionNameLabel" xml:space="preserve">
+    <value>Giá trị</value>
+  </data>
+  <data name="CustomFieldOptionNewOptionLabel" xml:space="preserve">
+    <value>Giá trị mới</value>
+  </data>
+  <data name="CustomFieldOptionsTab" xml:space="preserve">
+    <value>Giá trị khởi tạo</value>
+  </data>
+  <data name="CustomFieldOptionUpAlternateText" xml:space="preserve">
+    <value>Chuyển giá trị được chọn lên trên danh sách</value>
+  </data>
+  <data name="ProductEditLink" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="ProductSelectedLabel" xml:space="preserve">
+    <value>Sản phẩm được chọn</value>
+  </data>
+  <data name="ProductSpecialTilte" xml:space="preserve">
+    <value>Sản phẩm vị trí đặc biệt</value>
+  </data>
+  <data name="CustomFieldIsRequiredFormat" xml:space="preserve">
+    <value>Vui lòng nhập {0}.</value>
+  </data>
+  <data name="CustomFieldRequiredFieldIndicator" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="CustomFieldSelectLabel" xml:space="preserve">
+    <value>--Chọn--</value>
+  </data>
+  <data name="ProductAttributesTab" xml:space="preserve">
+    <value>Tab thông tin</value>
+  </data>
+  <data name="ProductFilterFeatureName" xml:space="preserve">
+    <value>Bộ lọc sản phẩm theo thuộc tính</value>
+  </data>
+  <data name="ProductPropertiesTab" xml:space="preserve">
+    <value>Thuộc tính</value>
+  </data>
+  <data name="CustomFieldColorType" xml:space="preserve">
+    <value>Thuộc tính màu sắc</value>
+  </data>
+  <data name="CustomFieldNormalType" xml:space="preserve">
+    <value>Thuộc tính thông thường</value>
+  </data>
+  <data name="CustomFieldPriceRangeType" xml:space="preserve">
+    <value>Thuộc tính lọc theo giá</value>
+  </data>
+  <data name="CustomFieldTypeLabel" xml:space="preserve">
+    <value>Loại thuộc tính</value>
+  </data>
+  <data name="CustomFieldOptionColorType" xml:space="preserve">
+    <value>Màu sắc</value>
+  </data>
+  <data name="CustomFieldOptionPictureType" xml:space="preserve">
+    <value>Ảnh hiển thị</value>
+  </data>
+  <data name="ProductPictureLabel" xml:space="preserve">
+    <value>Hình sản phẩm</value>
+  </data>
+  <data name="ProductPictureTypeLabel" xml:space="preserve">
+    <value>Loại hình ảnh</value>
+  </data>
+  <data name="ProductComparePrice" xml:space="preserve">
+    <value>Giá</value>
+  </data>
+  <data name="ProductCompareRemoveFromList" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="ProductCompareTitle" xml:space="preserve">
+    <value>So sánh sản phẩm</value>
+  </data>
+  <data name="ProductCompareClearList" xml:space="preserve">
+    <value>Xóa danh sách</value>
+  </data>
+  <data name="ProductCompareDescription" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="ProductCompareBackButton" xml:space="preserve">
+    <value>Quay lại</value>
+  </data>
+  <data name="ButtonDisabledPleaseWait" xml:space="preserve">
+    <value>Vui lòng đợi...</value>
+  </data>
+  <data name="NewsEditHeading" xml:space="preserve">
+    <value>Soạn thảo nội dung</value>
+  </data>
+  <data name="ProductAddNewTitle" xml:space="preserve">
+    <value>Thêm mới sản phẩm</value>
+  </data>
+  <data name="ProductDeleteMultiWarning" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa sản phẩm đã chọn?</value>
+  </data>
+  <data name="ProductDeleteWarning" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa sản phẩm?</value>
+  </data>
+  <data name="ProductEditTitle" xml:space="preserve">
+    <value>Chỉnh sửa sản phẩm</value>
+  </data>
+  <data name="ProductDisplayOrderLabel" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="ProductDeleteSelectedButton" xml:space="preserve">
+    <value>Xóa (Chọn)</value>
+  </data>
+  <data name="ProductNameLabel" xml:space="preserve">
+    <value>Tên sản phẩm</value>
+  </data>
+  <data name="ProductPictureHeading" xml:space="preserve">
+    <value>Ảnh</value>
+  </data>
+  <data name="ProductSearchButton" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="ProductUpdateButton" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="ProductViewCountLabel" xml:space="preserve">
+    <value>Lượt xem</value>
+  </data>
+  <data name="CustomFieldNotAllowFilteringFilterType" xml:space="preserve">
+    <value>Không cho phép lọc</value>
+  </data>
+  <data name="CommentCaptcha" xml:space="preserve">
+    <value>Nhập mã hiển thị</value>
+  </data>
+  <data name="CommentClosedMessage" xml:space="preserve">
+    <value>Bình luận đã khóa ở sản phẩm này.</value>
+  </data>
+  <data name="CommentCustomerReviews" xml:space="preserve">
+    <value>Đánh giá của khách hàng</value>
+  </data>
+  <data name="CommentFullName" xml:space="preserve">
+    <value>Họ tên</value>
+  </data>
+  <data name="CommentPostComment" xml:space="preserve">
+    <value>Gửi nhận xét</value>
+  </data>
+  <data name="CommentRequireAuthenticationMessage" xml:space="preserve">
+    <value>Bạn phải đăng nhập trước khi bình luận.</value>
+  </data>
+  <data name="CommentTitle" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="CommentYourComment" xml:space="preserve">
+    <value>Nhận xét của bạn</value>
+  </data>
+  <data name="CommentYourCommentTitle" xml:space="preserve">
+    <value>Nhận xét của bạn</value>
+  </data>
+  <data name="ProductPositionLabel" xml:space="preserve">
+    <value>Vị trí đặc biệt</value>
+  </data>
+  <data name="ProductShowOptionLink" xml:space="preserve">
+    <value>Cập nhật icon sản phẩm</value>
+  </data>
+  <data name="ProductShowOptionTilte" xml:space="preserve">
+    <value>Cập nhật icon sản phẩm</value>
+  </data>
+  <data name="ShowOptionLabel" xml:space="preserve">
+    <value>Tùy chọn hiển thị</value>
+  </data>
+  <data name="ProductTaggedProducts" xml:space="preserve">
+    <value>Số sản phẩm</value>
+  </data>
+  <data name="ProductTagName" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="ProductTagsDeleteMultiWarning" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa tag đã chọn?</value>
+  </data>
+  <data name="ProductTagsLabel" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="ProductTagsLink" xml:space="preserve">
+    <value>Danh sách tag</value>
+  </data>
+  <data name="ProductTagsTitle" xml:space="preserve">
+    <value>Danh sách tag</value>
+  </data>
+  <data name="ProductCodeLabel" xml:space="preserve">
+    <value>Mã sản phẩm</value>
+  </data>
+  <data name="ProductPriceLabel" xml:space="preserve">
+    <value>Giá</value>
+  </data>
+  <data name="BrowserOnServerLink" xml:space="preserve">
+    <value>Chọn từ máy chủ</value>
+  </data>
+  <data name="CommentRating" xml:space="preserve">
+    <value>Đánh giá sản phẩm</value>
+  </data>
+  <data name="ProductDateFormat" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="ProductImagesLabel" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="ProductImagesTab" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="ProductImageTitleLabel" xml:space="preserve">
+    <value>Chú thích</value>
+  </data>
+  <data name="ProductMediaTab" xml:space="preserve">
+    <value>Hình ảnh/Video</value>
+  </data>
+  <data name="ProductOldPriceLabel" xml:space="preserve">
+    <value>Giá thị trường</value>
+  </data>
+  <data name="ProductThumbnailLabel" xml:space="preserve">
+    <value>Thumbnail</value>
+  </data>
+  <data name="ProductTimeFormat" xml:space="preserve">
+    <value>HH:mm</value>
+  </data>
+  <data name="ProductVideoUrlLabel" xml:space="preserve">
+    <value>Đường dẫn video</value>
+  </data>
+  <data name="SelectFromComputerLabel" xml:space="preserve">
+    <value>Chọn hình</value>
+  </data>
+  <data name="ProductReviewDeleteMultiWarning" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa phản hồi đã chọn?</value>
+  </data>
+  <data name="ProductReviewLink" xml:space="preserve">
+    <value>Đánh giá sản phẩm</value>
+  </data>
+  <data name="ProductReviewTitle" xml:space="preserve">
+    <value>Đánh giá, phản hồi sản phẩm</value>
+  </data>
+  <data name="ProductReviewApproved" xml:space="preserve">
+    <value>Đã duyệt</value>
+  </data>
+  <data name="ProductReviewCreatedOn" xml:space="preserve">
+    <value>Ngày gửi</value>
+  </data>
+  <data name="ProductReviewEditLink" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="ProductReviewFullName" xml:space="preserve">
+    <value>Người gửi</value>
+  </data>
+  <data name="ProductReviewProductTitle" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="ProductReviewRating" xml:space="preserve">
+    <value>Đánh giá</value>
+  </data>
+  <data name="ProductReviewText" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="ProductReviewTitleLabel" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="IsSubZoneSetting" xml:space="preserve">
+    <value>Lấy con chuyên mục hiện tại</value>
+  </data>
+  <data name="ZoneProductFeatureName" xml:space="preserve">
+    <value>Sản phẩm theo chuyên mục</value>
+  </data>
+  <data name="AutomaticallySelectCategory" xml:space="preserve">
+    <value>[Tự động lấy chuyên mục]</value>
+  </data>
+  <data name="ParentZoneSetting" xml:space="preserve">
+    <value>Chọn chuyên mục</value>
+  </data>
+  <data name="ProductSortBySetting" xml:space="preserve">
+    <value>Sắp xếp theo</value>
+  </data>
+  <data name="OrderAdminTitle" xml:space="preserve">
+    <value>Quản lý hóa đơn</value>
+  </data>
+  <data name="OrderBillingInfo" xml:space="preserve">
+    <value>Thông tin thanh toán</value>
+  </data>
+  <data name="OrderConsigneeInfo" xml:space="preserve">
+    <value>Thông tin người nhận</value>
+  </data>
+  <data name="OrderCreatedOnLabel" xml:space="preserve">
+    <value>Thời gian đặt hàng</value>
+  </data>
+  <data name="OrderCustomerFirstLastFormat" xml:space="preserve">
+    <value>{LastName} {FirstName}</value>
+  </data>
+  <data name="OrderCustomerInfo" xml:space="preserve">
+    <value>Thông tin khách hàng</value>
+  </data>
+  <data name="OrderCustomerLabel" xml:space="preserve">
+    <value>Khách hàng</value>
+  </data>
+  <data name="OrderDateFromLabel" xml:space="preserve">
+    <value>Thời gian đặt hàng từ</value>
+  </data>
+  <data name="OrderDateToLabel" xml:space="preserve">
+    <value>Đến ngày</value>
+  </data>
+  <data name="OrderDetailLink" xml:space="preserve">
+    <value>Chi tiết</value>
+  </data>
+  <data name="OrderEmailLabel" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="OrderIdLabel" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="OrderKeywordLabel" xml:space="preserve">
+    <value>Từ khóa</value>
+  </data>
+  <data name="OrderKeywordTip" xml:space="preserve">
+    <value>Tên, địa chỉ khách hàng</value>
+  </data>
+  <data name="OrderPaymentMethodLabel" xml:space="preserve">
+    <value>Thông tin thanh toán</value>
+  </data>
+  <data name="OrderPhoneLabel" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="OrderQuickViewLink" xml:space="preserve">
+    <value>Xem nhanh</value>
+  </data>
+  <data name="OrderSearchButton" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="OrderShippingFeeLabel" xml:space="preserve">
+    <value>Phí vận chuyển</value>
+  </data>
+  <data name="OrderShippingInfo" xml:space="preserve">
+    <value>Thông tin vận chuyển</value>
+  </data>
+  <data name="OrderShippingMethodLabel" xml:space="preserve">
+    <value>Phương thức vận chuyển</value>
+  </data>
+  <data name="OrderStatusCancelled" xml:space="preserve">
+    <value>Đã hủy</value>
+  </data>
+  <data name="OrderStatusComplete" xml:space="preserve">
+    <value>Hoàn tất</value>
+  </data>
+  <data name="OrderStatusLabel" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="OrderStatusNew" xml:space="preserve">
+    <value>Mới</value>
+  </data>
+  <data name="OrderStatusPending" xml:space="preserve">
+    <value>Treo</value>
+  </data>
+  <data name="OrderStatusProcessing" xml:space="preserve">
+    <value>Đang xử lý</value>
+  </data>
+  <data name="OrderStatusRequestCancelled" xml:space="preserve">
+    <value>Yêu cầu hủy</value>
+  </data>
+  <data name="OrderStatusUpdateSuccessMessage" xml:space="preserve">
+    <value>Cập nhật trạng thái hóa đơn thành công.</value>
+  </data>
+  <data name="OrderSubTotalLabel" xml:space="preserve">
+    <value>Tổng</value>
+  </data>
+  <data name="OrderTotalLabel" xml:space="preserve">
+    <value>Tổng đơn hàng</value>
+  </data>
+  <data name="ProductTagAddNewButton" xml:space="preserve">
+    <value>Thêm mới</value>
+  </data>
+  <data name="ProductTagsBulkEdit" xml:space="preserve">
+    <value>Thêm/Cập nhật tag</value>
+  </data>
+  <data name="ProductTagKeywordLabel" xml:space="preserve">
+    <value>Từ khóa</value>
+  </data>
+  <data name="NumberOfTagsSetting" xml:space="preserve">
+    <value>Số tag cần hiển thị</value>
+  </data>
+  <data name="TagCloudFeatureName" xml:space="preserve">
+    <value>Tag cloud</value>
+  </data>
+  <data name="OtherProductLabel" xml:space="preserve">
+    <value>Các sản phẩm khác</value>
+  </data>
+  <data name="SearchPageTitle" xml:space="preserve">
+    <value>Tìm kiếm</value>
+  </data>
+  <data name="SearchResultsFormat" xml:space="preserve">
+    <value>Tìm thấy &lt;strong&gt;{0}&lt;/strong&gt; kết quả với từ khóa &lt;strong&gt;{1}&lt;/strong&gt; &lt;span class='searchduration'&gt;({2} giây)&lt;/span&gt;</value>
+  </data>
+  <data name="SearchResultsNotFound" xml:space="preserve">
+    <value>Không tìm thấy kết quả nào phù hợp với từ khóa của bạn</value>
+  </data>
+  <data name="OrderAddressLabel" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="OrderDetailFormat" xml:space="preserve">
+    <value>Chi tiết hóa đơn {0}</value>
+  </data>
+  <data name="OrderDetailTitle" xml:space="preserve">
+    <value>Chi tiết hóa đơn</value>
+  </data>
+  <data name="OrderDistrictLabel" xml:space="preserve">
+    <value>Quận/Huyện</value>
+  </data>
+  <data name="OrderFirstNameLabel" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="OrderLastNameLabel" xml:space="preserve">
+    <value>Họ</value>
+  </data>
+  <data name="OrderPriceLabel" xml:space="preserve">
+    <value>Giá</value>
+  </data>
+  <data name="OrderProvinceLabel" xml:space="preserve">
+    <value>Tỉnh/Thành</value>
+  </data>
+  <data name="OrderQuantityLabel" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="OrderSelectLabel" xml:space="preserve">
+    <value>--Chọn--</value>
+  </data>
+  <data name="OrderTotalPriceLabel" xml:space="preserve">
+    <value>Tổng cộng</value>
+  </data>
+  <data name="SortByNewest" xml:space="preserve">
+    <value>Mới nhất</value>
+  </data>
+  <data name="SortByPriceHighToLow" xml:space="preserve">
+    <value>Giá: Cao - Thấp</value>
+  </data>
+  <data name="SortByPriceLowToHigh" xml:space="preserve">
+    <value>Giá: Thấp - Cao</value>
+  </data>
+  <data name="ParentZonesSetting" xml:space="preserve">
+    <value>Chọn chuyên mục</value>
+  </data>
+  <data name="CheckoutCompletedTitle" xml:space="preserve">
+    <value>Hoàn tất đơn hàng</value>
+  </data>
+  <data name="OrderExportButton" xml:space="preserve">
+    <value>Xuất excel</value>
+  </data>
+  <data name="OrderExportByProductButton" xml:space="preserve">
+    <value>Xuất excel theo sản phẩm</value>
+  </data>
+  <data name="OrderStatusOutOfStock" xml:space="preserve">
+    <value>Hết hàng</value>
+  </data>
+  <data name="ShowHiddenContentsOnDetailPage" xml:space="preserve">
+    <value>Hiển thị nội dung ẩn ở trang chi tiết</value>
+  </data>
+  <data name="CustomFieldSpecialType" xml:space="preserve">
+    <value>Thuộc tính hiển thị riêng</value>
+  </data>
+  <data name="ShowCustomFieldsInProductList" xml:space="preserve">
+    <value>Hiển thị thuộc tính sản phẩm ở trang danh sách</value>
+  </data>
+  <data name="HideOtherContentsOnDetailPage" xml:space="preserve">
+    <value>Ẩn nội dung khác ở cột giữa trang chi tiết</value>
+  </data>
+  <data name="EnableKeywordFiltering" xml:space="preserve">
+    <value>Cho phép tìm kiếm theo từ khóa</value>
+  </data>
+  <data name="ShippingFeeAdditionalLabel" xml:space="preserve">
+    <value>Cộng thêm</value>
+  </data>
+  <data name="ShippingFeeByOrderTotal" xml:space="preserve">
+    <value>Giá trị hóa đơn ≥</value>
+  </data>
+  <data name="ShippingFeeByOrderWeight" xml:space="preserve">
+    <value>Khối lượng hóa đơn ≥</value>
+  </data>
+  <data name="ShippingFeeDefaultLabel" xml:space="preserve">
+    <value>Mức phí mặc định</value>
+  </data>
+  <data name="ShippingFeeExportData" xml:space="preserve">
+    <value>Xuất dữ liệu ra excel</value>
+  </data>
+  <data name="ShippingFeeExportDistrict" xml:space="preserve">
+    <value>Xuất Quận/Huyện</value>
+  </data>
+  <data name="ShippingFeeExportTemplate" xml:space="preserve">
+    <value>Xuất mẫu excel</value>
+  </data>
+  <data name="ShippingFeeGeoZoneId" xml:space="preserve">
+    <value>Mã Vùng/Miền</value>
+  </data>
+  <data name="ShippingFeeGeoZoneName" xml:space="preserve">
+    <value>Tên Vùng/Miền</value>
+  </data>
+  <data name="ShippingFeeImportLabel" xml:space="preserve">
+    <value>Import excel (xls)</value>
+  </data>
+  <data name="ShippingFeeLabel" xml:space="preserve">
+    <value>Phí vận chuyển</value>
+  </data>
+  <data name="ShippingFeePerItemLabel" xml:space="preserve">
+    <value>Phí vận chuyển trên 1 sản phẩm</value>
+  </data>
+  <data name="ShippingFreeLabel" xml:space="preserve">
+    <value>Miễn phí vận chuyển</value>
+  </data>
+  <data name="ShippingMethodDescriptionLabel" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="ShippingMethodDisplayOrderLabel" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="ShippingMethodEditLink" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="ShippingMethodEditTitle" xml:space="preserve">
+    <value>Thêm/Sửa phương thức vận chuyển</value>
+  </data>
+  <data name="ShippingMethodFormat" xml:space="preserve">
+    <value>Cấu hình cho phương thức {0}</value>
+  </data>
+  <data name="ShippingMethodFreeShippingOverX" xml:space="preserve">
+    <value>Miễn phí nếu giá trị đơn hàng ≥</value>
+  </data>
+  <data name="ShippingMethodFreeShippingOverXLabel" xml:space="preserve">
+    <value>Miễn phí vận chuyển nếu giá trị hóa đơn lớn hơn hoặc bằng 'X'</value>
+  </data>
+  <data name="ShippingMethodFreeShippingOverXValueLabel" xml:space="preserve">
+    <value>Giá trị 'X'</value>
+  </data>
+  <data name="ShippingMethodIsActiveLabel" xml:space="preserve">
+    <value>Hiển thị</value>
+  </data>
+  <data name="ShippingMethodMenuLink" xml:space="preserve">
+    <value>Phương thức vận chuyển</value>
+  </data>
+  <data name="ShippingMethodNameLabel" xml:space="preserve">
+    <value>Tên hiển thị</value>
+  </data>
+  <data name="ShippingMethodNameRequiredWarning" xml:space="preserve">
+    <value>Vui lòng nhập tên phương thức.</value>
+  </data>
+  <data name="ShippingMethodProviderLabel" xml:space="preserve">
+    <value>Phương thức vận chuyển</value>
+  </data>
+  <data name="ShippingMethodsTitle" xml:space="preserve">
+    <value>Phương thức vận chuyển</value>
+  </data>
+  <data name="ShippingProviderByGeoZoneAndFixed" xml:space="preserve">
+    <value>Phí cố định theo địa điểm</value>
+  </data>
+  <data name="ShippingProviderByGeoZoneAndOrderTotal" xml:space="preserve">
+    <value>Phí theo giá trị đơn hàng và địa điểm</value>
+  </data>
+  <data name="ShippingProviderByGeoZoneAndWeight" xml:space="preserve">
+    <value>Phí theo khối lượng đơn hàng và địa điểm</value>
+  </data>
+  <data name="ShippingProviderByOrderTotal" xml:space="preserve">
+    <value>Phí theo giá trị đơn hàng</value>
+  </data>
+  <data name="ShippingProviderByWeight" xml:space="preserve">
+    <value>Phí theo khối lượng đơn hàng</value>
+  </data>
+  <data name="ShippingProviderFixed" xml:space="preserve">
+    <value>Phí cố định</value>
+  </data>
+  <data name="ShippingProviderFixedPerItem" xml:space="preserve">
+    <value>Phí cố định trên 1 đơn vị sản phẩm</value>
+  </data>
+  <data name="ShippingProviderFree" xml:space="preserve">
+    <value>Miễn phí vận chuyển</value>
+  </data>
+  <data name="ProductReviewApproveSelected" xml:space="preserve">
+    <value>Duyệt (Chọn)</value>
+  </data>
+  <data name="ProductReviewDeleteMultiWarning1" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa phản hồi đã chọn?</value>
+  </data>
+  <data name="ProductReviewEditTitle" xml:space="preserve">
+    <value>Cập nhật phản hồi sản phẩm</value>
+  </data>
+  <data name="ProductReviewFromDate" xml:space="preserve">
+    <value>Từ  ngày</value>
+  </data>
+  <data name="ProductReviewKeyword" xml:space="preserve">
+    <value>Từ khóa</value>
+  </data>
+  <data name="ProductReviewKeywordTip" xml:space="preserve">
+    <value>Tên, email</value>
+  </data>
+  <data name="ProductReviewNotApprovedSelected" xml:space="preserve">
+    <value>Không duyệt (Chọn)</value>
+  </data>
+  <data name="ProductReviewOrderBy" xml:space="preserve">
+    <value>Sắp xếp theo</value>
+  </data>
+  <data name="ProductReviewReplyLink" xml:space="preserve">
+    <value>Trả lời</value>
+  </data>
+  <data name="ProductReviewStatus" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="ProductReviewToDate" xml:space="preserve">
+    <value>Đến ngày</value>
+  </data>
+  <data name="CustomFieldEnableComparingOption" xml:space="preserve">
+    <value>Cho phép so sánh</value>
+  </data>
+  <data name="CustomFieldEnableShoppingCartOption" xml:space="preserve">
+    <value>Cho phép đặt hàng</value>
+  </data>
+  <data name="CustomFieldOptionsLabel" xml:space="preserve">
+    <value>Tùy chọn</value>
+  </data>
+  <data name="CustomFieldShowInCatalogPagesOption" xml:space="preserve">
+    <value>Hiển thị ở trang danh sách</value>
+  </data>
+  <data name="CustomFieldShowInProductDetailsPageOption" xml:space="preserve">
+    <value>Hiển thị ở trang chi tiết</value>
+  </data>
+  <data name="CartProductHasBeenAddedFormat" xml:space="preserve">
+    <value>Sản phẩm đã được đưa vào &lt;a href="{0}"&gt;giỏ hàng&lt;/a&gt;</value>
+  </data>
+  <data name="WishlistProductHasBeenAddedFormat" xml:space="preserve">
+    <value>Sản phẩm đã được đưa vào &lt;a href="{0}"&gt;wishlist&lt;/a&gt;</value>
+  </data>
+  <data name="WishlistQuantityFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="ShoppingCartFeatureName" xml:space="preserve">
+    <value>Giỏ hàng</value>
+  </data>
+  <data name="CartCheckoutLabel" xml:space="preserve">
+    <value>Thanh toán</value>
+  </data>
+  <data name="CartContinueShoppingLabel" xml:space="preserve">
+    <value>Tiếp tục mua hàng</value>
+  </data>
+  <data name="CartCouponApplyLabel" xml:space="preserve">
+    <value>Áp dụng</value>
+  </data>
+  <data name="CartCouponCodeLabel" xml:space="preserve">
+    <value>Mã giảm giá Quà tặng</value>
+  </data>
+  <data name="CartImageLabel" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="CartItemsFormat" xml:space="preserve">
+    <value>Có {1} sản phẩm trong &lt;a href="{0}"&gt;giỏ hàng&lt;/a&gt;.</value>
+  </data>
+  <data name="CartItemTotalLabel" xml:space="preserve">
+    <value>Tổng</value>
+  </data>
+  <data name="CartLabel" xml:space="preserve">
+    <value>Giỏ hàng</value>
+  </data>
+  <data name="CartPriceLabel" xml:space="preserve">
+    <value>Giá</value>
+  </data>
+  <data name="CartProductLabel" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="CartQuantityFormat" xml:space="preserve">
+    <value>{0}</value>
+  </data>
+  <data name="CartQuantityLabel" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="CartRemoveLabel" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="CartShippingTotalLabel" xml:space="preserve">
+    <value>Phí vận chuyển</value>
+  </data>
+  <data name="CartSubTotalLabel" xml:space="preserve">
+    <value>Tạm tính</value>
+  </data>
+  <data name="CartTotalLabel" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="CartUnitPriceLabel" xml:space="preserve">
+    <value>Unit price</value>
+  </data>
+  <data name="CartUpdateLabel" xml:space="preserve">
+    <value>Cập nhật giỏ hàng</value>
+  </data>
+  <data name="CheckoutAddressFeatureName" xml:space="preserve">
+    <value>Đặt hàng: Địa chỉ</value>
+  </data>
+  <data name="AttributeContent" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="AttributeDefaultLanguage" xml:space="preserve">
+    <value>Mặc định</value>
+  </data>
+  <data name="AttributeDeleteAlternateText" xml:space="preserve">
+    <value>Nhấn vào đây để xóa nội dung được chọn.</value>
+  </data>
+  <data name="AttributeDeleteButton" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="AttributeDeleteConfirmMessage" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa. Sẽ không thể phục hồi nếu thực hiện thao tác?</value>
+  </data>
+  <data name="AttributeDeleteSelectedButton" xml:space="preserve">
+    <value>Xóa (Chọn)</value>
+  </data>
+  <data name="AttributeDownAlternateText" xml:space="preserve">
+    <value>Chuyển thuộc tính được chọn xuống dưới trong danh sách</value>
+  </data>
+  <data name="AttributeLanguageLabel" xml:space="preserve">
+    <value>Ngôn ngữ</value>
+  </data>
+  <data name="AttributeNewLabel" xml:space="preserve">
+    <value>Thuộc tính mới</value>
+  </data>
+  <data name="AttributeRefreshAlternateText" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="AttributeRefreshLink" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Attributes" xml:space="preserve">
+    <value>Thuộc tính</value>
+  </data>
+  <data name="AttributeTitle" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+  <data name="AttributeTitleRequired" xml:space="preserve">
+    <value>Vui lòng nhập tiêu đề</value>
+  </data>
+  <data name="AttributeUpAlternateText" xml:space="preserve">
+    <value>Chuyển thuộc tính được chọn lên trên danh sách</value>
+  </data>
+  <data name="AttributeUpdateButton" xml:space="preserve">
+    <value>Cập nhật</value>
+  </data>
+  <data name="ContentTab" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="FileAttachmentLabel" xml:space="preserve">
+    <value>Đính kèm file</value>
+  </data>
+  <data name="FriendlyUrlRegexWarning" xml:space="preserve">
+    <value>URL phải bắt đầu với ~ / hoặc http:// hoặc https:// và không chứa khoảng trắng.</value>
+  </data>
+  <data name="ImageDeleteConfirmMessage" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa hình được chọn?</value>
+  </data>
+  <data name="ImageDeleteSelectedButton" xml:space="preserve">
+    <value>Xóa (Chọn)</value>
+  </data>
+  <data name="ImageFile" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="IsPublishedLabel" xml:space="preserve">
+    <value>Duyệt hiển thị?</value>
+  </data>
+  <data name="MetaAdditionalLabel" xml:space="preserve">
+    <value>Additional Meta Tags</value>
+  </data>
+  <data name="MetaDescriptionLabel" xml:space="preserve">
+    <value>Thẻ "Description"</value>
+  </data>
+  <data name="MetaKeywordsLabel" xml:space="preserve">
+    <value>Thẻ "Keywords"</value>
+  </data>
+  <data name="MetaTab" xml:space="preserve">
+    <value>Cấu hình SEO</value>
+  </data>
+  <data name="NewsFeatureName" xml:space="preserve">
+    <value>Tin tức</value>
+  </data>
+  <data name="OpenInNewWindowLabel" xml:space="preserve">
+    <value>Mở trang mới</value>
+  </data>
+  <data name="OrderDeleteMultiWarning" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa hóa đơn đã chọn?</value>
+  </data>
+  <data name="PageUrlInUseErrorMessage" xml:space="preserve">
+    <value>Đường dẫn (URL) đã được sử dụng, vui lòng chọn URL khác hoặc thêm nhập đầy đủ http nếu muốn sử dụng URL này.</value>
+  </data>
+  <data name="ParseDateFailureMessage" xml:space="preserve">
+    <value>Sai định dạng ngày.</value>
+  </data>
+  <data name="ProductBeginDateRequired" xml:space="preserve">
+    <value>Ngày bắt đầu không hợp lệ</value>
+  </data>
+  <data name="ProductEditBriefContentLabel" xml:space="preserve">
+    <value>Mô tả ngắn</value>
+  </data>
+  <data name="ProductEditContentLabel" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="ProductEditDeleteButton" xml:space="preserve">
+    <value>Xóa</value>
+  </data>
+  <data name="ProductEditDisplayOrderLabel" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="ProductEditEndDateLabel" xml:space="preserve">
+    <value>Đến ngày</value>
+  </data>
+  <data name="ProductEditItemUrlLabel" xml:space="preserve">
+    <value>Đường dẫn (URL)</value>
+  </data>
+  <data name="ProductEditLanguageLabel" xml:space="preserve">
+    <value>Ngôn ngữ</value>
+  </data>
+  <data name="ProductEditLanguageNotCareLabel" xml:space="preserve">
+    <value>Không quan tâm</value>
+  </data>
+  <data name="ProductEditPreviewLabel" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="ProductEditStartDateLabel" xml:space="preserve">
+    <value>Ngày bắt đầu hiển thị</value>
+  </data>
+  <data name="ProductEmailSubject" xml:space="preserve">
+    <value>Gửi bạn bè</value>
+  </data>
+  <data name="ProductNextLink" xml:space="preserve">
+    <value>Bài sau &gt;&gt;</value>
+  </data>
+  <data name="ProductPreviousLink" xml:space="preserve">
+    <value>&lt;&lt; Bài trước</value>
+  </data>
+  <data name="ProductPrint" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="ProductUrlConflictWithPhysicalPageError" xml:space="preserve">
+    <value>Đường dẫn (URL) đã tồn tại. Vui lòng chọn đường dẫn khác.</value>
+  </data>
+  <data name="SelectZoneMessage" xml:space="preserve">
+    <value>Vui lòng chọn chuyên mục</value>
+  </data>
+  <data name="SubTitle" xml:space="preserve">
+    <value>Tiêu đề phụ</value>
+  </data>
+  <data name="TitleRequiredWarning" xml:space="preserve">
+    <value>Vui lòng nhập tiêu đề.</value>
+  </data>
+  <data name="ViewMoreLabel" xml:space="preserve">
+    <value>Xem thêm</value>
+  </data>
+  <data name="CheckoutAddress" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="CheckoutAddressCountry" xml:space="preserve">
+    <value>Quốc gia</value>
+  </data>
+  <data name="CheckoutAddressDistrict" xml:space="preserve">
+    <value>Quận/Huyện</value>
+  </data>
+  <data name="CheckoutAddressEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="CheckoutAddressFax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="CheckoutAddressFirstName" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="CheckoutAddressFullName" xml:space="preserve">
+    <value>Họ tên</value>
+  </data>
+  <data name="CheckoutAddressLastName" xml:space="preserve">
+    <value>Họ</value>
+  </data>
+  <data name="CheckoutAddressMobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="CheckoutAddressPhone" xml:space="preserve">
+    <value>Điện thoại</value>
+  </data>
+  <data name="CheckoutAddressProvince" xml:space="preserve">
+    <value>Tỉnh/Thành phố</value>
+  </data>
+  <data name="CheckoutAddressStreet" xml:space="preserve">
+    <value>Đường</value>
+  </data>
+  <data name="CheckoutAddressWard" xml:space="preserve">
+    <value>Phường/Xã</value>
+  </data>
+  <data name="CheckoutContinue" xml:space="preserve">
+    <value>Tiếp tục</value>
+  </data>
+  <data name="CheckoutAddressCountryRequired" xml:space="preserve">
+    <value>Vui lòng nhập Quốc gia.</value>
+  </data>
+  <data name="CheckoutAddressDistrictRequired" xml:space="preserve">
+    <value>Vui lòng nhập Quận/Huyện.</value>
+  </data>
+  <data name="CheckoutAddressEmailInvalid" xml:space="preserve">
+    <value>Email không hợp lệ.</value>
+  </data>
+  <data name="CheckoutAddressEmailRequired" xml:space="preserve">
+    <value>Vui lòng nhập Email.</value>
+  </data>
+  <data name="CheckoutAddressFaxRequired" xml:space="preserve">
+    <value>Vui lòng nhập Fax.</value>
+  </data>
+  <data name="CheckoutAddressFirstNameRequired" xml:space="preserve">
+    <value>Vui lòng nhập Tên.</value>
+  </data>
+  <data name="CheckoutAddressFullNameRequired" xml:space="preserve">
+    <value>Vui lòng nhập Họ tên.</value>
+  </data>
+  <data name="CheckoutAddressLastNameRequired" xml:space="preserve">
+    <value>Vui lòng nhập Họ.</value>
+  </data>
+  <data name="CheckoutAddressMobileRequired" xml:space="preserve">
+    <value>Vui lòng nhập Mobile.</value>
+  </data>
+  <data name="CheckoutAddressPhoneRequired" xml:space="preserve">
+    <value>Vui lòng nhập Điện thoại.</value>
+  </data>
+  <data name="CheckoutAddressProvinceRequired" xml:space="preserve">
+    <value>Vui lòng nhập Tỉnh/Thành phố.</value>
+  </data>
+  <data name="CheckoutAddressRequired" xml:space="preserve">
+    <value>Vui lòng nhập Địa chỉ.</value>
+  </data>
+  <data name="CheckoutAddressStreetRequired" xml:space="preserve">
+    <value>Vui lòng nhập Đường.</value>
+  </data>
+  <data name="CheckoutAddressWardRequired" xml:space="preserve">
+    <value>Vui lòng nhập Phường/Xã.</value>
+  </data>
+  <data name="CheckoutAnonymousNotAllowed" xml:space="preserve">
+    <value>Vui lòng đăng nhập trước khi thanh toán</value>
+  </data>
+  <data name="CheckoutNextPageUrl" xml:space="preserve">
+    <value>Đặt hàng: Url bước tiếp theo</value>
+  </data>
+  <data name="CheckoutSelectDistrict" xml:space="preserve">
+    <value>Chọn Quận/Huyện</value>
+  </data>
+  <data name="CheckoutSelectProvince" xml:space="preserve">
+    <value>Chọn Tỉnh/Thành phố</value>
+  </data>
+  <data name="CartCheckoutProcessLabel" xml:space="preserve">
+    <value>Tiến hành thanh toán</value>
+  </data>
+  <data name="CartDiscountLabel" xml:space="preserve">
+    <value>Giảm giá</value>
+  </data>
+  <data name="CheckoutAsGuest" xml:space="preserve">
+    <value>Đặt hàng không cần đăng ký</value>
+  </data>
+  <data name="CheckoutAsReturningCustomer" xml:space="preserve">
+    <value>Tôi đã có tài khoản</value>
+  </data>
+  <data name="CheckoutLoginFeatureName" xml:space="preserve">
+    <value>Đặt hàng: Đăng nhập</value>
+  </data>
+  <data name="CheckoutMethodFeatureName" xml:space="preserve">
+    <value>Đặt hàng: Vận chuyển/Thanh toán</value>
+  </data>
+  <data name="CheckoutPageUrl" xml:space="preserve">
+    <value>Url trang đặt hàng</value>
+  </data>
+  <data name="CheckoutCompanyAddress" xml:space="preserve">
+    <value>Địa chỉ công ty</value>
+  </data>
+  <data name="CheckoutCompanyName" xml:space="preserve">
+    <value>Tên công ty</value>
+  </data>
+  <data name="CheckoutCompanyTaxCode" xml:space="preserve">
+    <value>Mã số thuế</value>
+  </data>
+  <data name="CheckoutOrderNote" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="CheckoutShippingMethodRequired" xml:space="preserve">
+    <value>Vui lòng nhập phương thức giao hàng.</value>
+  </data>
+  <data name="CommentEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="TimeAgoDay" xml:space="preserve">
+    <value>1 ngày trước</value>
+  </data>
+  <data name="TimeAgoDaysFormat" xml:space="preserve">
+    <value>{0} ngày trước</value>
+  </data>
+  <data name="TimeAgoHour" xml:space="preserve">
+    <value>1 giờ trước</value>
+  </data>
+  <data name="TimeAgoHoursFormat" xml:space="preserve">
+    <value>{0} giờ trước</value>
+  </data>
+  <data name="TimeAgoMinute" xml:space="preserve">
+    <value>1 phút trước</value>
+  </data>
+  <data name="TimeAgoMinutesFormat" xml:space="preserve">
+    <value>{0} phút trước</value>
+  </data>
+  <data name="TimeAgoMonth" xml:space="preserve">
+    <value>1 tháng trước</value>
+  </data>
+  <data name="TimeAgoMonthsFormat" xml:space="preserve">
+    <value>{0} tháng trước</value>
+  </data>
+  <data name="TimeAgoSecond" xml:space="preserve">
+    <value>1 giây trước</value>
+  </data>
+  <data name="TimeAgoSecondsFormat" xml:space="preserve">
+    <value>{0} giây trước</value>
+  </data>
+  <data name="TimeAgoYear" xml:space="preserve">
+    <value>1 năm trước</value>
+  </data>
+  <data name="TimeAgoYearsFormat" xml:space="preserve">
+    <value>{0} năm trước</value>
+  </data>
+  <data name="CartMaximumQuantity" xml:space="preserve">
+    <value>Số lượng của 1 sản phẩm tối đa: {0}.</value>
+  </data>
+  <data name="CartMaximumShoppingCartItems" xml:space="preserve">
+    <value>Số sản phẩm riêng biệt tối đa trong giỏ hàng: {0}.</value>
+  </data>
+  <data name="CartMaximumWishlistItems" xml:space="preserve">
+    <value>Số sản phẩm riêng biệt tối đa trong wishlist: {0}.</value>
+  </data>
+  <data name="PaymentMethodMenuLink" xml:space="preserve">
+    <value>Phương thức thanh toán</value>
+  </data>
+  <data name="PaymentMethodsTitle" xml:space="preserve">
+    <value>Phương thức thanh toán</value>
+  </data>
+  <data name="PaymentMethodEditLink" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="PaymentMethodEditTitle" xml:space="preserve">
+    <value>Thêm/Sửa phương thức thanh toán</value>
+  </data>
+  <data name="PaymentMethodFreeOnOrdersOverX" xml:space="preserve">
+    <value>Miễn phí nếu giá trị đơn hàng ≥</value>
+  </data>
+  <data name="PaymentMethodFreeOnOrdersOverXLabel" xml:space="preserve">
+    <value>Miễn phí nếu giá trị hóa đơn lớn hơn hoặc bằng 'X'</value>
+  </data>
+  <data name="PaymentMethodFreeOnOrdersOverXValueLabel" xml:space="preserve">
+    <value>Giá trị 'X'</value>
+  </data>
+  <data name="PaymentMethodAdditionalFeeByAmount" xml:space="preserve">
+    <value>VND</value>
+  </data>
+  <data name="PaymentMethodAdditionalFeeByPercentage" xml:space="preserve">
+    <value>% giá trị đơn hàng</value>
+  </data>
+  <data name="PaymentMethodAdditionalFeeLabel" xml:space="preserve">
+    <value>Phí cộng thêm</value>
+  </data>
+  <data name="PaymentMethodDescriptionLabel" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="PaymentMethodDisplayOrderLabel" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="PaymentMethodIsActiveLabel" xml:space="preserve">
+    <value>Kích hoạt</value>
+  </data>
+  <data name="PaymentMethodNameLabel" xml:space="preserve">
+    <value>Tên phương thức</value>
+  </data>
+  <data name="PaymentMethodNameRequiredWarning" xml:space="preserve">
+    <value>Vui lòng nhập tên phương thức.</value>
+  </data>
+  <data name="PaymentMethodProviderLabel" xml:space="preserve">
+    <value>Phương thức thanh toán</value>
+  </data>
+  <data name="PaymentProviderManualPayments" xml:space="preserve">
+    <value>Tiền mặt/Chuyển khoản</value>
+  </data>
+  <data name="CheckoutPaymentMethodRequired" xml:space="preserve">
+    <value>Vui lòng nhập phương thức thanh toán.</value>
+  </data>
+  <data name="OrderCodeLabel" xml:space="preserve">
+    <value>Mã đơn hàng</value>
+  </data>
+  <data name="OrderInfoLabel" xml:space="preserve">
+    <value>Thông tin đơn hàng</value>
+  </data>
+  <data name="OrderNoteLabel" xml:space="preserve">
+    <value>Ghi chú</value>
+  </data>
+  <data name="OrderCreatedDateFormat" xml:space="preserve">
+    <value>dd/MM/yyyy HH:mm</value>
+  </data>
+  <data name="OrderCreatedDateLabel" xml:space="preserve">
+    <value>Ngày đặt hàng</value>
+  </data>
+  <data name="OrderCreatedTimeLabel" xml:space="preserve">
+    <value>Giờ</value>
+  </data>
+  <data name="PaymentMethodLabel" xml:space="preserve">
+    <value>Phương thức thanh toán</value>
+  </data>
+  <data name="ShippingMethodLabel" xml:space="preserve">
+    <value>Phương thức vận chuyển</value>
+  </data>
+  <data name="ProductColorLabel" xml:space="preserve">
+    <value>Màu sắc</value>
+  </data>
+  <data name="ProductStockQuantityLabel" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="ProductEditPriceAdjustmentLabel" xml:space="preserve">
+    <value>Giá điều chỉnh</value>
+  </data>
+  <data name="CopyProductButton" xml:space="preserve">
+    <value>Sao chép</value>
+  </data>
+  <data name="CopyProductCopyImagesLabel" xml:space="preserve">
+    <value>Sao chép hình ảnh?</value>
+  </data>
+  <data name="CopyProductLabel" xml:space="preserve">
+    <value>Sao chép sản phẩm</value>
+  </data>
+  <data name="CopyProductNameLabel" xml:space="preserve">
+    <value>Tên sản phẩm mới</value>
+  </data>
+  <data name="CopyProductPublishedLabel" xml:space="preserve">
+    <value>Hiển thị?</value>
+  </data>
+  <data name="CopyProductSuccessMessage" xml:space="preserve">
+    <value>Sao chép sản phẩm thành công</value>
+  </data>
+  <data name="ReportBestsellersProducts" xml:space="preserve">
+    <value>Sản phẩm bán chạy</value>
+  </data>
+  <data name="ReportButton" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data name="OrderStatusAll" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+  <data name="ReportOrderByLabel" xml:space="preserve">
+    <value>Sắp xếp theo</value>
+  </data>
+  <data name="ReportOrderByQuantity" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="ReportOrderBySubTotal" xml:space="preserve">
+    <value>Giá trị</value>
+  </data>
+  <data name="CouponActiveLabel" xml:space="preserve">
+    <value>Sử dụng</value>
+  </data>
+  <data name="CouponActiveStatusLabel" xml:space="preserve">
+    <value>Trạng thái</value>
+  </data>
+  <data name="CouponAmountLabel" xml:space="preserve">
+    <value>Số tiền giảm</value>
+  </data>
+  <data name="CouponAppliedToCategoriesLabel" xml:space="preserve">
+    <value>Áp dụng cho danh mục sản phẩm</value>
+  </data>
+  <data name="CouponAppliedToProductsLabel" xml:space="preserve">
+    <value>Áp dụng cho sản phẩm</value>
+  </data>
+  <data name="CouponAppliedTypeLabel" xml:space="preserve">
+    <value>Áp dụng cho</value>
+  </data>
+  <data name="CouponCodeExistsWarning" xml:space="preserve">
+    <value>Mã khuyến mãi đã tồn tại.</value>
+  </data>
+  <data name="CouponCodeHasExpiredWarning" xml:space="preserve">
+    <value>Mã khuyến mãi đã hết hạn sử dụng.</value>
+  </data>
+  <data name="CouponCodeLabel" xml:space="preserve">
+    <value>Mã coupon</value>
+  </data>
+  <data name="CouponCodeMustSpentMinPurchaseFormat" xml:space="preserve">
+    <value>Đơn hàng của bạn phải đạt số tiền tối thiểu {0} mới sử dụng được khuyến mãi.</value>
+  </data>
+  <data name="CouponCodeNotExistsWarning" xml:space="preserve">
+    <value>Mã khuyến mãi không tồn tại.</value>
+  </data>
+  <data name="CouponCodeRequiredWarning" xml:space="preserve">
+    <value>Vui lòng nhập mã khuyến mãi.</value>
+  </data>
+  <data name="CouponContinueButton" xml:space="preserve">
+    <value>Tiếp tục</value>
+  </data>
+  <data name="CouponDiscountLabel" xml:space="preserve">
+    <value>Giảm giá</value>
+  </data>
+  <data name="CouponDiscountRequiredWarning" xml:space="preserve">
+    <value>Vui lòng nhập giảm giá.</value>
+  </data>
+  <data name="CouponDiscountTypeAmountPerProduct" xml:space="preserve">
+    <value>Giảm giá với mỗi sản phẩm</value>
+  </data>
+  <data name="CouponDiscountTypePercentagePerProduct" xml:space="preserve">
+    <value>% giảm giá với mỗi sản phẩm</value>
+  </data>
+  <data name="CouponEditLink" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="CouponEditTitle" xml:space="preserve">
+    <value>Thêm/Sửa khuyến mãi</value>
+  </data>
+  <data name="CouponEndDateLabel" xml:space="preserve">
+    <value>Đến ngày</value>
+  </data>
+  <data name="CouponExpiryDateLabel" xml:space="preserve">
+    <value>Ngày hết hạn</value>
+  </data>
+  <data name="CouponFromDateLabel" xml:space="preserve">
+    <value>Bắt đầu từ ngày</value>
+  </data>
+  <data name="CouponImportTitle" xml:space="preserve">
+    <value>Nhập danh sách mã khuyến mãi</value>
+  </data>
+  <data name="CouponInactiveLabel" xml:space="preserve">
+    <value>Ngừng sử dụng</value>
+  </data>
+  <data name="CouponInfoTab" xml:space="preserve">
+    <value>Thông tin khuyến mãi</value>
+  </data>
+  <data name="CouponLabel" xml:space="preserve">
+    <value>Giảm giá</value>
+  </data>
+  <data name="CouponLimitationTimesHint" xml:space="preserve">
+    <value>0: Không giới hạn</value>
+  </data>
+  <data name="CouponLimitationTimesLabel" xml:space="preserve">
+    <value>Số lần sử dụng</value>
+  </data>
+  <data name="CouponMinPurchaseLabel" xml:space="preserve">
+    <value>Số tiền tối thiểu của đơn hàng để áp dụng mã coupons</value>
+  </data>
+  <data name="CouponNameLabel" xml:space="preserve">
+    <value>Tên coupon</value>
+  </data>
+  <data name="CouponNameRequiredWarning" xml:space="preserve">
+    <value>Vui lòng nhập tên coupon.</value>
+  </data>
+  <data name="CouponPercentageLabel" xml:space="preserve">
+    <value>% giảm giá</value>
+  </data>
+  <data name="CouponRegisterFeatureName" xml:space="preserve">
+    <value>Đăng ký Coupon</value>
+  </data>
+  <data name="CouponSelectedProductsLabel" xml:space="preserve">
+    <value>Sản phẩm được chọn</value>
+  </data>
+  <data name="CouponsPageTitle" xml:space="preserve">
+    <value>Mã khuyến mãi</value>
+  </data>
+  <data name="CouponStartDateLabel" xml:space="preserve">
+    <value>Từ ngày</value>
+  </data>
+  <data name="CouponUsageHistoryTab" xml:space="preserve">
+    <value>Đơn hàng sử dụng</value>
+  </data>
+  <data name="CouponUsePercentageLabel" xml:space="preserve">
+    <value>Giảm theo %</value>
+  </data>
+  <data name="DiscountAmountLabel" xml:space="preserve">
+    <value>Số tiền giảm</value>
+  </data>
+  <data name="DiscountAmountPerProduct" xml:space="preserve">
+    <value>Giảm giá với mỗi sản phẩm</value>
+  </data>
+  <data name="DiscountCouponCodeLabel" xml:space="preserve">
+    <value>Mã coupon</value>
+  </data>
+  <data name="DiscountCouponCodeNotExistsWarning" xml:space="preserve">
+    <value>Mã khuyến mãi không tồn tại.</value>
+  </data>
+  <data name="DiscountCouponCodeRequiredWarning" xml:space="preserve">
+    <value>Vui lòng nhập mã khuyến mãi.</value>
+  </data>
+  <data name="DiscountEditLink" xml:space="preserve">
+    <value>Sửa</value>
+  </data>
+  <data name="DiscountEditTitle" xml:space="preserve">
+    <value>Thêm/Sửa khuyến mãi</value>
+  </data>
+  <data name="DiscountEndDateLabel" xml:space="preserve">
+    <value>Đến ngày</value>
+  </data>
+  <data name="DiscountEndDateRequiredWarning" xml:space="preserve">
+    <value>Vui lòng nhập Đến ngày.</value>
+  </data>
+  <data name="DiscountInfoTab" xml:space="preserve">
+    <value>Thông tin khuyến mãi</value>
+  </data>
+  <data name="DiscountLabel" xml:space="preserve">
+    <value>Giảm giá</value>
+  </data>
+  <data name="DiscountLimitationHint" xml:space="preserve">
+    <value>0: Không giới hạn</value>
+  </data>
+  <data name="DiscountLimitationLabel" xml:space="preserve">
+    <value>Số lần sử dụng</value>
+  </data>
+  <data name="DiscountManagerTitle" xml:space="preserve">
+    <value>Quản lý khuyến mãi</value>
+  </data>
+  <data name="DiscountNameLabel" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="DiscountNameRequiredWarning" xml:space="preserve">
+    <value>Vui lòng nhập thuộc tính.</value>
+  </data>
+  <data name="DiscountPageTitle" xml:space="preserve">
+    <value>Danh sách khuyến mãi</value>
+  </data>
+  <data name="DiscountPercentageLabel" xml:space="preserve">
+    <value>% giảm giá</value>
+  </data>
+  <data name="DiscountPercentagePerProduct" xml:space="preserve">
+    <value>% giảm giá với mỗi sản phẩm</value>
+  </data>
+  <data name="DiscountRequiresCouponCodeLabel" xml:space="preserve">
+    <value>Yêu cầu nhập coupon</value>
+  </data>
+  <data name="DiscountStartDateLabel" xml:space="preserve">
+    <value>Từ ngày</value>
+  </data>
+  <data name="DiscountStartDateRequiredWarning" xml:space="preserve">
+    <value>Vui lòng nhập Từ ngày.</value>
+  </data>
+  <data name="DiscountTypeAssignedToCategories" xml:space="preserve">
+    <value>Danh mục</value>
+  </data>
+  <data name="DiscountTypeAssignedToOrderTotal" xml:space="preserve">
+    <value>Đơn hàng</value>
+  </data>
+  <data name="DiscountTypeAssignedToProducts" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+  <data name="DiscountTypeLabel" xml:space="preserve">
+    <value>Áp dụng cho</value>
+  </data>
+  <data name="DiscountUsageHistoryTab" xml:space="preserve">
+    <value>Đơn hàng sử dụng</value>
+  </data>
+  <data name="DiscountUsePercentageLabel" xml:space="preserve">
+    <value>Giảm theo %</value>
+  </data>
+  <data name="PromotionCouponsMenuLink" xml:space="preserve">
+    <value>Mã coupon</value>
+  </data>
+  <data name="PromotionDiscountsMenuLink" xml:space="preserve">
+    <value>Danh sách khuyến mãi</value>
+  </data>
+  <data name="PromotionMenuLink" xml:space="preserve">
+    <value>Khuyến mãi</value>
+  </data>
+  <data name="CouponIsNotUsingForProducts" xml:space="preserve">
+    <value>Mã Khuyến Mãi "{0}" không áp dụng được cho sản phẩm bên dưới</value>
+  </data>
+  <data name="OrderAddNewProductTitle" xml:space="preserve">
+    <value>Thêm sản phẩm vào đơn hàng</value>
+  </data>
+  <data name="ReportSalesTitle" xml:space="preserve">
+    <value>Thống kê bán hàng</value>
+  </data>
+  <data name="CheckoutCompletedFeatureName" xml:space="preserve">
+    <value>Đặt hàng: Hoàn tất</value>
+  </data>
+  <data name="PaymentStatusLabel" xml:space="preserve">
+    <value>Tình trạng thanh toán</value>
+  </data>
+  <data name="IsWishlistSetting" xml:space="preserve">
+    <value>Is wishlist</value>
+  </data>
+  <data name="OrderDiscountLabel" xml:space="preserve">
+    <value>Giảm giá</value>
+  </data>
+  <data name="ManufacturerListMenuLink" xml:space="preserve">
+    <value>Danh sách thương hiệu</value>
+  </data>
+  <data name="ManufacturersMenuLink" xml:space="preserve">
+    <value>Thương hiệu</value>
+  </data>
+  <data name="ManufacturersTitle" xml:space="preserve">
+    <value>Thương hiệu</value>
+  </data>
+  <data name="ManufacturerAddNewTitle" xml:space="preserve">
+    <value>Thêm mới Thương hiệu</value>
+  </data>
+  <data name="ManufacturerEditTitle" xml:space="preserve">
+    <value>Cập nhật Thương hiệu</value>
+  </data>
+  <data name="ManufacturerDeleteWarning" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn xóa Thương hiệu?</value>
+  </data>
+  <data name="ManufacturerDescriptionLabel" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="ManufacturerDisplayOrderLabel" xml:space="preserve">
+    <value>Thứ tự</value>
+  </data>
+  <data name="ManufacturerIsPublishedLabel" xml:space="preserve">
+    <value>Hiển thị?</value>
+  </data>
+  <data name="ManufacturerNameLabel" xml:space="preserve">
+    <value>Tên thương hiệu</value>
+  </data>
+  <data name="ManufacturerNameRequiredWarning" xml:space="preserve">
+    <value>Vui lòng nhập Tên thương hiệu</value>
+  </data>
+  <data name="ManufacturerPrimaryImageLabel" xml:space="preserve">
+    <value>Hình ảnh</value>
+  </data>
+  <data name="ManufacturerSecondImageLabel" xml:space="preserve">
+    <value>Hình ảnh 2</value>
+  </data>
+  <data name="ManufacturerUrlLabel" xml:space="preserve">
+    <value>Đường dẫn (URL)</value>
+  </data>
+  <data name="ManufacturerLabel" xml:space="preserve">
+    <value>Thương hiệu</value>
+  </data>
+  <data name="ManufacturerListLink" xml:space="preserve">
+    <value>Danh sách thương hiệu</value>
+  </data>
+  <data name="ManufacturerSelectLabel" xml:space="preserve">
+    <value>Chọn</value>
+  </data>
+  <data name="ManufacturerFeatureName" xml:space="preserve">
+    <value>Thương hiệu</value>
+  </data>
+  <data name="ManufacturerItemsPerPageSetting" xml:space="preserve">
+    <value>Số thương hiệu hiển thị (0: Tất cả)</value>
+  </data>
+  <data name="ManufacturerLoadByZoneSetting" xml:space="preserve">
+    <value>Lấy dữ liệu theo Chuyên mục</value>
+  </data>
+  <data name="ManufacturerShowPagerSetting" xml:space="preserve">
+    <value>Hiển thị phân trang</value>
+  </data>
+</root>

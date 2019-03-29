@@ -102,23 +102,36 @@ singleTaskJs.forEach(function (number) {
 	});
 });
 
-gulp.task('processJs', gulp.series(
-	singleTaskJs.map(function (number) {
-		return 'scripts:' + ArrayJs[number].name;
-	})
-)
-);
+gulp.task('processJs', function () {
+	// singleTaskJs.map(function (number) {
+	// 	return 'scripts:' + ArrayJs[number].name;
+	// })
+	return gulp.src('./src/pages/index.js')
+		.pipe(srcmap.init())
+		.pipe(babel({
+			presets: ['@babel/env']
+		}))
+		.pipe(uglify())
+		.pipe(srcmap.write('.'))
+		.pipe(rename({
+			suffix: '.min',
+			basename: 'main'
+		}))
+		.pipe(gulp.dest('dist/js'))
+})
 
 gulp.task('globalJs', function () {
 	let glob = JSON.parse(readFileSync("./config.json"))
 
 	return gulp.src(glob.globalJs, {
-		allowEmpty: true
-	})
+			allowEmpty: true
+		})
 		.pipe(concat('global.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('dist/js'))
-		.pipe(browserSync.reload({ stream: true }))
+		.pipe(browserSync.reload({
+			stream: true
+		}))
 })
 // End task JS
 
@@ -127,10 +140,12 @@ gulp.task('globalJs', function () {
 singleTaskCss.forEach(function (number) {
 	gulp.task('css:' + ArrayCss[number].name, function () {
 		return gulp.src([
-			'./src/pages/' + ArrayCss[number].name + '/index.sass',
-		])
+				'./src/pages/' + ArrayCss[number].name + '/index.sass',
+			])
 			.pipe(srcmap.init())
-			.pipe(sass.sync({ fiber: Fiber }).on('error', sass.logError))
+			.pipe(sass.sync({
+				fiber: Fiber
+			}).on('error', sass.logError))
 			.pipe(sassUnicode())
 			.pipe(cssImport())
 			.pipe(postcss([
@@ -139,7 +154,9 @@ singleTaskCss.forEach(function (number) {
 					cascade: false,
 				}),
 				cssnano(),
-				cssDeclarationSorter({ order: 'smacss' })
+				cssDeclarationSorter({
+					order: 'smacss'
+				})
 			]))
 			.pipe(rename({
 				basename: ArrayCss[number].name,
@@ -153,18 +170,43 @@ singleTaskCss.forEach(function (number) {
 	});
 });
 
-gulp.task('processCss',
-	gulp.series(
-		singleTaskCss.map(function (number) {
-			return 'css:' + ArrayCss[number].name;
-		})
-	)
-)
+gulp.task('processCss', function () {
+	// gulp.series(
+	// 	singleTaskCss.map(function (number) {
+	// 		return 'css:' + ArrayCss[number].name;
+	// 	})
+	// )
+
+	return gulp.src('./src/pages/**/index.sass')
+		.pipe(srcmap.init())
+		.pipe(concat('main.min.sass'))
+		.pipe(replace('../../','../'))
+		.pipe(sass.sync({
+			fiber: Fiber
+		}).on('error', sass.logError))
+		.pipe(sassUnicode())
+		.pipe(cssImport())
+		.pipe(postcss([
+			prefixer({
+				browsers: ['last 4 version', "IE 10"],
+				cascade: false,
+			}),
+			cssnano(),
+			cssDeclarationSorter({
+				order: 'smacss'
+			})
+		]))
+		.pipe(srcmap.write('.'))
+		.pipe(gulp.dest('./dist/css'))
+		.pipe(browserSync.reload({
+			stream: true
+		}))
+})
 
 gulp.task('globalCss', function () {
 	return gulp.src("./src/shared/index.sass", {
-		allowEmpty: true,
-	})
+			allowEmpty: true,
+		})
 		.pipe(srcmap.init())
 		.pipe(sass.sync({
 			fiber: Fiber
@@ -177,7 +219,9 @@ gulp.task('globalCss', function () {
 				cascade: false,
 			}),
 			cssnano(),
-			cssDeclarationSorter({ order: 'smacss' })
+			cssDeclarationSorter({
+				order: 'smacss'
+			})
 		]))
 		.pipe(rename({
 			basename: "global",
@@ -223,12 +267,12 @@ gulp.task('processHtml',
 // Task watch
 gulp.task('serve', function () {
 	browserSync.init({
-		notify: false,
-		server: {
-			baseDir: './dist',
-		},
-		port: 8000
-	}),
+			notify: false,
+			server: {
+				baseDir: './dist',
+			},
+			port: 8000
+		}),
 		gulp.watch(
 			[
 				'./src/assets/img/**/**.{svg,gif,png,jpg,jpeg}'

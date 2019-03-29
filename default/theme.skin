@@ -1,0 +1,198 @@
+<%@ Register Namespace="CanhCam.Web.UI" Assembly="CanhCam.Web" TagPrefix="portal" %>
+<%@ Register Namespace="CanhCam.Web.BannerUI" Assembly="CanhCam.Features.Banner" TagPrefix="portal" %>
+<%@ Register Namespace="CanhCam.Web.NewsUI" Assembly="CanhCam.Features.News" TagPrefix="portal" %>
+<%@ Register Namespace="CanhCam.Web.DealerUI" Assembly="CanhCam.Features.DealerLocator" TagPrefix="portal" %>
+<%@ Register Namespace="CanhCam.Web.SharedFilesUI" Assembly="CanhCam.Features.SharedFiles" TagPrefix="portal" %>
+<%@ Register Namespace="CanhCam.Web.ProductUI" Assembly="CanhCam.Features.Product" TagPrefix="portal" %>
+
+<portal:ZonesDisplaySettings runat="server" 
+	ShowDescription="true"
+    DescriptionControlType="textarea"
+    ShowPrimaryImage="true"
+    ShowSecondImage="false"
+	/>
+<portal:BannerDisplaySettings runat="server" 
+	ShowDescription="true"
+    DescriptionControlType="editor"
+    ShowThumbnail="false"
+    ThumbnailWidth="100"
+    ImageWidth="150"
+	/>
+<portal:NewsDisplaySettings runat="server" 
+	ShowAttribute="true"
+    ShowSubtitle="true"
+    ShowAttachment="true"
+	/>
+<portal:DealerDisplaySettings runat="server" 
+	ShowDescription="true"
+	/>
+<portal:ProductDisplaySettings runat="server" 
+	ShowOldPrice="true"
+    ShowProductCode="true"
+    ShowSubTitle="true"
+    ShowRelatedProduct="true"
+	/>
+<portal:SharedFilesDisplaySettings runat="server" 
+	ShowFolder="false"
+    ShowYear="false"
+	/>
+<portal:SearchResultsDisplaySettings runat="server" 
+	PageId="3"
+	/>
+
+<portal:LayoutDisplaySettings runat="server" 
+    LeftSideNoRightSideCss="col-left"
+    RightSideNoLeftSideCss="col-sm-3 right-content rightside right2column"
+    CenterNoLeftSideCss="col-sm-9 center-rightmargin cmszone"
+    CenterNoRightSideCss="col-right"
+    CenterNoLeftOrRightSideCss="middle-fullwidth"
+    CenterWithLeftAndRightSideCss="col-sm-9 center-rightandleftmargins cmszone"
+    LeftAndRightNoCenterCss=""
+    EmptyCenterCss="middle-empty"
+    LeftOnlyCss=""
+    RightOnlyCss=""
+    />
+
+<telerik:RadGrid SkinId="radGridSkin" CssClass="table-responsive" AllowMultiRowSelection="true" AllowMultiRowEdit="false" EditItemStyle-ForeColor="#000000"
+            Skin="Default" runat="server" AllowFilteringByColumn="false" AllowAutomaticDeletes="True" AllowAutomaticInserts="True"
+            Width="100%" PageSize="20" AllowAutomaticUpdates="True" AllowPaging="True" AutoGenerateColumns="False" GridLines="None"
+            HeaderStyle-Font-Bold="true" AllowSorting="true"
+            MasterTableView-EditFormSettings-EditColumn-ButtonType="ImageButton"
+            Font-Names="arial,sans-serif">
+    <MasterTableView CssClass="cmstable table table-bordered"></MasterTableView>
+    <PagerStyle SEOPagingQueryStringKey="page" />
+    <GroupingSettings CaseSensitive="false" />
+    <ClientSettings>
+        <Selecting AllowRowSelect="true" EnableDragToSelectRows="false" />
+    </ClientSettings>
+</telerik:RadGrid>
+
+<telerik:RadSplitter SkinID="radSplitterSkin" Skin="Simple" CssClass="spliter" Width="100%" runat="server" />
+<telerik:RadTabStrip SkinID="MainTab" CssClass="maintabs" runat="server" />
+<telerik:RadTabStrip SkinID="SubTabs" CssClass="subtabs" runat="server" />
+<telerik:RadAutoCompleteBox SkinID="radAutoCompleteBox" Skin="Simple" runat="server" />
+<telerik:RadAsyncUpload SkinID="radAsyncUploadSkin" Skin="Simple" HideFileInput="true" CssClass="asynupload" runat="server" />
+<telerik:RadComboBox SkinID="radComboBoxSkin" Skin="Simple" runat="server" />
+<telerik:RadNumericTextBox SkinID="radNumericTextBox" Width="70" runat="server" />
+
+<asp:TextBox SkinID="NumericTextBox" Width="75" runat="server" />
+<asp:TextBox SkinID="PriceTextBox" Width="100" runat="server" />
+
+<asp:CheckBoxList  runat="server"
+    CssClass="aspcheckboxlist"
+    RepeatColumns="2"
+    RepeatDirection="horizontal"
+    RepeatLayout="Table"
+
+    />
+
+<asp:CheckBoxList runat="server" SkinID="Enum"
+    CssClass="aspcheckboxlist nav"
+    RepeatLayout="UnorderedList"
+    />
+<asp:CheckBoxList runat="server" SkinID="Roles"
+    CssClass="aspcheckboxlist"
+    RepeatColumns="3"
+    RepeatDirection="horizontal"
+    RepeatLayout="Table"
+       
+    />
+       
+<asp:CheckBoxList  runat="server" SkinID="Blog"
+    CssClass="aspcheckboxlist"
+    RepeatColumns="4"
+    RepeatDirection="horizontal"
+    RepeatLayout="Table"
+       
+    />
+   
+
+<asp:Calendar  runat="server"
+     CaptionAlign="Top"
+     CssClass="aspcalendarmain"
+     DayHeaderStyle-CssClass="aspcalendardayheader"
+     DayNameFormat="FirstLetter"
+     DayStyle-CssClass="aspcalendarday"
+     FirstDayOfWeek="sunday"
+     NextMonthText="+"
+     NextPrevFormat="CustomText"
+     NextPrevStyle-CssClass="aspcalendarnextprevious"
+     OtherMonthDayStyle-CssClass="aspcalendarothermonth"
+     PrevMonthText="-"
+     SelectedDayStyle-CssClass="aspcalendarselectedday"
+     SelectorStyle-CssClass="aspcalendarselector"
+     ShowDayHeader="true"
+     ShowGridLines="false"
+     ShowNextPrevMonth="true"
+     ShowTitle="true"
+     TitleFormat="MonthYear"
+     TitleStyle-CssClass="aspcalendartitle"
+     TodayDayStyle-CssClass="aspcalendartoday"
+     WeekendDayStyle-CssClass="aspcalendarweekendday"
+     Width="100%"
+    /> 
+    
+    <%--  this is the EventCalendar  --%>
+    
+<gb:DataCalendar runat="server"
+     BackColor=""
+     BorderColor=""
+     BorderStyle="none"
+     CaptionAlign="Top"
+     CssClass="calendarmain"
+     DayHeaderStyle-CssClass="calendardayheader"
+     DayNameFormat="Short"
+     DayStyle-CssClass="calendarday"
+     FirstDayOfWeek="sunday"
+     NextMonthText="+"
+     NextPrevFormat="CustomText"
+     NextPrevStyle-CssClass="calendarnextprevious"
+     OtherMonthDayStyle-CssClass="calendarothermonth"
+     PrevMonthText="-"
+     SelectedDayStyle-CssClass="calendarselectedday"
+     SelectorStyle-CssClass="calendarselector"
+     ShowDayHeader="true"
+     ShowGridLines="false"
+     ShowNextPrevMonth="true"
+     ShowTitle="true"
+     TitleFormat="MonthYear"
+     TitleStyle-CssClass="calendartitle"
+     TodayDayStyle-CssClass="calendartoday"
+     WeekendDayStyle-CssClass="calendarweekendday"
+    />
+
+<asp:ValidationSummary runat="server" ForeColor="" CssClass="fa fa-exclamation-triangle" />
+<asp:RangeValidator runat="server" ForeColor="" CssClass="fa fa-exclamation-triangle" />
+<asp:RequiredFieldValidator runat="server" ForeColor="" CssClass="fa fa-exclamation-triangle" />
+<asp:RegularExpressionValidator runat="server" ForeColor="" CssClass="fa fa-exclamation-triangle" />
+<asp:CompareValidator runat="server" ForeColor="" CssClass="fa fa-exclamation-triangle" />
+<asp:CustomValidator runat="server" ForeColor="" CssClass="fa fa-exclamation-triangle" /> 
+
+<asp:ValidationSummary runat="server" SkinID="Registration" ForeColor="" CssClass="fa fa-exclamation-triangle" />
+<asp:RangeValidator runat="server" SkinID="Registration" ForeColor="" CssClass="fa fa-exclamation-triangle" />
+<asp:RequiredFieldValidator runat="server" SkinID="Registration" ForeColor="" CssClass="fa fa-exclamation-triangle" />
+<asp:RegularExpressionValidator runat="server" SkinID="Registration" ForeColor="" CssClass="fa fa-exclamation-triangle" />
+<asp:CompareValidator runat="server" SkinID="Registration" ForeColor="" CssClass="fa fa-exclamation-triangle" />
+<asp:CustomValidator runat="server" SkinID="Registration" ForeColor="" CssClass="fa fa-exclamation-triangle" />
+
+<asp:Button CssClass="btn btn-default" SkinID="DefaultButton" runat="server" />
+<asp:Button CssClass="btn btn-default" SkinID="ExportButton" runat="server" />
+<asp:Button CssClass="btn btn-default btn-insert" SkinID="InsertButton" runat="server" />
+<asp:Button CssClass="btn btn-default btn-update" SkinID="UpdateButton" runat="server" />
+<asp:Button CssClass="btn btn-default btn-edit" SkinID="EditButton" runat="server" />
+<asp:Button CssClass="btn btn-default btn-save" SkinID="SaveButton" runat="server" />
+<asp:Button CssClass="btn btn-default btn-cancel" SkinID="CancelButton" runat="server" />
+<asp:Button CssClass="btn btn-default btn-search" SkinID="SearchButton" runat="server" />
+<asp:Button CssClass="btn btn-danger btn-delete" SkinID="DeleteButton" runat="server" />
+<asp:Button CssClass="btn btn-default btn-link" SkinID="LinkButton" runat="server" />
+
+<asp:HyperLink CssClass="btn btn-default" SkinID="DefaultButton" runat="server" />
+<asp:HyperLink CssClass="btn btn-default" SkinID="ExportButton" runat="server" />
+<asp:HyperLink CssClass="btn btn-default btn-insert" SkinID="InsertButton" runat="server" />
+<asp:HyperLink CssClass="btn btn-default btn-update" SkinID="UpdateButton" runat="server" />
+<asp:HyperLink CssClass="btn btn-default btn-edit" SkinID="EditButton" runat="server" />
+<asp:HyperLink CssClass="btn btn-default btn-save" SkinID="SaveButton" runat="server" />
+<asp:HyperLink CssClass="btn btn-default btn-cancel" SkinID="CancelButton" runat="server" />
+<asp:HyperLink CssClass="btn btn-default btn-search" SkinID="SearchButton" runat="server" />
+<asp:HyperLink CssClass="btn btn-danger btn-delete" SkinID="DeleteButton" runat="server" />
+<asp:HyperLink CssClass="btn btn-default btn-link" SkinID="LinkButton" runat="server" />
