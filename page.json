@@ -1,5 +1,5 @@
 {
-	"buildAll": false,
+	"buildAll": true,
 	"page": [
 		{
 			"name": "index",
