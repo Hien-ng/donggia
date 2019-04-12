@@ -92,9 +92,12 @@ $(document).ready(function () {
 			gutter: 0,
 		}
 	})
-	$(window).on('resize', function () {
-		$('.gallery .grid').isotope('shuffle')
-	})
+	$isoGrid.imagesLoaded().progress( function() {
+		$isoGrid.isotope('layout');
+	  });
+	// $(window).on('resize', function () {
+	// 	$('.gallery .grid').isotope('shuffle')
+	// })
 
 	$('.gallery .viewmore a').on('click', function (e) {
 		e.preventDefault()

@@ -8,6 +8,7 @@
 		"./bower_components/jquery/dist/jquery.js",
 		"./bower_components/swiper/dist/js/swiper.min.js",
 		"./bower_components/fancybox/dist/jquery.fancybox.js",
-		"./bower_components/isotope-layout/dist/isotope.pkgd.min.js"
+		"./bower_components/isotope-layout/dist/isotope.pkgd.min.js",
+		"./bower_components/imagesloaded/imagesloaded.pkgd.min.js"
 	]
 }

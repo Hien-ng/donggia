@@ -108,9 +108,9 @@ gulp.task('processJs', function () {
 	// })
 	return gulp.src('./src/pages/index.js')
 		.pipe(srcmap.init())
-		.pipe(babel({
-			presets: ['@babel/env']
-		}))
+		// .pipe(babel({
+		// 	presets: ['@babel/env']
+		// }))
 		.pipe(uglify())
 		.pipe(srcmap.write('.'))
 		.pipe(rename({
